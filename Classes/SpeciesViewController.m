@@ -9,14 +9,34 @@
 #import "SpeciesViewController.h"
 
 
+NSString *const kSpeciesDescriptionHtmlTemplate = 
+@"<html>"
+@"<head>"
+@"	<title>Plant KEy</title>"
+@"	<style type='text/css'><!--"
+@"	body {"
+@"		background-color: #FFFFFF;"
+@"		color: #000000;"
+@"		font-size: 17px;"
+@"		font-family: Helvetia, Sans-Serif;"
+@"	}"
+@"	--></style>"
+@"</head>"
+@"<body>%@</body>"
+@"</html>";
+
+
+
 @implementation SpeciesViewController
 
 @synthesize keyNode;
 @synthesize navigationController;
+@synthesize imageView;
+@synthesize webView;
 
 
 - (id)initWithKeyNode:(KeyNode *)k andNavigationController:(UINavigationController *)n {
-	if ((self = [super initWithNibName:@"QuestionViewController" bundle:nil])) {
+	if ((self = [super initWithNibName:@"SpeciesViewController" bundle:nil])) {
 		// Custom initialization
 		self.keyNode = k;
 		self.navigationController = n;		
@@ -35,12 +55,20 @@
 */
 
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	NSString *imageName = [NSString stringWithFormat:@"%@.png",self.keyNode.keyNodeId];
+	imageView.image = [UIImage imageNamed:imageName];
+	
+	NSString *cssDescription = [NSString stringWithFormat:kSpeciesDescriptionHtmlTemplate, self.keyNode.description];
+	[webView loadHTMLString:cssDescription baseURL:nil];
+	
+	NSLog(@"SpeciesViewController: view loaded");
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.

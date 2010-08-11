@@ -17,6 +17,8 @@
 @synthesize opt2KeyNodeId;
 @synthesize speciesName;
 @synthesize commonNames;
+@synthesize description;
+
 
 
 -(BOOL) isLeaf{

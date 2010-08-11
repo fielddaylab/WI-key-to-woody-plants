@@ -38,12 +38,15 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	NSLog(@"KeyNodeViewController: Loading View with KeyNode: %@", keyNode);
+	NSLog(@"KeyNodeViewController: Loading View with KeyNodeId: %@", self.keyNode.keyNodeId);
 	
-	if ([keyNode isLeaf]) {
+	if ([self.keyNode isLeaf]) {
 		//Display a Species Details VC
 		NSLog(@"KeyNodeViewController: The current KeyNode is a Species");
-		self.title = @"Identification Complete";
+		self.title = self.keyNode.speciesName;
+		
+		contentViewController = [[SpeciesViewController alloc] initWithKeyNode:keyNode andNavigationController:self.navigationController];
+		[self.view addSubview:contentViewController.view];
 
 	}
 	else {

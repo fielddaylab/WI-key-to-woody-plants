@@ -77,7 +77,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 	// Open the database from the users filessytem
 	if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
 		// Setup the SQL Statement and compile it for faster access
-		const char *sqlStatement = "select id,opt1desc,opt1keyNode,opt2desc,opt2keyNode,species,commonNames from keyNodes";
+		const char *sqlStatement = "select id,opt1desc,opt1keyNode,opt2desc,opt2keyNode,species,commonNames,description from keyNodes";
 
 		sqlite3_stmt *compiledStatement;
 		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
@@ -109,6 +109,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 				if(sqlite3_column_text(compiledStatement, 6) == NULL) commonNames = nil;
 				else commonNames = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)];				
 
+				NSString *description;
+				if(sqlite3_column_text(compiledStatement, 7) == NULL) commonNames = nil;
+				else description = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 7)];	
+				
 				// Create a new animal object with the data from the database
 				KeyNode *keyNode = [[KeyNode alloc] init];
 				keyNode.keyNodeId = keyNodeId;
@@ -118,6 +122,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 				keyNode.opt2KeyNodeId = opt2keyNodeId;
 				keyNode.speciesName = species;
 				keyNode.commonNames = commonNames;
+				keyNode.description = description;
+
 				
 				// Add the animal object to the animals Array
 				[keyNodes setObject:keyNode forKey:keyNode.keyNodeId];
@@ -130,6 +136,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		
 	}
 	sqlite3_close(database);
+	NSLog(@"AppModel:readKeyFromDatabase: Reading Complete");
+
 	
 }
 

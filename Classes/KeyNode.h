@@ -21,6 +21,7 @@
 	//Species Related
 	NSString	*speciesName;
 	NSString	*commonNames;	
+	NSString	*description;
 }
 
 @property(nonatomic, retain) NSNumber	*keyNodeId;
@@ -30,6 +31,8 @@
 @property(nonatomic, retain) NSNumber	*opt2KeyNodeId;
 @property(nonatomic, retain) NSString	*speciesName;
 @property(nonatomic, retain) NSString	*commonNames;	
+@property(nonatomic, retain) NSString	*description;	
+
 
 -(BOOL) isLeaf;
 

@@ -117,10 +117,10 @@
 	NSString *text;
 	switch (indexPath.row) {
 		case 0:
-			text = keyNode.opt1Desc;
+			text = self.keyNode.opt1Desc;
 			break;
 		case 1:
-			text = keyNode.opt2Desc;
+			text = self.keyNode.opt2Desc;
 			break;	
 		default:
 			break;
@@ -144,10 +144,10 @@
 	NSString *text;
 	switch (indexPath.row) {
 		case 0:
-			text = keyNode.opt1Desc;
+			text = self.keyNode.opt1Desc;
 			break;
 		case 1:
-			text = keyNode.opt2Desc;
+			text = self.keyNode.opt2Desc;
 			break;	
 		default:
 			break;
@@ -208,10 +208,10 @@
 	KeyNode *kn;
 	switch (indexPath.row) {
 		case 0:
-			kn = [[AppModel sharedInstance] keyNodeForId:keyNode.opt1KeyNodeId] ;
+			kn = [[AppModel sharedInstance] keyNodeForId:self.keyNode.opt1KeyNodeId] ;
 			break;
 		case 1:
-			kn = [[AppModel sharedInstance] keyNodeForId:keyNode.opt2KeyNodeId] ;
+			kn = [[AppModel sharedInstance] keyNodeForId:self.keyNode.opt2KeyNodeId] ;
 			break;	
 		default:
 			break;

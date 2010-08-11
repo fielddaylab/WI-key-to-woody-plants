@@ -13,11 +13,16 @@
 @interface SpeciesViewController : UIViewController {
 	KeyNode *keyNode;
 	IBOutlet UINavigationController *navigationController;
+	IBOutlet UIImageView *imageView;
+	IBOutlet UIWebView *webView;
 
 }
 
 @property (nonatomic,retain) KeyNode *keyNode;
 @property (nonatomic,retain) IBOutlet UINavigationController *navigationController;
+@property (nonatomic,retain) IBOutlet UIImageView *imageView;
+@property (nonatomic,retain) IBOutlet UIWebView *webView;
+
 
 - (id)initWithKeyNode:(KeyNode *)k andNavigationController:(UINavigationController *)n;
 
