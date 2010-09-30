@@ -28,7 +28,6 @@
 	[keyVC release];
 	
 	[window addSubview:keyNav.view];
-    [keyNav release];
 	
 	[window makeKeyAndVisible];
 	

@@ -10,21 +10,13 @@
 
 @implementation KeyNode
 
-@synthesize keyNodeId;
-@synthesize opt1Desc;
-@synthesize opt1KeyNodeId;
-@synthesize opt2Desc;
-@synthesize opt2KeyNodeId;
-@synthesize speciesName;
-@synthesize commonNames;
-@synthesize description;
-
-
-
--(BOOL) isLeaf{
-	if (self.opt1Desc == nil) return YES;
-	else return FALSE;
-}
+@synthesize		uid;
+@synthesize		opt1text;
+@synthesize		opt1id;
+@synthesize		opt1type;
+@synthesize		opt2text;
+@synthesize		opt2id;
+@synthesize		opt2type;
 
 
 @end

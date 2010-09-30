@@ -22,7 +22,7 @@
 }
 
 + (AppModel *)sharedInstance;
-- (void) readKeyFromDatabase;
+- (void) readKeyNodesFromDatabase;
 - (void) checkAndCreateDatabase;
 - (KeyNode *)keyNodeForId: (NSNumber*)i;
 
