@@ -6,9 +6,11 @@
 //  Copyright 2010 University of Wisconsin. All rights reserved.
 //
 
-#import "KeyNodeViewController.h"
 #import "AppModel.h"
+#import "PlantKeyType.h"
 #import "KeyNodeViewController.h"
+#import "Plant.h"
+#import "PlantViewController.h"
 
 #define FONT_SIZE 18.0f
 #define CELL_CONTENT_WIDTH 300.0f
@@ -203,20 +205,44 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	NSLog(@"KeyNodeViewController: didSelectRowAtIndexPath");
 
-	KeyNode *kn;
+	
+	//Retrieve the details of the selection 
+	plantKeyType nextType;
+	NSNumber *nextId;
+	
 	switch (indexPath.row) {
 		case 0:
-			kn = [[AppModel sharedInstance] keyNodeForId:self.keyNode.opt1id] ;
+			nextType = self.keyNode.opt1type;
+			nextId = self.keyNode.opt1id;
 			break;
 		case 1:
-			kn = [[AppModel sharedInstance] keyNodeForId:self.keyNode.opt2id] ;
+			nextType = self.keyNode.opt2type;
+			nextId = self.keyNode.opt2id;
 			break;	
 		default:
+			NSLog(@"KeyNodeViewController: Shouldn't have gotten here");
 			break;
 	}
-	KeyNodeViewController *keyVC = [[KeyNodeViewController alloc]initWithKeyNode:kn];
-	[self.navigationController pushViewController:keyVC animated:YES];
-	[keyVC release];
+	
+	//Create an push the new view
+	UIViewController *nextVc;
+	
+	if (nextType == kNode) {
+		NSLog(@"KeyNodeViewController: Key Node specifies a Key Node");
+		KeyNode *kn = [[AppModel sharedInstance] keyNodeForId:nextId];
+		nextVc = [[KeyNodeViewController alloc]initWithKeyNode:kn];
+		[kn release];
+	}
+	else if (nextType == kPlant){	
+		NSLog(@"KeyNodeViewController: Key Node specifies a Plant");
+		Plant *p = [[AppModel sharedInstance] plantForId:nextId];
+		nextVc = [[PlantViewController alloc]initWithPlant:p];
+	}
+	else NSLog(@"KeyNodeViewController: Shouldn't have gotten here");
+
+	
+	[self.navigationController pushViewController:nextVc animated:YES];
+	[nextVc release];
 	
 }
 

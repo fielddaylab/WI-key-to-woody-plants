@@ -15,6 +15,7 @@
 
 SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 @synthesize keyNodes;
+@synthesize plants;
 
 -(id)init {
     if (self = [super init]) {
@@ -27,11 +28,9 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		NSString *documentsDir = [documentPaths objectAtIndex:0];
 		databasePath = [documentsDir stringByAppendingPathComponent:databaseName];
 		
-		// Execute the "checkAndCreateDatabase" function
-		[self checkAndCreateDatabase];
-		
+		[self checkAndCreateDatabase];		
 		[self readKeyNodesFromDatabase];
-		
+		[self readPlantsFromDatabase];
 		
 		NSLog(@"AppModel Inited");
 	}
@@ -66,13 +65,11 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 }
 
 -(void) readKeyNodesFromDatabase {
-	NSLog(@"AppModel:readKeyFromDatabase: Begin Reading");
+	NSLog(@"AppModel:readKeyNodesFromDatabase: Begin Reading");
 
-	// Setup the database object
 	sqlite3 *database;
-	
-	// Init the animals Array
-	keyNodes = [[NSMutableDictionary alloc] init];
+	if (self.keyNodes) [self.keyNodes release];
+	self.keyNodes = [[NSMutableDictionary alloc] init];
 	
 	// Open the database from the users filessytem
 	if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
@@ -86,53 +83,85 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 			// Loop through the results and add them to the feeds array
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
 				NSLog(@"AppModel:readKeyFromDatabase: Hydrating a KeyNode");
-				// Read the data from the result row
 				
-				NSNumber *uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
-				NSString *opt1text = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
-				NSNumber *opt1id = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)] intValue]];
-				
-				plantKeyType opt1type;
-				if ([[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)] isEqualToString:@"n"]) opt1type = kNode;
-				else opt1type = kPlant;
-				
-				NSString *opt2text = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)];
-				NSNumber *opt2id = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)] intValue]];
-				
-				plantKeyType opt2type;
-				if ([[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)] isEqualToString:@"n"]) opt2type = kNode;
-				else opt2type = kPlant;
-				
-				
-				// Create a new animal object with the data from the database
 				KeyNode *keyNode = [[KeyNode alloc] init];
-				keyNode.uid = uid;
-				keyNode.opt1text = opt1text;
-				keyNode.opt1id = opt1id;
-				keyNode.opt1type = opt1type;
-				keyNode.opt2text = opt2text;
-				keyNode.opt2id = opt2id;
-				keyNode.opt2type = opt2type;
+
+				keyNode.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
+				keyNode.opt1text = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
+				keyNode.opt1id = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)] intValue]];
+				
+				if ([[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)] isEqualToString:@"n"]) keyNode.opt1type = kNode;
+				else keyNode.opt1type = kPlant;
+				
+				keyNode.opt2text = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)];
+				keyNode.opt2id = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)] intValue]];
+			
+				if ([[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)] isEqualToString:@"n"]) keyNode.opt2type = kNode;
+				else keyNode.opt2type = kPlant;
 				
 				// Add the node to the keyNode array
-				[keyNodes setObject:keyNode forKey:keyNode.uid];
-				
+				[self.keyNodes setObject:keyNode forKey:keyNode.uid];
 				[keyNode release];
 			}
 		}
 		// Release the compiled statement from memory
 		sqlite3_finalize(compiledStatement);
-		
 	}
 	sqlite3_close(database);
 	NSLog(@"AppModel:readKeyNodesFromDatabase: Reading Complete");
+}
 
+-(void) readPlantsFromDatabase {
+	NSLog(@"AppModel:readPlantsFromDatabase: Begin Reading");
 	
+	sqlite3 *database;
+	if (self.plants) [self.plants release];
+	self.plants = [[NSMutableDictionary alloc] init];
+	
+	// Open the database from the users filessytem
+	if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
+		// Setup the SQL Statement and compile it for faster access
+		const char *sqlStatement = "select uid,scientificName,commonName1,commonName2,commonName3,nativeText,habitatText from plants";
+		
+		sqlite3_stmt *compiledStatement;
+		
+		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
+			NSLog(@"AppModel:readKeyFromDatabase: SQLITE_OK");
+			// Loop through the results and add them to the feeds array
+			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
+				NSLog(@"AppModel:readKeyFromDatabase: Hydrating a Plant");
+				
+				Plant *plant = [[Plant alloc] init];
+				plant.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
+				plant.scientificName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
+				plant.commonName1 = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)];
+				plant.commonName2 = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)];
+				plant.commonName3 = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)];
+				plant.nativeText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)];
+				plant.habitatText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)];
+									
+				// Add the node to the keyNode array
+				[self.plants setObject:plant forKey:plant.uid];
+				[plant release];
+			}
+		}
+		// Release the compiled statement from memory
+		sqlite3_finalize(compiledStatement);
+	}
+	sqlite3_close(database);
+	NSLog(@"AppModel:readKeyNodesFromDatabase: Reading Complete");
 }
 
-- (KeyNode *)keyNodeForId: (NSNumber *)n {
-	return [keyNodes objectForKey:n];
+
+- (KeyNode *)keyNodeForId: (NSNumber *)i {
+	return [self.keyNodes objectForKey:i];
 }
+
+
+- (Plant*)plantForId:(NSNumber *)i {
+	return [self.plants objectForKey:i];	
+}
+
 
 
 

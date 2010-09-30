@@ -9,14 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "SynthesizeSingleton.h"
 #import "KeyNode.h"
+#import "Plant.h";
 
 @interface AppModel : NSObject {
 	// Database variables
 	NSString *databaseName;
 	NSString *databasePath;
 	
-	// Array to store the keyNode objects
 	NSMutableDictionary *keyNodes;
+	NSMutableDictionary *plants;
 	
 	
 }
@@ -25,11 +26,11 @@
 - (void) readKeyNodesFromDatabase;
 - (void) checkAndCreateDatabase;
 - (KeyNode *)keyNodeForId: (NSNumber*)i;
-
-
+- (Plant *)plantForId: (NSNumber*)i;
 
 
 @property (nonatomic, retain) NSMutableDictionary *keyNodes;
+@property (nonatomic, retain) NSMutableDictionary *plants;
 
 
 

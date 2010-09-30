@@ -21,6 +21,9 @@
 		ABCE86BE12133B5E0012C322 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCE86BD12133B5E0012C322 /* 3.png */; };
 		ABD22C2E125511F10018A3E8 /* KeyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22C2D125511F10018A3E8 /* KeyNode.m */; };
 		ABD22D571255246E0018A3E8 /* keyNodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD22D561255246E0018A3E8 /* keyNodeViewController.xib */; };
+		ABD22DAC12552B4A0018A3E8 /* PlantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DAA12552B4A0018A3E8 /* PlantViewController.m */; };
+		ABD22DAD12552B4A0018A3E8 /* PlantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD22DAB12552B4A0018A3E8 /* PlantViewController.xib */; };
+		ABD22DB212552B630018A3E8 /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DB112552B630018A3E8 /* Plant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,11 @@
 		ABD22C2912550E580018A3E8 /* PlantKeyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantKeyType.h; sourceTree = "<group>"; };
 		ABD22C2D125511F10018A3E8 /* KeyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNode.m; sourceTree = "<group>"; };
 		ABD22D561255246E0018A3E8 /* keyNodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = keyNodeViewController.xib; sourceTree = "<group>"; };
+		ABD22DA912552B4A0018A3E8 /* PlantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantViewController.h; sourceTree = "<group>"; };
+		ABD22DAA12552B4A0018A3E8 /* PlantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantViewController.m; sourceTree = "<group>"; };
+		ABD22DAB12552B4A0018A3E8 /* PlantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantViewController.xib; sourceTree = "<group>"; };
+		ABD22DB012552B630018A3E8 /* Plant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plant.h; sourceTree = "<group>"; };
+		ABD22DB112552B630018A3E8 /* Plant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,11 @@
 				ABD22C2D125511F10018A3E8 /* KeyNode.m */,
 				AB7C05221212E344005F4DBE /* KeyNodeViewController.h */,
 				AB7C05231212E344005F4DBE /* KeyNodeViewController.m */,
+				ABD22DB012552B630018A3E8 /* Plant.h */,
+				ABD22DB112552B630018A3E8 /* Plant.m */,
+				ABD22DA912552B4A0018A3E8 /* PlantViewController.h */,
+				ABD22DAA12552B4A0018A3E8 /* PlantViewController.m */,
+				ABD22DAB12552B4A0018A3E8 /* PlantViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -196,6 +209,7 @@
 				ABCE86BE12133B5E0012C322 /* 3.png in Resources */,
 				AB9BF95D12256B4C0028D6AC /* notes in Resources */,
 				ABD22D571255246E0018A3E8 /* keyNodeViewController.xib in Resources */,
+				ABD22DAD12552B4A0018A3E8 /* PlantViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +225,8 @@
 				AB7C01801210A3A8005F4DBE /* AppModel.m in Sources */,
 				AB7C05251212E344005F4DBE /* KeyNodeViewController.m in Sources */,
 				ABD22C2E125511F10018A3E8 /* KeyNode.m in Sources */,
+				ABD22DAC12552B4A0018A3E8 /* PlantViewController.m in Sources */,
+				ABD22DB212552B630018A3E8 /* Plant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
