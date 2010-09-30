@@ -8,6 +8,7 @@
 
 #import "PlantKeyAppDelegate.h"
 #import "KeyNodeViewController.h"
+#import "PlantListViewController.h"
 #import "AppModel.h"
 
 
@@ -23,11 +24,15 @@
 		
 	//Start up by loading key #1 and putting it on screen
 	KeyNodeViewController *keyVC = [[KeyNodeViewController alloc]initWithKeyNode:[[AppModel sharedInstance] keyNodeForId:[NSNumber numberWithInt:1]]];
-	
 	UINavigationController *keyNav = [[UINavigationController alloc] initWithRootViewController:keyVC];
 	[keyVC release];
 	
-	[window addSubview:keyNav.view];
+	PlantListViewController *plantListVC = [[PlantListViewController alloc]initWithNibName:@"PlantListViewController" bundle:nil];
+	UINavigationController *plantNav = [[UINavigationController alloc] initWithRootViewController:plantListVC];
+	[plantListVC release];
+	
+	
+	[window addSubview:plantNav.view];
 	
 	[window makeKeyAndVisible];
 	
