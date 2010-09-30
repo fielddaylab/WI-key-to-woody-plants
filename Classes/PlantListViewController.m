@@ -12,6 +12,8 @@
 
 @implementation PlantListViewController
 
+@synthesize plantArray;
+
 #pragma mark -
 #pragma mark View lifecycle
 
@@ -20,6 +22,9 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         self.title = @"Plant List";
+		NSDictionary *plantDict = [[AppModel sharedInstance] plants]; 
+		self.plantArray = [plantDict keysSortedByValueUsingSelector:@selector(compareScientificName:)];
+
     }
     return self;
 }
@@ -51,7 +56,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-	int count = [[[AppModel sharedInstance] plants] count];
+	int count = [self.plantArray count];
     return count;
 }
 
@@ -68,7 +73,8 @@
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 	}
 
-	Plant *p = [[AppModel sharedInstance] plantForId:[NSNumber numberWithInt:indexPath.row]];
+	NSNumber *plantId = [self.plantArray objectAtIndex:indexPath.row];
+	Plant *p = [[AppModel sharedInstance] plantForId:plantId];
 	cell.textLabel.text = p.scientificName;
 	
 	return cell;
@@ -127,7 +133,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	NSLog(@"PlantListViewController: didSelectRowAtIndexPath");
 		
-	Plant *p = [[AppModel sharedInstance] plantForId:[NSNumber numberWithInt:indexPath.row]];
+	NSNumber *plantId = [self.plantArray objectAtIndex:indexPath.row];
+	Plant *p = [[AppModel sharedInstance] plantForId:plantId];
 	PlantViewController *pvc = [[PlantViewController alloc]initWithPlant:p];
 
 	[self.navigationController pushViewController:pvc animated:YES];

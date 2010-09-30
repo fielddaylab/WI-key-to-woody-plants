@@ -19,4 +19,9 @@
 @synthesize nativeText;
 @synthesize habitatText; 
 
+
+- (NSComparisonResult)compareScientificName:(Plant*)otherPlant{
+	return [self.scientificName localizedCaseInsensitiveCompare:otherPlant.scientificName];
+}
+
 @end

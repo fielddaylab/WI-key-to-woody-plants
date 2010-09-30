@@ -11,6 +11,9 @@
 
 @interface PlantListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource> {
 	IBOutlet UITableView *myTableView;
+	NSArray *plantArray;
 }
+
+@property(nonatomic, retain) NSArray *plantArray;
 
 @end

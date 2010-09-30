@@ -20,12 +20,12 @@
 		AB9BF95D12256B4C0028D6AC /* notes in Resources */ = {isa = PBXBuildFile; fileRef = AB9BF95C12256B4C0028D6AC /* notes */; };
 		ABCE86BE12133B5E0012C322 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCE86BD12133B5E0012C322 /* 3.png */; };
 		ABD22C2E125511F10018A3E8 /* KeyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22C2D125511F10018A3E8 /* KeyNode.m */; };
-		ABD22D571255246E0018A3E8 /* KeyNodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD22D561255246E0018A3E8 /* KeyNodeViewController.xib */; };
 		ABD22DAC12552B4A0018A3E8 /* PlantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DAA12552B4A0018A3E8 /* PlantViewController.m */; };
 		ABD22DAD12552B4A0018A3E8 /* PlantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD22DAB12552B4A0018A3E8 /* PlantViewController.xib */; };
 		ABD22DB212552B630018A3E8 /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DB112552B630018A3E8 /* Plant.m */; };
 		ABD22E30125545CB0018A3E8 /* PlantListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22E2E125545CA0018A3E8 /* PlantListViewController.m */; };
 		ABD22E31125545CB0018A3E8 /* PlantListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD22E2F125545CB0018A3E8 /* PlantListViewController.xib */; };
+		ABD22F0E1255545D0018A3E8 /* KeyNodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD22F0D1255545D0018A3E8 /* KeyNodeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +51,6 @@
 		ABCE86BD12133B5E0012C322 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		ABD22C2912550E580018A3E8 /* PlantKeyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantKeyType.h; sourceTree = "<group>"; };
 		ABD22C2D125511F10018A3E8 /* KeyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNode.m; sourceTree = "<group>"; };
-		ABD22D561255246E0018A3E8 /* KeyNodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyNodeViewController.xib; sourceTree = "<group>"; };
 		ABD22DA912552B4A0018A3E8 /* PlantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantViewController.h; sourceTree = "<group>"; };
 		ABD22DAA12552B4A0018A3E8 /* PlantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantViewController.m; sourceTree = "<group>"; };
 		ABD22DAB12552B4A0018A3E8 /* PlantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlantViewController.xib; path = Classes/PlantViewController.xib; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		ABD22E2D125545CA0018A3E8 /* PlantListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantListViewController.h; sourceTree = "<group>"; };
 		ABD22E2E125545CA0018A3E8 /* PlantListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantListViewController.m; sourceTree = "<group>"; };
 		ABD22E2F125545CB0018A3E8 /* PlantListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlantListViewController.xib; path = Classes/PlantListViewController.xib; sourceTree = "<group>"; };
+		ABD22F0D1255545D0018A3E8 /* KeyNodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyNodeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 				AB7C036D1211E932005F4DBE /* plantKey.sql */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* PlantKey-Info.plist */,
-				ABD22D561255246E0018A3E8 /* KeyNodeViewController.xib */,
+				ABD22F0D1255545D0018A3E8 /* KeyNodeViewController.xib */,
 				ABD22DAB12552B4A0018A3E8 /* PlantViewController.xib */,
 				ABD22E2F125545CB0018A3E8 /* PlantListViewController.xib */,
 			);
@@ -216,9 +216,9 @@
 				AB7C036E1211E932005F4DBE /* plantKey.sql in Resources */,
 				ABCE86BE12133B5E0012C322 /* 3.png in Resources */,
 				AB9BF95D12256B4C0028D6AC /* notes in Resources */,
-				ABD22D571255246E0018A3E8 /* KeyNodeViewController.xib in Resources */,
 				ABD22DAD12552B4A0018A3E8 /* PlantViewController.xib in Resources */,
 				ABD22E31125545CB0018A3E8 /* PlantListViewController.xib in Resources */,
+				ABD22F0E1255545D0018A3E8 /* KeyNodeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
