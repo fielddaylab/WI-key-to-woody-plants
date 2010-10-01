@@ -21,8 +21,8 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-		
-	//Start up by loading key #1 and putting it on screen
+
+	
 	KeyNodeViewController *keyVC = [[KeyNodeViewController alloc]initWithKeyNode:[[AppModel sharedInstance] keyNodeForId:[NSNumber numberWithInt:1]]];
 	UINavigationController *keyNav = [[UINavigationController alloc] initWithRootViewController:keyVC];
 	[keyVC release];
@@ -31,8 +31,10 @@
 	UINavigationController *plantNav = [[UINavigationController alloc] initWithRootViewController:plantListVC];
 	[plantListVC release];
 	
+	UITabBarController *tabBarController = [[UITabBarController alloc]init];
+	[tabBarController setViewControllers:[NSArray arrayWithObjects:plantNav,keyNav,nil] animated:NO];
 	
-	[window addSubview:plantNav.view];
+	[window addSubview:tabBarController.view];
 	
 	[window makeKeyAndVisible];
 	

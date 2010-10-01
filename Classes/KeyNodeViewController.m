@@ -29,7 +29,9 @@
 	if ((self = [super initWithNibName:@"KeyNodeViewController" bundle:nil])) {
 		// Custom initialization
 		self.keyNode = k;
-		self.title = @"Key Question";
+		self.title = @"Identification Key";
+		self.tabBarItem.image = [UIImage imageNamed:@"keyIcon.png"];
+
 
 	}
 	return self;

@@ -23,6 +23,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         self.title = @"Plant List";
+		self.tabBarItem.image = [UIImage imageNamed:@"plantIcon.png"];
+
 		[self refreshPlantIndexes];
 		self.filteredPlantIndexes = [NSMutableArray arrayWithCapacity:[self.plantIndexes count]];
     }
@@ -166,6 +168,7 @@
 
 	Plant *p = [[AppModel sharedInstance] plantForId:plantId];
 	PlantViewController *pvc = [[PlantViewController alloc]initWithPlant:p];
+	pvc.hidesBottomBarWhenPushed = YES;
 
 	[self.navigationController pushViewController:pvc animated:YES];
 	[pvc release];

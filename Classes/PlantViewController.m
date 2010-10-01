@@ -34,6 +34,9 @@
 	commonNamesTextView.text = self.plant.commonName1;
 	habitatTextView.text = self.plant.habitatText;
 	
+	self.hidesBottomBarWhenPushed = YES;
+
+	
 }
 
 /*
