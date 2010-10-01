@@ -133,10 +133,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 				
 				Plant *plant = [[Plant alloc] init];
 				plant.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
-				plant.scientificName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
-				plant.commonName1 = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)];
-				plant.commonName2 = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)];
-				plant.commonName3 = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)];
+				plant.scientificName = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)] capitalizedString];
+				plant.commonName1 = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)] capitalizedString];
+				plant.commonName2 = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)] capitalizedString];
+				plant.commonName3 = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)] capitalizedString];
 				plant.nativeText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)];
 				plant.habitatText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)];
 									
