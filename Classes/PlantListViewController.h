@@ -11,11 +11,16 @@
 
 @interface PlantListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource, UISearchDisplayDelegate, UISearchBarDelegate> {
 	IBOutlet UITableView *myTableView;
+	IBOutlet UISegmentedControl *sortFieldSegmentedControl;
 	NSArray *plantIndexes;
 	NSMutableArray *filteredPlantIndexes;
 }
 
 @property(nonatomic, retain) NSArray *plantIndexes;
 @property(nonatomic, retain) NSMutableArray *filteredPlantIndexes;
+
+-(IBAction) sortingSelectorValueChanged: (id) sender;
+-(void)refreshPlantIndexes;
+ 
 
 @end

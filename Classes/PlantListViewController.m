@@ -23,8 +23,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         self.title = @"Plant List";
-		NSDictionary *plantDict = [[AppModel sharedInstance] plants]; 
-		self.plantIndexes = [plantDict keysSortedByValueUsingSelector:@selector(compareCommonName:)];
+		[self refreshPlantIndexes];
 		self.filteredPlantIndexes = [NSMutableArray arrayWithCapacity:[self.plantIndexes count]];
     }
     return self;
@@ -87,8 +86,21 @@
 
 
 	Plant *p = [[AppModel sharedInstance] plantForId:plantId];
-	cell.textLabel.text = p.scientificName;
-	cell.detailTextLabel.text = p.commonName1;
+	
+	switch (sortFieldSegmentedControl.selectedSegmentIndex) {
+		case 0:
+			cell.textLabel.text = p.scientificName;
+			cell.detailTextLabel.text = p.commonName1;			
+			break;
+		case 1:
+			cell.textLabel.text = p.commonName1;
+			cell.detailTextLabel.text = p.scientificName;
+			break;
+		default:
+			break;
+	}
+	
+	
 	
 	return cell;
 }
@@ -169,10 +181,12 @@
 	
 	for (NSNumber *plantId in self.plantIndexes) {
 		Plant *p = [[AppModel sharedInstance] plantForId:plantId];
-		NSComparisonResult result = [p.scientificName compare:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch) range:NSMakeRange(0, [searchText length])];
-		if (result == NSOrderedSame) {
-			[self.filteredPlantIndexes addObject:plantId]; 
-		}
+		NSComparisonResult result;
+		if ([p.scientificName rangeOfString:searchText].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
+		if ([p.commonName1 rangeOfString:searchText].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
+		if ([p.commonName2 rangeOfString:searchText].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
+		if ([p.commonName3 rangeOfString:searchText].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
+		
 	}
 	NSLog(@"filting Complete");
 }
@@ -200,6 +214,27 @@
     return YES;
 }
 
+
+#pragma mark -
+#pragma mark Sorting
+-(IBAction) sortingSelectorValueChanged: (id) sender {
+	[self refreshPlantIndexes];
+	[myTableView reloadData];
+}
+
+- (void)refreshPlantIndexes {
+	NSLog(@"PlantListVC: Refresh Indexes");
+	switch (sortFieldSegmentedControl.selectedSegmentIndex) {
+		case 0:
+			self.plantIndexes = [[[AppModel sharedInstance] plants] keysSortedByValueUsingSelector:@selector(compareScientificName:)];
+			break;
+		case 1:
+			self.plantIndexes = [[[AppModel sharedInstance] plants] keysSortedByValueUsingSelector:@selector(compareCommonName:)];
+			break;
+		default:
+			break;
+	}
+}
 
 #pragma mark -
 #pragma mark Memory management
