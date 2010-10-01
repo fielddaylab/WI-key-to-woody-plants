@@ -277,8 +277,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
-									<integer>1</integer>
+									<integer>29</integer>
+									<integer>21</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -330,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>ABD230A5125597DC0018A3E8</string>
+										<string>ABD231431255A3200018A3E8</string>
 										<key>history</key>
 										<array>
 											<string>AB7C04171211FC86005F4DBE</string>
@@ -384,7 +384,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>ABD230A6125597DC0018A3E8</string>
+										<string>ABD231441255A3200018A3E8</string>
 										<key>history</key>
 										<array>
 											<string>AB7C04171211FC86005F4DBE</string>
@@ -404,8 +404,8 @@
 											<string>ABD22EA2125550CA0018A3E8</string>
 											<string>ABD22EA3125550CA0018A3E8</string>
 											<string>ABD22EB3125551690018A3E8</string>
-											<string>ABD23042125592C70018A3E8</string>
-											<string>ABD23099125597570018A3E8</string>
+											<string>ABD230FA12559D130018A3E8</string>
+											<string>ABD2310512559DAB0018A3E8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -417,14 +417,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 5}, {1105, 396}}</string>
+								<string>{{0, 5}, {1105, 438}}</string>
 								<key>RubberWindowFrame</key>
 								<string>34 197 1406 681 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>396pt</string>
+							<string>438pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -444,7 +444,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>ABD230A7125597DC0018A3E8</string>
+										<string>ABD231451255A3200018A3E8</string>
 										<key>history</key>
 										<array>
 											<string>AB7C045E12120203005F4DBE</string>
@@ -460,11 +460,11 @@
 											<string>ABD22EA8125550CA0018A3E8</string>
 											<string>ABD22EA9125550CA0018A3E8</string>
 											<string>ABD22ECC1255521C0018A3E8</string>
-											<string>ABD22F1E125558DB0018A3E8</string>
 											<string>ABD22F41125581640018A3E8</string>
 											<string>ABD2300012558BA90018A3E8</string>
-											<string>ABD2300B12558C4B0018A3E8</string>
-											<string>ABD2300C12558C4B0018A3E8</string>
+											<string>ABD2311212559E090018A3E8</string>
+											<string>ABD2311312559E090018A3E8</string>
+											<string>ABD2311412559E090018A3E8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -476,14 +476,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 406}, {1105, 229}}</string>
+								<string>{{0, 448}, {1105, 187}}</string>
 								<key>RubberWindowFrame</key>
 								<string>34 197 1406 681 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>229pt</string>
+							<string>187pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -666,7 +666,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>ABD230A4125597D30018A3E8</string>
+		<string>ABD231461255A3200018A3E8</string>
 		<string>ABD23070125596010018A3E8</string>
 		<string>ABD22C7512551DDB0018A3E8</string>
 		<string>ABD22C6412551D330018A3E8</string>
@@ -699,7 +699,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Plant.m</string>
+								<string>PlantListViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -768,7 +768,7 @@
 			<key>WindowToolGUID</key>
 			<string>AB7C015C1210A229005F4DBE</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
