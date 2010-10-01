@@ -24,4 +24,8 @@
 	return [self.scientificName localizedCaseInsensitiveCompare:otherPlant.scientificName];
 }
 
+- (NSComparisonResult)compareCommonName:(Plant*)otherPlant{
+	return [self.commonName1 localizedCaseInsensitiveCompare:otherPlant.commonName1];
+}
+
 @end

@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 
 
-@interface PlantListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource> {
+@interface PlantListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource, UISearchDisplayDelegate, UISearchBarDelegate> {
 	IBOutlet UITableView *myTableView;
-	NSArray *plantArray;
+	NSArray *plantIndexes;
+	NSMutableArray *filteredPlantIndexes;
 }
 
-@property(nonatomic, retain) NSArray *plantArray;
+@property(nonatomic, retain) NSArray *plantIndexes;
+@property(nonatomic, retain) NSMutableArray *filteredPlantIndexes;
 
 @end

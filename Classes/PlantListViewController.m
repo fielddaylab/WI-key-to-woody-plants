@@ -12,7 +12,8 @@
 
 @implementation PlantListViewController
 
-@synthesize plantArray;
+@synthesize plantIndexes;
+@synthesize filteredPlantIndexes;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -23,8 +24,8 @@
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         self.title = @"Plant List";
 		NSDictionary *plantDict = [[AppModel sharedInstance] plants]; 
-		self.plantArray = [plantDict keysSortedByValueUsingSelector:@selector(compareScientificName:)];
-
+		self.plantIndexes = [plantDict keysSortedByValueUsingSelector:@selector(compareCommonName:)];
+		self.filteredPlantIndexes = [NSMutableArray arrayWithCapacity:[self.plantIndexes count]];
     }
     return self;
 }
@@ -56,8 +57,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-	int count = [self.plantArray count];
-    return count;
+	/*
+     If the requesting table view is the search display controller's table view, return the count of
+     the filtered list, otherwise return the count of the main list.
+     */
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+		return [self.filteredPlantIndexes count];
+    else return [self.plantIndexes count];
+    
 }
 
 
@@ -70,12 +77,18 @@
 	cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	
 	if (cell == nil) {
-		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
 	}
 
-	NSNumber *plantId = [self.plantArray objectAtIndex:indexPath.row];
+	NSNumber *plantId;
+	if (tableView == self.searchDisplayController.searchResultsTableView) 
+		plantId = [self.filteredPlantIndexes objectAtIndex:indexPath.row];
+    else plantId = [self.plantIndexes objectAtIndex:indexPath.row];
+
+
 	Plant *p = [[AppModel sharedInstance] plantForId:plantId];
 	cell.textLabel.text = p.scientificName;
+	cell.detailTextLabel.text = p.commonName1;
 	
 	return cell;
 }
@@ -133,12 +146,58 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	NSLog(@"PlantListViewController: didSelectRowAtIndexPath");
 		
-	NSNumber *plantId = [self.plantArray objectAtIndex:indexPath.row];
+	NSNumber *plantId;
+	
+	if (tableView == self.searchDisplayController.searchResultsTableView) 
+		plantId = [self.filteredPlantIndexes objectAtIndex:indexPath.row];
+    else plantId = [self.plantIndexes objectAtIndex:indexPath.row];
+
 	Plant *p = [[AppModel sharedInstance] plantForId:plantId];
 	PlantViewController *pvc = [[PlantViewController alloc]initWithPlant:p];
 
 	[self.navigationController pushViewController:pvc animated:YES];
 	[pvc release];
+}
+
+
+
+#pragma mark -
+#pragma mark Content Filtering
+
+- (void)filterContentForSearchText:(NSString*)searchText{
+	[self.filteredPlantIndexes removeAllObjects]; // First clear the filtered array.
+	
+	for (NSNumber *plantId in self.plantIndexes) {
+		Plant *p = [[AppModel sharedInstance] plantForId:plantId];
+		NSComparisonResult result = [p.scientificName compare:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch) range:NSMakeRange(0, [searchText length])];
+		if (result == NSOrderedSame) {
+			[self.filteredPlantIndexes addObject:plantId]; 
+		}
+	}
+	NSLog(@"filting Complete");
+}
+
+
+
+
+#pragma mark -
+#pragma mark UISearchDisplayController Delegate Methods
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString];
+    
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption
+{
+    [self filterContentForSearchText:[self.searchDisplayController.searchBar text]];
+    
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
 }
 
 
