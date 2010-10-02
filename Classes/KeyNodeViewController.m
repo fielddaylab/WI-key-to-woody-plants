@@ -45,6 +45,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	
 	NSLog(@"KeyNodeViewController: Loading Key Node: %@",self.keyNode.uid);
+	
 }
 
 
@@ -233,12 +234,20 @@
 		NSLog(@"KeyNodeViewController: Key Node specifies a Key Node");
 		KeyNode *kn = [[AppModel sharedInstance] keyNodeForId:nextId];
 		nextVc = [[KeyNodeViewController alloc]initWithKeyNode:kn];
+				
+		UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
+		temporaryBarButtonItem.title = @"Back";
+		self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
+		[temporaryBarButtonItem release];
+		 
+		
 		[kn release];
 	}
 	else if (nextType == kPlant){	
 		NSLog(@"KeyNodeViewController: Key Node specifies a Plant");
 		Plant *p = [[AppModel sharedInstance] plantForId:nextId];
 		nextVc = [[PlantViewController alloc]initWithPlant:p];
+		nextVc.hidesBottomBarWhenPushed = YES;
 	}
 	else NSLog(@"KeyNodeViewController: Shouldn't have gotten here");
 
