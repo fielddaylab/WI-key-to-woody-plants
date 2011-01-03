@@ -18,7 +18,12 @@
 @synthesize commonName3;
 @synthesize nativeText;
 @synthesize habitatText; 
+@synthesize images;
 
+-(id)init {
+	self.images = [[NSMutableArray alloc]init];
+    return self;
+}
 
 - (NSComparisonResult)compareScientificName:(Plant*)otherPlant{
 	return [self.scientificName localizedCaseInsensitiveCompare:otherPlant.scientificName];

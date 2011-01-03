@@ -18,7 +18,15 @@
 		AB7C05251212E344005F4DBE /* KeyNodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7C05231212E344005F4DBE /* KeyNodeViewController.m */; };
 		AB7C05DD1213233B005F4DBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7C05DC1213233B005F4DBE /* CoreGraphics.framework */; };
 		AB9BF95D12256B4C0028D6AC /* notes in Resources */ = {isa = PBXBuildFile; fileRef = AB9BF95C12256B4C0028D6AC /* notes */; };
-		ABCE86BE12133B5E0012C322 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCE86BD12133B5E0012C322 /* 3.png */; };
+		ABAB8FA712D27B430095BDCE /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8F9F12D27B420095BDCE /* 1.jpg */; };
+		ABAB8FA812D27B430095BDCE /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA012D27B420095BDCE /* 2.jpg */; };
+		ABAB8FA912D27B430095BDCE /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA112D27B420095BDCE /* 3.jpg */; };
+		ABAB8FAA12D27B430095BDCE /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA212D27B420095BDCE /* 4.jpg */; };
+		ABAB8FAB12D27B430095BDCE /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA312D27B420095BDCE /* 5.jpg */; };
+		ABAB8FAC12D27B430095BDCE /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA412D27B420095BDCE /* 6.jpg */; };
+		ABAB8FAD12D27B430095BDCE /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA512D27B420095BDCE /* 7.jpg */; };
+		ABAB8FAE12D27B430095BDCE /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA612D27B420095BDCE /* 8.jpg */; };
+		ABAB8FB312D27BCC0095BDCE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB8FB212D27BCC0095BDCE /* Image.m */; };
 		ABD22C2E125511F10018A3E8 /* KeyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22C2D125511F10018A3E8 /* KeyNode.m */; };
 		ABD22DAC12552B4A0018A3E8 /* PlantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DAA12552B4A0018A3E8 /* PlantViewController.m */; };
 		ABD22DAD12552B4A0018A3E8 /* PlantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD22DAB12552B4A0018A3E8 /* PlantViewController.xib */; };
@@ -50,7 +58,16 @@
 		AB7C05231212E344005F4DBE /* KeyNodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNodeViewController.m; sourceTree = "<group>"; };
 		AB7C05DC1213233B005F4DBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AB9BF95C12256B4C0028D6AC /* notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
-		ABCE86BD12133B5E0012C322 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		ABAB8F9F12D27B420095BDCE /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		ABAB8FA012D27B420095BDCE /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		ABAB8FA112D27B420095BDCE /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		ABAB8FA212D27B420095BDCE /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		ABAB8FA312D27B420095BDCE /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		ABAB8FA412D27B420095BDCE /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		ABAB8FA512D27B420095BDCE /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		ABAB8FA612D27B420095BDCE /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		ABAB8FB112D27BCC0095BDCE /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		ABAB8FB212D27BCC0095BDCE /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		ABD22C2912550E580018A3E8 /* PlantKeyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantKeyType.h; sourceTree = "<group>"; };
 		ABD22C2D125511F10018A3E8 /* KeyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNode.m; sourceTree = "<group>"; };
 		ABD22DA912552B4A0018A3E8 /* PlantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantViewController.h; sourceTree = "<group>"; };
@@ -96,6 +113,8 @@
 				AB7C05231212E344005F4DBE /* KeyNodeViewController.m */,
 				ABD22DB012552B630018A3E8 /* Plant.h */,
 				ABD22DB112552B630018A3E8 /* Plant.m */,
+				ABAB8FB112D27BCC0095BDCE /* Image.h */,
+				ABAB8FB212D27BCC0095BDCE /* Image.m */,
 				ABD22DA912552B4A0018A3E8 /* PlantViewController.h */,
 				ABD22DAA12552B4A0018A3E8 /* PlantViewController.m */,
 				ABD22E2D125545CA0018A3E8 /* PlantListViewController.h */,
@@ -164,7 +183,14 @@
 		ABCE86BC12133B380012C322 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				ABCE86BD12133B5E0012C322 /* 3.png */,
+				ABAB8F9F12D27B420095BDCE /* 1.jpg */,
+				ABAB8FA012D27B420095BDCE /* 2.jpg */,
+				ABAB8FA112D27B420095BDCE /* 3.jpg */,
+				ABAB8FA212D27B420095BDCE /* 4.jpg */,
+				ABAB8FA312D27B420095BDCE /* 5.jpg */,
+				ABAB8FA412D27B420095BDCE /* 6.jpg */,
+				ABAB8FA512D27B420095BDCE /* 7.jpg */,
+				ABAB8FA612D27B420095BDCE /* 8.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -220,13 +246,20 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				AB7C036E1211E932005F4DBE /* plantKey.sql in Resources */,
-				ABCE86BE12133B5E0012C322 /* 3.png in Resources */,
 				AB9BF95D12256B4C0028D6AC /* notes in Resources */,
 				ABD22DAD12552B4A0018A3E8 /* PlantViewController.xib in Resources */,
 				ABD22E31125545CB0018A3E8 /* PlantListViewController.xib in Resources */,
 				ABD22F0E1255545D0018A3E8 /* KeyNodeViewController.xib in Resources */,
 				ABD231A01255A90A0018A3E8 /* keyIcon.png in Resources */,
 				ABD231A41255A9CE0018A3E8 /* plantIcon.png in Resources */,
+				ABAB8FA712D27B430095BDCE /* 1.jpg in Resources */,
+				ABAB8FA812D27B430095BDCE /* 2.jpg in Resources */,
+				ABAB8FA912D27B430095BDCE /* 3.jpg in Resources */,
+				ABAB8FAA12D27B430095BDCE /* 4.jpg in Resources */,
+				ABAB8FAB12D27B430095BDCE /* 5.jpg in Resources */,
+				ABAB8FAC12D27B430095BDCE /* 6.jpg in Resources */,
+				ABAB8FAD12D27B430095BDCE /* 7.jpg in Resources */,
+				ABAB8FAE12D27B430095BDCE /* 8.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +278,7 @@
 				ABD22DAC12552B4A0018A3E8 /* PlantViewController.m in Sources */,
 				ABD22DB212552B630018A3E8 /* Plant.m in Sources */,
 				ABD22E30125545CB0018A3E8 /* PlantListViewController.m in Sources */,
+				ABAB8FB312D27BCC0095BDCE /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +295,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PlantKey_Prefix.pch;
 				INFOPLIST_FILE = "PlantKey-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = PlantKey;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -275,7 +310,7 @@
 				GCC_PREFIX_HEADER = PlantKey_Prefix.pch;
 				INFOPLIST_FILE = "PlantKey-Info.plist";
 				PRODUCT_NAME = PlantKey;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -289,7 +324,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -303,7 +338,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

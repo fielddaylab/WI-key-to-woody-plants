@@ -24,6 +24,8 @@
 
 + (AppModel *)sharedInstance;
 - (void) readKeyNodesFromDatabase;
+- (void) readPlantsFromDatabase;
+
 - (void) checkAndCreateDatabase;
 - (KeyNode *)keyNodeForId: (NSNumber*)i;
 - (Plant *)plantForId: (NSNumber*)i;

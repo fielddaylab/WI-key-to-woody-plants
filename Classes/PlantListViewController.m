@@ -184,7 +184,6 @@
 	
 	for (NSNumber *plantId in self.plantIndexes) {
 		Plant *p = [[AppModel sharedInstance] plantForId:plantId];
-		NSComparisonResult result;
 		if ([[p.scientificName lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
 		if ([[p.commonName1 lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
 		if ([[p.commonName2 lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 

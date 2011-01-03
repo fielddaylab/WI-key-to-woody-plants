@@ -17,6 +17,7 @@
 	NSString*		commonName3;
 	NSString*		nativeText;
 	NSString*		habitatText;
+	NSMutableArray*	images;
 }
 
 @property(nonatomic, retain) NSNumber*		uid;
@@ -26,6 +27,9 @@
 @property(nonatomic, retain) NSString*		commonName3;
 @property(nonatomic, retain) NSString*		nativeText;
 @property(nonatomic, retain) NSString*		habitatText;
+@property(nonatomic, retain) NSMutableArray*	images;
 
+- (NSComparisonResult)compareScientificName:(Plant*)otherPlant;
+- (NSComparisonResult)compareCommonName:(Plant*)otherPlant;
 
 @end

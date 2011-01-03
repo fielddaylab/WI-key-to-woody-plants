@@ -9,6 +9,7 @@
 #import "AppModel.h"
 #import <sqlite3.h>
 #import "PlantKeyType.h"
+#import "Image.h"
 
 
 @implementation AppModel
@@ -140,6 +141,19 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 				plant.nativeText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)];
 				plant.habitatText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)];
 									
+				//TODO:Replace this with real code to read the images
+				for (int count=1; count<=8; count++) {
+					Image *i = [[Image alloc]init];
+					i.uid = [NSNumber numberWithInt: count];
+					if (count == 1) i.isDefault = TRUE; else i.isDefault = FALSE;
+					i.caption = [NSString stringWithFormat:@"Image %d Caption",count];
+					i.displayPriority = [NSNumber numberWithInt: count];
+					i.fileName = [NSString stringWithFormat:@"%d.jpg",count];
+					[plant.images addObject:i];
+					[i release];
+				}
+				
+				
 				// Add the node to the keyNode array
 				[self.plants setObject:plant forKey:plant.uid];
 				[plant release];
@@ -154,7 +168,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 
 
 - (KeyNode *)keyNodeForId: (NSNumber *)i {
-	return [self.keyNodes objectForKey:i];
+	KeyNode* kn = [self.keyNodes objectForKey:i];
+	return kn;
 }
 
 
