@@ -42,36 +42,38 @@
 	self.scrollView.delegate = self;
 	[self.scrollView setBackgroundColor:[UIColor blackColor]];
 	[scrollView setCanCancelContentTouches:NO];
-	scrollView.indicatorStyle = UIScrollViewIndicatorStyleWhite;
+	scrollView.showsHorizontalScrollIndicator = NO;
 	scrollView.clipsToBounds = YES;
 	scrollView.scrollEnabled = YES;
 	scrollView.pagingEnabled = YES;
 	
-	CGFloat cx = 0;
-	for (NSUInteger nimages = 0; nimages < [self.plant.images count]; nimages++) {
-		Image *image = [self.plant.images objectAtIndex:nimages];
+	CGFloat scrollViewContentWidth = 0;
+	for (NSUInteger imageIndex = 0; imageIndex < [self.plant.images count]; imageIndex++) {
+		Image *image = [self.plant.images objectAtIndex:imageIndex];
 		UIImage *uiImage = image.image;
 		UIImageView *imageView = [[UIImageView alloc]initWithImage:uiImage];
-		
+	
+		imageView.contentMode = UIViewContentModeScaleAspectFit;
+				
 		CGRect rect = imageView.frame;
-		rect.size.height = uiImage.size.height;
-		rect.size.width = uiImage.size.width;
-		//rect.size.height = scrollView.frame.size.height;
-		//rect.size.width = scrollView.frame.size.width;
-		rect.origin.x = cx;		
+		rect.size.height = 480; //uiImage.size.height;
+		rect.size.width = 320; //uiImage.size.width;
+		rect.origin.x = scrollViewContentWidth;		
 		imageView.frame = rect;
 		
+		
+
 		[scrollView addSubview:imageView];
 		[imageView release];
 		
-		cx += scrollView.frame.size.width;
+		scrollViewContentWidth += scrollView.frame.size.width;
 	}
 	
 	self.pageControl.numberOfPages = [self.plant.images count];
 	
 	[self updateCaption];
 	
-	[scrollView setContentSize:CGSizeMake(cx, [scrollView bounds].size.height)];
+	[scrollView setContentSize:CGSizeMake(scrollViewContentWidth, [scrollView bounds].size.height)];
 	
 
 	
