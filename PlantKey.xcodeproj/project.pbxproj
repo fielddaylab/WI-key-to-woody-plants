@@ -12,6 +12,8 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		AB026ACC12D288EB00D17F90 /* PlantImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */; };
+		AB026ACD12D288EB00D17F90 /* PlantImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB026ACB12D288EB00D17F90 /* PlantImageViewController.xib */; };
 		AB7C01801210A3A8005F4DBE /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7C017E1210A3A8005F4DBE /* AppModel.m */; };
 		AB7C036E1211E932005F4DBE /* plantKey.sql in Resources */ = {isa = PBXBuildFile; fileRef = AB7C036D1211E932005F4DBE /* plantKey.sql */; };
 		AB7C03CD1211F412005F4DBE /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7C03CC1211F412005F4DBE /* libsqlite3.0.dylib */; };
@@ -25,7 +27,6 @@
 		ABAB8FAB12D27B430095BDCE /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA312D27B420095BDCE /* 5.jpg */; };
 		ABAB8FAC12D27B430095BDCE /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA412D27B420095BDCE /* 6.jpg */; };
 		ABAB8FAD12D27B430095BDCE /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA512D27B420095BDCE /* 7.jpg */; };
-		ABAB8FAE12D27B430095BDCE /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA612D27B420095BDCE /* 8.jpg */; };
 		ABAB8FB312D27BCC0095BDCE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB8FB212D27BCC0095BDCE /* Image.m */; };
 		ABD22C2E125511F10018A3E8 /* KeyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22C2D125511F10018A3E8 /* KeyNode.m */; };
 		ABD22DAC12552B4A0018A3E8 /* PlantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DAA12552B4A0018A3E8 /* PlantViewController.m */; };
@@ -48,6 +49,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PlantKey_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantKey_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* PlantKey-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PlantKey-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AB026AC912D288EB00D17F90 /* PlantImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantImageViewController.h; sourceTree = "<group>"; };
+		AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantImageViewController.m; sourceTree = "<group>"; };
+		AB026ACB12D288EB00D17F90 /* PlantImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlantImageViewController.xib; path = Classes/PlantImageViewController.xib; sourceTree = "<group>"; };
 		AB7C017D1210A3A8005F4DBE /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
 		AB7C017E1210A3A8005F4DBE /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
 		AB7C017F1210A3A8005F4DBE /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
@@ -65,7 +69,6 @@
 		ABAB8FA312D27B420095BDCE /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		ABAB8FA412D27B420095BDCE /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		ABAB8FA512D27B420095BDCE /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
-		ABAB8FA612D27B420095BDCE /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		ABAB8FB112D27BCC0095BDCE /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		ABAB8FB212D27BCC0095BDCE /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		ABD22C2912550E580018A3E8 /* PlantKeyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantKeyType.h; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				ABAB8FB212D27BCC0095BDCE /* Image.m */,
 				ABD22DA912552B4A0018A3E8 /* PlantViewController.h */,
 				ABD22DAA12552B4A0018A3E8 /* PlantViewController.m */,
+				AB026AC912D288EB00D17F90 /* PlantImageViewController.h */,
+				AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */,
 				ABD22E2D125545CA0018A3E8 /* PlantListViewController.h */,
 				ABD22E2E125545CA0018A3E8 /* PlantListViewController.m */,
 			);
@@ -165,6 +170,7 @@
 				8D1107310486CEB800E47090 /* PlantKey-Info.plist */,
 				ABD22F0D1255545D0018A3E8 /* KeyNodeViewController.xib */,
 				ABD22DAB12552B4A0018A3E8 /* PlantViewController.xib */,
+				AB026ACB12D288EB00D17F90 /* PlantImageViewController.xib */,
 				ABD22E2F125545CB0018A3E8 /* PlantListViewController.xib */,
 			);
 			name = Resources;
@@ -190,7 +196,6 @@
 				ABAB8FA312D27B420095BDCE /* 5.jpg */,
 				ABAB8FA412D27B420095BDCE /* 6.jpg */,
 				ABAB8FA512D27B420095BDCE /* 7.jpg */,
-				ABAB8FA612D27B420095BDCE /* 8.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -259,7 +264,7 @@
 				ABAB8FAB12D27B430095BDCE /* 5.jpg in Resources */,
 				ABAB8FAC12D27B430095BDCE /* 6.jpg in Resources */,
 				ABAB8FAD12D27B430095BDCE /* 7.jpg in Resources */,
-				ABAB8FAE12D27B430095BDCE /* 8.jpg in Resources */,
+				AB026ACD12D288EB00D17F90 /* PlantImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +284,7 @@
 				ABD22DB212552B630018A3E8 /* Plant.m in Sources */,
 				ABD22E30125545CB0018A3E8 /* PlantListViewController.m in Sources */,
 				ABAB8FB312D27BCC0095BDCE /* Image.m in Sources */,
+				AB026ACC12D288EB00D17F90 /* PlantImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
