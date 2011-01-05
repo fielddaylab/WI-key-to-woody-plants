@@ -30,7 +30,7 @@
 		// Custom initialization
 		self.keyNode = k;
 		self.title = @"Identification Key";
-		self.tabBarItem.image = [UIImage imageNamed:@"keyIcon.png"];
+		self.tabBarItem.image = [UIImage imageNamed:@"30-key.png"];
 
 
 	}

@@ -23,7 +23,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         self.title = @"Plant List";
-		self.tabBarItem.image = [UIImage imageNamed:@"plantIcon.png"];
+		self.tabBarItem.image = [UIImage imageNamed:@"189-plant.png"];
 
 		[self refreshPlantIndexes];
 		self.filteredPlantIndexes = [NSMutableArray arrayWithCapacity:[self.plantIndexes count]];
