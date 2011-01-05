@@ -142,7 +142,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 				plant.habitatText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)];
 									
 				//TODO:Replace this with real code to read the images
-				for (int count=1; count<=8; count++) {
+				for (int count=1; count<=7; count++) {
 					Image *i = [[Image alloc]init];
 					i.uid = [NSNumber numberWithInt: count];
 					if (count == 1) i.isDefault = TRUE; else i.isDefault = FALSE;

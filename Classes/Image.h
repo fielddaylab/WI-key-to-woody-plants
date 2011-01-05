@@ -15,6 +15,7 @@
 	NSString*		caption;
 	NSNumber*		displayPriority;
 	NSString*		fileName;
+	UIImage*		image;
 }
 
 
@@ -23,7 +24,11 @@
 @property(nonatomic, retain) NSString*		caption;
 @property(nonatomic, retain) NSNumber*		displayPriority;
 @property(nonatomic, retain) NSString*		fileName;
+@property(nonatomic, retain) UIImage*		image;
 
 - (NSComparisonResult)compareDisplayPriority:(Image*)otherImage;
+
+//When filename is set, calculate and store a UIImage
+- (void)setFileName:(NSString*)fn;
 
 @end

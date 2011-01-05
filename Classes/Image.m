@@ -16,10 +16,17 @@
 @synthesize caption;
 @synthesize displayPriority;
 @synthesize fileName;
+@synthesize image;
 
 
 - (NSComparisonResult)compareDisplayPriority:(Image*)otherImage{
 	return self.displayPriority < otherImage.displayPriority;
+}
+
+- (void)setFileName:(NSString*)fn{
+	NSLog(@"Image.m: Setting Filename to %@",fn);
+	fileName = fn;
+	self.image = [UIImage imageNamed:fn];
 }
 
 

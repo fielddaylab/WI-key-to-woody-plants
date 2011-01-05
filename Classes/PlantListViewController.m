@@ -8,7 +8,7 @@
 
 #import "PlantListViewController.h"
 #import "AppModel.h"
-#import "PlantViewController.h"
+#import "PlantImageViewController.h"
 
 @implementation PlantListViewController
 
@@ -167,11 +167,11 @@
     else plantId = [self.plantIndexes objectAtIndex:indexPath.row];
 
 	Plant *p = [[AppModel sharedInstance] plantForId:plantId];
-	PlantViewController *pvc = [[PlantViewController alloc]initWithPlant:p];
-	pvc.hidesBottomBarWhenPushed = YES;
-
-	[self.navigationController pushViewController:pvc animated:YES];
-	[pvc release];
+	//PlantViewController *pvc = [[PlantViewController alloc]initWithPlant:p];
+	PlantImageViewController *pivc = [[PlantImageViewController alloc]initWithPlant:p];
+	pivc.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:pivc animated:YES];
+	//[pivc release];
 }
 
 
