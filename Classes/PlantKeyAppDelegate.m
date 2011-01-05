@@ -9,6 +9,8 @@
 #import "PlantKeyAppDelegate.h"
 #import "KeyNodeViewController.h"
 #import "PlantListViewController.h"
+#import "GlossaryListViewController.h"
+
 #import "AppModel.h"
 
 
@@ -31,8 +33,12 @@
 	UINavigationController *plantNav = [[UINavigationController alloc] initWithRootViewController:plantListVC];
 	[plantListVC release];
 	
+	PlantListViewController *glossaryListVC = [[GlossaryListViewController alloc]initWithNibName:@"GlossaryListViewController" bundle:nil];
+	UINavigationController *glossaryNav = [[UINavigationController alloc] initWithRootViewController:glossaryListVC];
+	[glossaryListVC release];
+	
 	UITabBarController *tabBarController = [[UITabBarController alloc]init];
-	[tabBarController setViewControllers:[NSArray arrayWithObjects:plantNav,keyNav,nil] animated:NO];
+	[tabBarController setViewControllers:[NSArray arrayWithObjects:plantNav,keyNav,glossaryNav,nil] animated:NO];
 	
 	[window addSubview:tabBarController.view];
 	
