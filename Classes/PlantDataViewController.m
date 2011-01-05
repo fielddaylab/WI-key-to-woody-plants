@@ -1,19 +1,19 @@
 //
-//  PlantViewController.m
+//  PlantDataViewController.m
 //  PlantKey
 //
 //  Created by David J Gagnon on 9/30/10.
 //  Copyright 2010 University of Wisconsin. All rights reserved.
 //
 
-#import "PlantViewController.h"
+#import "PlantDataViewController.h"
 
 
-@implementation PlantViewController
+@implementation PlantDataViewController
 @synthesize plant;
 
 - (id)initWithPlant:(Plant *)p {
-	if ((self = [super initWithNibName:@"PlantViewController" bundle:nil])) {
+	if ((self = [super initWithNibName:@"PlantDataViewController" bundle:nil])) {
 		// Custom initialization
 		self.plant = p;
 		self.title = @"Plant Details";
@@ -28,7 +28,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	
-	NSLog(@"PlantViewController: Loading Plant: %@",self.plant.uid);
+	NSLog(@"PlantDataViewController: Loading Plant: %@",self.plant.uid);
 	self.title = self.plant.scientificName;
 	nativeTextView.text = self.plant.nativeText;
 	commonNamesTextView.text = self.plant.commonName1;

@@ -10,7 +10,7 @@
 #import "PlantKeyType.h"
 #import "KeyNodeViewController.h"
 #import "Plant.h"
-#import "PlantViewController.h"
+#import "PlantImageViewController.h"
 
 #define FONT_SIZE 18.0f
 #define CELL_CONTENT_WIDTH 300.0f
@@ -246,7 +246,7 @@
 	else if (nextType == kPlant){	
 		NSLog(@"KeyNodeViewController: Key Node specifies a Plant");
 		Plant *p = [[AppModel sharedInstance] plantForId:nextId];
-		nextVc = [[PlantViewController alloc]initWithPlant:p];
+		nextVc = [[PlantImageViewController alloc]initWithPlant:p];
 		nextVc.hidesBottomBarWhenPushed = YES;
 	}
 	else NSLog(@"KeyNodeViewController: Shouldn't have gotten here");

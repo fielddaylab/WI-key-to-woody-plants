@@ -1,5 +1,5 @@
 //
-//  PlantViewController.h
+//  PlantDataViewController.h
 //  PlantKey
 //
 //  Created by David J Gagnon on 9/30/10.
@@ -10,7 +10,7 @@
 #import "Plant.h";
 
 
-@interface PlantViewController : UIViewController {
+@interface PlantDataViewController : UIViewController {
 	Plant *plant;
 	IBOutlet UITextView *nativeTextView;
 	IBOutlet UITextView *commonNamesTextView;

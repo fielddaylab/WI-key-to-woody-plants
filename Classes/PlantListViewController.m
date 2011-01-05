@@ -167,11 +167,10 @@
     else plantId = [self.plantIndexes objectAtIndex:indexPath.row];
 
 	Plant *p = [[AppModel sharedInstance] plantForId:plantId];
-	//PlantViewController *pvc = [[PlantViewController alloc]initWithPlant:p];
-	PlantImageViewController *pivc = [[PlantImageViewController alloc]initWithPlant:p];
-	pivc.hidesBottomBarWhenPushed = YES;
-	[self.navigationController pushViewController:pivc animated:YES];
-	//[pivc release];
+	PlantImageViewController *vc = [[PlantImageViewController alloc]initWithPlant:p];
+	vc.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:vc animated:YES];
+	[vc release];
 }
 
 

@@ -11,11 +11,11 @@
 
 @interface PlantImageViewController : UIViewController <UIScrollViewDelegate> {
 	Plant *plant;
-	NSMutableArray *imageViews;
 	IBOutlet UILabel	*caption;
 	IBOutlet UIScrollView		*scrollView;
 	IBOutlet UIPageControl		*pageControl;
-	BOOL pageControlIsChangingPage;
+	
+	UIView *secondaryView;
 
 }
 
@@ -24,6 +24,7 @@
 @property (nonatomic,retain) IBOutlet UILabel *caption;
 @property (nonatomic,retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic,retain) IBOutlet UIPageControl *pageControl;
+@property (nonatomic,retain) UIView *secondaryView;
 
 
 

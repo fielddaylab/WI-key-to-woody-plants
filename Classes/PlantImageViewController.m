@@ -8,21 +8,21 @@
 
 #import "PlantImageViewController.h"
 #import "Image.h"
+#import "PlantDataViewController.h"
 
 @implementation PlantImageViewController
 
 @synthesize plant;
-@synthesize imageViews;
 @synthesize caption;
 @synthesize scrollView;
 @synthesize pageControl;
+@synthesize secondaryView;
 
 - (id)initWithPlant:(Plant *)p {
 	if ((self = [super initWithNibName:@"PlantImageViewController" bundle:nil])) {
 		// Custom initialization
 		self.plant = p;
 		self.title = p.scientificName;
-		self.imageViews = [[NSMutableArray alloc]init];
 	}
 	return self;
 }
@@ -39,8 +39,8 @@
 	self.title = self.plant.scientificName;
 	self.hidesBottomBarWhenPushed = YES;
 	
+	//Scroller Images
 	self.scrollView.delegate = self;
-	[self.scrollView setBackgroundColor:[UIColor blackColor]];
 	[scrollView setCanCancelContentTouches:NO];
 	scrollView.showsHorizontalScrollIndicator = NO;
 	scrollView.clipsToBounds = YES;
@@ -61,22 +61,79 @@
 		rect.origin.x = scrollViewContentWidth;		
 		imageView.frame = rect;
 		
-		
-
+	
 		[scrollView addSubview:imageView];
 		[imageView release];
 		
 		scrollViewContentWidth += scrollView.frame.size.width;
 	}
+
+	[scrollView setContentSize:CGSizeMake(scrollViewContentWidth, [scrollView bounds].size.height)];
+
 	
+	//Other Stuff
 	self.pageControl.numberOfPages = [self.plant.images count];
 	
 	[self updateCaption];
 	
-	[scrollView setContentSize:CGSizeMake(scrollViewContentWidth, [scrollView bounds].size.height)];
+	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Second" 
+															   style:UIBarButtonItemStylePlain 
+															  target:self 
+															  action:@selector(showSecondary)];
+	button.image = [UIImage imageNamed:@"179-notepad.png"];
+	
+	self.navigationItem.rightBarButtonItem = button;
+	[button release];
+	
+	
+	PlantDataViewController *secondaryViewController = [[PlantDataViewController alloc]initWithPlant:self.plant];
+	self.secondaryView = secondaryViewController.view;
+	[secondaryViewController release];
 	
 
 	
+}
+
+
+-(void)showSecondary{
+	NSLog(@"PlantImageViewController: Showing Secondary View");
+	
+	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Primary" 
+															   style:UIBarButtonItemStylePlain 
+															  target:self 
+															  action:@selector(showPrimary)];
+	button.image = [UIImage imageNamed:@"43-film-roll.png"];
+	self.navigationItem.rightBarButtonItem = button;
+	[button release];
+	
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:1.0];
+	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight
+						   forView:[self view]
+							 cache:YES];
+	[[self view] addSubview:self.secondaryView];
+	[UIView commitAnimations];
+	
+}
+
+-(void)showPrimary{
+	NSLog(@"PlantImageViewController: Showing Primary View");
+	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Second" 
+															   style:UIBarButtonItemStylePlain 
+															  target:self 
+															  action:@selector(showSecondary)];  
+	button.image = [UIImage imageNamed:@"179-notepad.png"];
+
+	self.navigationItem.rightBarButtonItem = button;
+	[button release];
+	
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:1.0];
+	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft
+						   forView:[self view]
+							 cache:YES];
+	[self.secondaryView removeFromSuperview];
+	[UIView commitAnimations];
 }
 
 
@@ -112,10 +169,7 @@
 #pragma mark UIScrollViewDelegate stuff
 - (void)scrollViewDidScroll:(UIScrollView *)_scrollView
 {
-    if (pageControlIsChangingPage) {
-        return;
-    }
-	
+ 
 	/*
 	 *	We switch page at 50% across
 	 */
@@ -124,30 +178,6 @@
     pageControl.currentPage = page;
 	
 	[self updateCaption];
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)_scrollView 
-{
-    pageControlIsChangingPage = NO;
-}
-
-#pragma mark -
-#pragma mark PageControl stuff
-- (IBAction)changePage:(id)sender 
-{
-	/*
-	 *	Change the scroll view
-	 */
-    CGRect frame = scrollView.frame;
-    frame.origin.x = frame.size.width * pageControl.currentPage;
-    frame.origin.y = 0;
-	
-    [scrollView scrollRectToVisible:frame animated:YES];
-	
-	/*
-	 *	When the animated scrolling finishings, scrollViewDidEndDecelerating will turn this off
-	 */
-    pageControlIsChangingPage = YES;
 }
 
 -(void)updateCaption {
