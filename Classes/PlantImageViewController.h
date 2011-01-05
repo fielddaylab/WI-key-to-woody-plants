@@ -28,6 +28,7 @@
 
 
 - (id)initWithPlant:(Plant *)p;
+- (void)updateCaption;
 
 
 @end
