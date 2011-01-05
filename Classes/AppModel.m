@@ -10,6 +10,7 @@
 #import <sqlite3.h>
 #import "PlantKeyType.h"
 #import "Image.h"
+#import "Term.h"
 
 
 @implementation AppModel
@@ -17,6 +18,7 @@
 SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 @synthesize keyNodes;
 @synthesize plants;
+@synthesize glossary;
 
 -(id)init {
     if (self = [super init]) {
@@ -32,6 +34,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		[self checkAndCreateDatabase];		
 		[self readKeyNodesFromDatabase];
 		[self readPlantsFromDatabase];
+		[self readGlossaryFromDatabase];
+
 		
 		NSLog(@"AppModel Inited");
 	}
@@ -166,6 +170,45 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 	NSLog(@"AppModel:readKeyNodesFromDatabase: Reading Complete");
 }
 
+-(void) readGlossaryFromDatabase {
+	NSLog(@"AppModel:readGlossaryFromDatabase: Begin Reading");
+	
+	sqlite3 *database;
+	if (self.glossary) [self.glossary release];
+	self.glossary = [[NSMutableDictionary alloc] init];
+	
+	// Open the database from the users filessytem
+	if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
+		// Setup the SQL Statement and compile it for faster access
+		const char *sqlStatement = "select uid,word,definition from glossary";
+		
+		sqlite3_stmt *compiledStatement;
+		
+		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
+			NSLog(@"AppModel:readKeyFromDatabase: SQLITE_OK");
+			// Loop through the results and add them to the feeds array
+			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
+				NSLog(@"AppModel:readKeyFromDatabase: Hydrating a Term");
+				
+				Term *term = [[Term alloc] init];
+				term.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
+				term.word = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
+				term.definition = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)];
+							
+								
+				// Add the node to the array
+				[self.glossary setObject:term forKey:term.uid];
+				[term release];
+			}
+		}
+		// Release the compiled statement from memory
+		sqlite3_finalize(compiledStatement);
+	}
+	sqlite3_close(database);
+	NSLog(@"AppModel:readGlossaryFromDatabase: Reading Complete");
+}
+
+
 
 - (KeyNode *)keyNodeForId: (NSNumber *)i {
 	KeyNode* kn = [self.keyNodes objectForKey:i];
@@ -177,6 +220,9 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 	return [self.plants objectForKey:i];	
 }
 
+- (Term*)termForId:(NSNumber *)i {
+	return [self.glossary objectForKey:i];	
+}
 
 
 

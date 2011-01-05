@@ -21,6 +21,7 @@
 		AB62406212D52447000EAB07 /* 30-key.png in Resources */ = {isa = PBXBuildFile; fileRef = AB62406112D52447000EAB07 /* 30-key.png */; };
 		AB62406A12D52490000EAB07 /* 96-book.png in Resources */ = {isa = PBXBuildFile; fileRef = AB62406912D52490000EAB07 /* 96-book.png */; };
 		AB62406C12D524C0000EAB07 /* 189-plant.png in Resources */ = {isa = PBXBuildFile; fileRef = AB62406B12D524C0000EAB07 /* 189-plant.png */; };
+		AB62408F12D526DF000EAB07 /* Term.m in Sources */ = {isa = PBXBuildFile; fileRef = AB62408E12D526DF000EAB07 /* Term.m */; };
 		AB7C01801210A3A8005F4DBE /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7C017E1210A3A8005F4DBE /* AppModel.m */; };
 		AB7C036E1211E932005F4DBE /* plantKey.sql in Resources */ = {isa = PBXBuildFile; fileRef = AB7C036D1211E932005F4DBE /* plantKey.sql */; };
 		AB7C03CD1211F412005F4DBE /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7C03CC1211F412005F4DBE /* libsqlite3.0.dylib */; };
@@ -65,6 +66,8 @@
 		AB62406112D52447000EAB07 /* 30-key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "30-key.png"; sourceTree = "<group>"; };
 		AB62406912D52490000EAB07 /* 96-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "96-book.png"; sourceTree = "<group>"; };
 		AB62406B12D524C0000EAB07 /* 189-plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "189-plant.png"; sourceTree = "<group>"; };
+		AB62408D12D526DF000EAB07 /* Term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Term.h; sourceTree = "<group>"; };
+		AB62408E12D526DF000EAB07 /* Term.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Term.m; sourceTree = "<group>"; };
 		AB7C017D1210A3A8005F4DBE /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
 		AB7C017E1210A3A8005F4DBE /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
 		AB7C017F1210A3A8005F4DBE /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				AB7C017F1210A3A8005F4DBE /* SynthesizeSingleton.h */,
 				AB7C03701211E968005F4DBE /* KeyNode.h */,
 				ABD22C2D125511F10018A3E8 /* KeyNode.m */,
+				AB62408D12D526DF000EAB07 /* Term.h */,
+				AB62408E12D526DF000EAB07 /* Term.m */,
 				ABD22DB012552B630018A3E8 /* Plant.h */,
 				ABD22DB112552B630018A3E8 /* Plant.m */,
 				ABAB8FB112D27BCC0095BDCE /* Image.h */,
@@ -307,6 +312,7 @@
 				ABAB8FB312D27BCC0095BDCE /* Image.m in Sources */,
 				AB026ACC12D288EB00D17F90 /* PlantImageViewController.m in Sources */,
 				AB62404F12D512CB000EAB07 /* PlantListViewController.m in Sources */,
+				AB62408F12D526DF000EAB07 /* Term.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

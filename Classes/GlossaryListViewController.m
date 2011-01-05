@@ -8,12 +8,12 @@
 
 #import "GlossaryListViewController.h"
 #import "AppModel.h"
-#import "PlantImageViewController.h"
+#import "Term.h"
 
 @implementation GlossaryListViewController
 
-@synthesize plantIndexes;
-@synthesize filteredPlantIndexes;
+@synthesize indexes;
+@synthesize filteredIndexes;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -25,8 +25,8 @@
         self.title = @"Glossary";
 		self.tabBarItem.image = [UIImage imageNamed:@"96-book.png"];
 
-		[self refreshPlantIndexes];
-		self.filteredPlantIndexes = [NSMutableArray arrayWithCapacity:[self.plantIndexes count]];
+		[self refreshIndexes];
+		self.filteredIndexes = [NSMutableArray arrayWithCapacity:[self.indexes count]];
     }
     return self;
 }
@@ -63,8 +63,8 @@
      the filtered list, otherwise return the count of the main list.
      */
     if (tableView == self.searchDisplayController.searchResultsTableView)
-		return [self.filteredPlantIndexes count];
-    else return [self.plantIndexes count];
+		return [self.filteredIndexes count];
+    else return [self.indexes count];
     
 }
 
@@ -81,26 +81,16 @@
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
 	}
 
-	NSNumber *plantId;
+	NSNumber *uid;
 	if (tableView == self.searchDisplayController.searchResultsTableView) 
-		plantId = [self.filteredPlantIndexes objectAtIndex:indexPath.row];
-    else plantId = [self.plantIndexes objectAtIndex:indexPath.row];
+		uid = [self.filteredIndexes objectAtIndex:indexPath.row];
+    else uid = [self.indexes objectAtIndex:indexPath.row];
 
 
-	Plant *p = [[AppModel sharedInstance] plantForId:plantId];
+	Term *t = [[AppModel sharedInstance] termForId:uid];
 	
-	switch (sortFieldSegmentedControl.selectedSegmentIndex) {
-		case 0:
-			cell.textLabel.text = p.scientificName;
-			cell.detailTextLabel.text = p.commonName1;			
-			break;
-		case 1:
-			cell.textLabel.text = p.commonName1;
-			cell.detailTextLabel.text = p.scientificName;
-			break;
-		default:
-			break;
-	}
+	cell.textLabel.text = t.word;
+	cell.detailTextLabel.text = t.definition;
 	
 	
 	
@@ -158,19 +148,7 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	NSLog(@"PlantListViewController: didSelectRowAtIndexPath");
-		
-	NSNumber *plantId;
-	
-	if (tableView == self.searchDisplayController.searchResultsTableView) 
-		plantId = [self.filteredPlantIndexes objectAtIndex:indexPath.row];
-    else plantId = [self.plantIndexes objectAtIndex:indexPath.row];
-
-	Plant *p = [[AppModel sharedInstance] plantForId:plantId];
-	PlantImageViewController *vc = [[PlantImageViewController alloc]initWithPlant:p];
-	vc.hidesBottomBarWhenPushed = YES;
-	[self.navigationController pushViewController:vc animated:YES];
-	[vc release];
+	NSLog(@"GlossaryViewController: didSelectRowAtIndexPath");
 }
 
 
@@ -179,15 +157,11 @@
 #pragma mark Content Filtering
 
 - (void)filterContentForSearchText:(NSString*)searchText{
-	[self.filteredPlantIndexes removeAllObjects]; // First clear the filtered array.
+	[self.filteredIndexes removeAllObjects]; // First clear the filtered array.
 	
-	for (NSNumber *plantId in self.plantIndexes) {
-		Plant *p = [[AppModel sharedInstance] plantForId:plantId];
-		if ([[p.scientificName lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
-		if ([[p.commonName1 lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
-		if ([[p.commonName2 lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
-		if ([[p.commonName3 lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
-		
+	for (NSNumber *uid in self.indexes) {
+		Term *t = [[AppModel sharedInstance] termForId:uid];
+		if ([[t.word lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredIndexes addObject:uid]; 
 	}
 	NSLog(@"filting Complete");
 }
@@ -219,22 +193,13 @@
 #pragma mark -
 #pragma mark Sorting
 -(IBAction) sortingSelectorValueChanged: (id) sender {
-	[self refreshPlantIndexes];
+	[self refreshIndexes];
 	[myTableView reloadData];
 }
 
-- (void)refreshPlantIndexes {
+- (void)refreshIndexes {
 	NSLog(@"PlantListVC: Refresh Indexes");
-	switch (sortFieldSegmentedControl.selectedSegmentIndex) {
-		case 0:
-			self.plantIndexes = [[[AppModel sharedInstance] plants] keysSortedByValueUsingSelector:@selector(compareScientificName:)];
-			break;
-		case 1:
-			self.plantIndexes = [[[AppModel sharedInstance] plants] keysSortedByValueUsingSelector:@selector(compareCommonName:)];
-			break;
-		default:
-			break;
-	}
+	self.indexes = [[[AppModel sharedInstance] glossary] keysSortedByValueUsingSelector:@selector(compareWord:)];
 }
 
 #pragma mark -
