@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Plant.h";
 
-@interface PlantImageViewController : UIViewController {
+@interface PlantImageViewController : UIViewController <UIScrollViewDelegate> {
 	Plant *plant;
 	NSMutableArray *imageViews;
 	IBOutlet UILabel	*caption;

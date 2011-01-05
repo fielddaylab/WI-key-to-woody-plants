@@ -277,7 +277,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>19</integer>
+									<integer>18</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -330,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB623D4112D4EEAB000EAB07</string>
+										<string>AB623D5012D4F074000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C04171211FC86005F4DBE</string>
@@ -364,12 +364,14 @@
 							<string>0pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PlantImageViewController.m</string>
+								<string>PlantImageViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -377,11 +379,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PlantImageViewController.m</string>
+										<string>PlantImageViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB623D4212D4EEAB000EAB07</string>
+										<string>AB623D5312D4F074000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C04171211FC86005F4DBE</string>
@@ -402,11 +404,11 @@
 											<string>AB026B1112D296C300D17F90</string>
 											<string>AB026BBA12D2A07E00D17F90</string>
 											<string>AB026BCC12D2A15A00D17F90</string>
-											<string>AB026BF512D2A3C600D17F90</string>
 											<string>AB026BF612D2A3C600D17F90</string>
 											<string>AB026BF712D2A3C600D17F90</string>
 											<string>AB623D0612D4ECC4000EAB07</string>
-											<string>AB623D0712D4ECC4000EAB07</string>
+											<string>AB623D5112D4F074000EAB07</string>
+											<string>AB623D5212D4F074000EAB07</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -418,18 +420,16 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 5}, {1180, 137}}</string>
+								<string>{{0, 5}, {1180, 272}}</string>
 								<key>RubberWindowFrame</key>
 								<string>374 330 1440 819 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>137pt</string>
+							<string>272pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -447,7 +447,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB623D4312D4EEAB000EAB07</string>
+										<string>AB623D5412D4F074000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C045E12120203005F4DBE</string>
@@ -491,14 +491,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 147}, {1180, 608}}</string>
+								<string>{{0, 282}, {1180, 473}}</string>
 								<key>RubberWindowFrame</key>
 								<string>374 330 1440 819 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>608pt</string>
+							<string>473pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -681,7 +681,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>AB623D4412D4EEAB000EAB07</string>
+		<string>AB623D5512D4F074000EAB07</string>
 		<string>AB623C3412D3DD4B000EAB07</string>
 		<string>AB623C1C12D3DB2A000EAB07</string>
 		<string>1CD10A99069EF8BA00B06720</string>

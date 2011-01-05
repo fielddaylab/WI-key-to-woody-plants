@@ -299,6 +299,11 @@
 			AB623D4112D4EEAB000EAB07 /* PBXTextBookmark */ = AB623D4112D4EEAB000EAB07 /* PBXTextBookmark */;
 			AB623D4212D4EEAB000EAB07 /* PBXTextBookmark */ = AB623D4212D4EEAB000EAB07 /* PBXTextBookmark */;
 			AB623D4312D4EEAB000EAB07 /* PBXTextBookmark */ = AB623D4312D4EEAB000EAB07 /* PBXTextBookmark */;
+			AB623D5012D4F074000EAB07 /* PBXTextBookmark */ = AB623D5012D4F074000EAB07 /* PBXTextBookmark */;
+			AB623D5112D4F074000EAB07 /* PBXTextBookmark */ = AB623D5112D4F074000EAB07 /* PBXTextBookmark */;
+			AB623D5212D4F074000EAB07 /* PBXTextBookmark */ = AB623D5212D4F074000EAB07 /* PBXTextBookmark */;
+			AB623D5312D4F074000EAB07 /* PBXTextBookmark */ = AB623D5312D4F074000EAB07 /* PBXTextBookmark */;
+			AB623D5412D4F074000EAB07 /* PBXTextBookmark */ = AB623D5412D4F074000EAB07 /* PBXTextBookmark */;
 			AB7C04171211FC86005F4DBE = AB7C04171211FC86005F4DBE /* PBXTextBookmark */;
 			AB7C045E12120203005F4DBE = AB7C045E12120203005F4DBE /* PBXTextBookmark */;
 			AB7C04D212120716005F4DBE = AB7C04D212120716005F4DBE /* PBXTextBookmark */;
@@ -355,16 +360,16 @@
 	};
 	AB026AC912D288EB00D17F90 /* PlantImageViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1119, 615}}";
-			sepNavSelRange = "{600, 0}";
-			sepNavVisRange = "{0, 774}";
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 442}}";
+			sepNavSelRange = "{281, 0}";
+			sepNavVisRange = "{0, 432}";
 		};
 	};
 	AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1119, 2171}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 2028}}";
 			sepNavSelRange = "{3979, 0}";
-			sepNavVisRange = "{3061, 962}";
+			sepNavVisRange = "{372, 1194}";
 		};
 	};
 	AB026B1012D296C300D17F90 /* PBXTextBookmark */ = {
@@ -442,7 +447,7 @@
 		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
 		name = "PlantImageViewController.h: 26";
 		rLen = 0;
-		rLoc = 708;
+		rLoc = 731;
 		rType = 0;
 		vrLen = 549;
 		vrLoc = 203;
@@ -472,7 +477,7 @@
 		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
 		name = "PlantImageViewController.h: 26";
 		rLen = 0;
-		rLoc = 704;
+		rLoc = 727;
 		rType = 0;
 		vrLen = 734;
 		vrLoc = 0;
@@ -712,7 +717,7 @@
 		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
 		name = "PlantImageViewController.h: 26";
 		rLen = 0;
-		rLoc = 708;
+		rLoc = 731;
 		rType = 0;
 		vrLen = 776;
 		vrLoc = 0;
@@ -820,7 +825,7 @@
 		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
 		name = "PlantImageViewController.h: 26";
 		rLen = 0;
-		rLoc = 708;
+		rLoc = 731;
 		rType = 0;
 		vrLen = 776;
 		vrLoc = 0;
@@ -1522,7 +1527,7 @@
 		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
 		name = "PlantImageViewController.h: 26";
 		rLen = 0;
-		rLoc = 708;
+		rLoc = 731;
 		rType = 0;
 		vrLen = 776;
 		vrLoc = 0;
@@ -1532,7 +1537,7 @@
 		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
 		name = "PlantImageViewController.h: 24";
 		rLen = 0;
-		rLoc = 600;
+		rLoc = 623;
 		rType = 0;
 		vrLen = 774;
 		vrLoc = 0;
@@ -1562,7 +1567,7 @@
 		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
 		name = "PlantImageViewController.h: 24";
 		rLen = 0;
-		rLoc = 600;
+		rLoc = 623;
 		rType = 0;
 		vrLen = 774;
 		vrLoc = 0;
@@ -2050,6 +2055,56 @@
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 3061;
+	};
+	AB623D5012D4F074000EAB07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB7C017E1210A3A8005F4DBE /* AppModel.m */;
+		name = "AppModel.m: 78";
+		rLen = 0;
+		rLoc = 2438;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	AB623D5112D4F074000EAB07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
+		name = "PlantImageViewController.m: 82";
+		rLen = 0;
+		rLoc = 2281;
+		rType = 0;
+		vrLen = 781;
+		vrLoc = 2049;
+	};
+	AB623D5212D4F074000EAB07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
+		name = "PlantImageViewController.h: 26";
+		rLen = 0;
+		rLoc = 727;
+		rType = 0;
+		vrLen = 767;
+		vrLoc = 0;
+	};
+	AB623D5312D4F074000EAB07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
+		name = "PlantImageViewController.h: 12";
+		rLen = 0;
+		rLoc = 281;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 0;
+	};
+	AB623D5412D4F074000EAB07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
+		name = "PlantImageViewController.m: 152";
+		rLen = 0;
+		rLoc = 3979;
+		rType = 0;
+		vrLen = 1194;
+		vrLoc = 372;
 	};
 	AB7C01471210A214005F4DBE /* PlantKey */ = {
 		isa = PBXExecutable;
