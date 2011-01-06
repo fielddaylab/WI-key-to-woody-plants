@@ -94,8 +94,6 @@
 	cell.detailTextLabel.numberOfLines = 3;
 	cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
 	
-	
-	
 	return cell;
 }
 
@@ -153,9 +151,18 @@
 	NSLog(@"GlossaryViewController: didSelectRowAtIndexPath");
 }
 
-- (CGFloat) tableView:(UITableView *)aTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	int numberOfLines = 3;
-	return  (44.0 + (numberOfLines - 1) * 19.0);
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+	UITableViewCell *c = [self tableView: tableView cellForRowAtIndexPath: indexPath];
+
+    CGSize maximumLabelSize = CGSizeMake(tableView.bounds.size.width - 20, MAXFLOAT);
+	
+    CGSize expectedLabelSize = [c.detailTextLabel.text sizeWithFont:[UIFont systemFontOfSize:15] 
+												  constrainedToSize:maximumLabelSize
+													  lineBreakMode:c.detailTextLabel.lineBreakMode ]; 
+	
+	
+	return expectedLabelSize.height + 24;
 }
 
 #pragma mark -
