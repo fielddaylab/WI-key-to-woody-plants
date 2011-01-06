@@ -35,6 +35,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		[self readKeyNodesFromDatabase];
 		[self readPlantsFromDatabase];
 		[self readGlossaryFromDatabase];
+		[self readImagesFromDatabaseForPlants];
 
 		
 		NSLog(@"AppModel Inited");
@@ -144,9 +145,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 				plant.commonName3 = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)];
 				plant.nativeText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)];
 				plant.habitatText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)];
-										
-				[self readImagesFromDatabaseForPlant:plant];
-				
+														
 				// Add the plant to the Plants array
 				[self.plants setObject:plant forKey:plant.uid];
 				[plant release];
@@ -159,8 +158,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 	NSLog(@"AppModel:readPlantsFromDatabase: Reading Complete");
 }
 
--(void) readImagesFromDatabaseForPlant:(Plant*)plant {
-	NSLog(@"AppModel:readImagesFromDatabaseForPlant: Begin Reading");
+-(void) readImagesFromDatabaseForPlants {
+	NSLog(@"AppModel:readImagesFromDatabaseForPlants: Begin Reading");
 	
 	sqlite3 *database;
 	
@@ -168,9 +167,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 	if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
 		
 		// Setup the SQL Statement and compile it for faster access
-		NSString *sqlString = [NSString stringWithFormat: @"select uid,caption,displayPriority,fileName from images where thing_type = 'p' and thing_uid = '%@'", plant.uid];
-		NSLog(@"readImagesFromDatabaseForPlant: Query is = %@",sqlString);
-		const char *sqlStatement = [sqlString UTF8String];		
+		const char *sqlStatement = "select uid,caption,displayPriority,fileName,thing_uid from images where thing_type = 'p'";		
 
 		sqlite3_stmt *compiledStatement;
 		
@@ -187,9 +184,16 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 				image.displayPriority = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)];
 				image.fileName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)];
 				image.fileName = [NSString stringWithFormat:@"%@.jpg", image.fileName]; //Add the extension  
+				
+				NSNumber *plantId = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)] intValue]];
 
 				// Add the image to the Plant's image array
-				[plant.images addObject:image];
+				Plant *plant = [self.plants objectForKey:plantId];
+				if (plant) {
+					NSLog(@"AppModel:readImagesFromDatabaseForPlant: adding image to plant %@", plant.uid);
+					[plant.images addObject:image];
+				}
+				else NSLog(@"AppModel:readImagesFromDatabaseForPlant: Bad Plant uid in Image uid %@",image.uid );
 				[image release];
 			}
 		}

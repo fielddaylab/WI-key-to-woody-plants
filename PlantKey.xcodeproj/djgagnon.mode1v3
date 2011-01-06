@@ -276,7 +276,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
+									<integer>6</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -301,7 +301,7 @@
 							<real>238</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>18 63 1670 1106 0 0 1920 1178 </string>
+						<string>19 62 1670 1106 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB62435312D66483000EAB07</string>
+										<string>AB6243BA12D668D9000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C04171211FC86005F4DBE</string>
@@ -355,7 +355,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1410, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>18 63 1670 1106 0 0 1920 1178 </string>
+								<string>19 62 1670 1106 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -380,7 +380,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB62435412D66483000EAB07</string>
+										<string>AB6243BB12D668D9000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C04171211FC86005F4DBE</string>
@@ -419,7 +419,7 @@
 								<key>Frame</key>
 								<string>{{0, 5}, {1410, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>18 63 1670 1106 0 0 1920 1178 </string>
+								<string>19 62 1670 1106 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -434,7 +434,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PlantImageViewController.m</string>
+								<string>AppModel.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -442,11 +442,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PlantImageViewController.m</string>
+										<string>AppModel.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB62435512D66483000EAB07</string>
+										<string>AB6243BC12D668D9000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C045E12120203005F4DBE</string>
@@ -467,7 +467,6 @@
 											<string>AB623E1B12D5005B000EAB07</string>
 											<string>AB623EB712D5111D000EAB07</string>
 											<string>AB623EB812D5111D000EAB07</string>
-											<string>AB62405612D512FF000EAB07</string>
 											<string>AB62405712D512FF000EAB07</string>
 											<string>AB62407112D52566000EAB07</string>
 											<string>AB62407212D52566000EAB07</string>
@@ -484,9 +483,10 @@
 											<string>AB6240C112D52DB6000EAB07</string>
 											<string>AB62427D12D65570000EAB07</string>
 											<string>AB6242A812D66050000EAB07</string>
-											<string>AB62432212D66308000EAB07</string>
 											<string>AB62432312D66308000EAB07</string>
-											<string>AB62434812D66438000EAB07</string>
+											<string>AB62435F12D666C4000EAB07</string>
+											<string>AB62436012D666C4000EAB07</string>
+											<string>AB62437412D666F4000EAB07</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -500,7 +500,7 @@
 								<key>Frame</key>
 								<string>{{0, 10}, {1410, 925}}</string>
 								<key>RubberWindowFrame</key>
-								<string>18 63 1670 1106 0 0 1920 1178 </string>
+								<string>19 62 1670 1106 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -525,7 +525,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB62435612D66483000EAB07</string>
+										<string>AB6243BD12D668D9000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C045E12120203005F4DBE</string>
@@ -579,7 +579,7 @@
 								<key>Frame</key>
 								<string>{{0, 940}, {1410, 120}}</string>
 								<key>RubberWindowFrame</key>
-								<string>18 63 1670 1106 0 0 1920 1178 </string>
+								<string>19 62 1670 1106 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -599,7 +599,7 @@
 								<key>Frame</key>
 								<string>{{0, 1065}, {1410, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>18 63 1670 1106 0 0 1920 1178 </string>
+								<string>19 62 1670 1106 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -769,7 +769,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>AB62435212D6646B000EAB07</string>
+		<string>AB6243B812D668BB000EAB07</string>
 		<string>AB623C3412D3DD4B000EAB07</string>
 		<string>AB623C1C12D3DB2A000EAB07</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -778,7 +778,7 @@
 		<string>/Users/djgagnon/Documents/PlantKey/svn-trunk/PlantKey.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>18 63 1670 1106 0 0 1920 1178 </string>
+	<string>19 62 1670 1106 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -1126,7 +1126,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {930, 656}}</string>
 								<key>RubberWindowFrame</key>
-								<string>512 103 930 697 0 0 1920 1178 </string>
+								<string>991 261 930 697 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -1155,7 +1155,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>512 103 930 697 0 0 1920 1178 </string>
+			<string>991 261 930 697 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
