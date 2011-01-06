@@ -71,10 +71,17 @@
 	[scrollView setContentSize:CGSizeMake(scrollViewContentWidth, [scrollView bounds].size.height)];
 
 	
-	//Other Stuff
+	//Update the caption and page control
 	self.pageControl.numberOfPages = [self.plant.images count];
 	
 	[self updateCaption];
+	
+	
+	//Setup the secondary view and button
+	PlantDataViewController *secondaryViewController = [[PlantDataViewController alloc]initWithPlant:self.plant];
+	self.secondaryView = secondaryViewController.view;
+	[secondaryViewController release];
+	
 	
 	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Second" 
 															   style:UIBarButtonItemStylePlain 
@@ -85,12 +92,8 @@
 	self.navigationItem.rightBarButtonItem = button;
 	[button release];
 	
-	
-	PlantDataViewController *secondaryViewController = [[PlantDataViewController alloc]initWithPlant:self.plant];
-	self.secondaryView = secondaryViewController.view;
-	[secondaryViewController release];
-	
-
+	//If no images, go directly to secondary view
+	if (self.pageControl.numberOfPages < 1) [self showSecondary];
 	
 }
 
@@ -181,8 +184,11 @@
 }
 
 -(void)updateCaption {
-	Image *image = [self.plant.images objectAtIndex:pageControl.currentPage];
-	caption.text = image.caption;	
+	if (self.pageControl.numberOfPages < 1) caption.text = @"No Images Available";
+	else {
+		Image *image = [self.plant.images objectAtIndex:pageControl.currentPage];
+		caption.text = image.caption;
+	}
 }
 
 

@@ -131,10 +131,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		sqlite3_stmt *compiledStatement;
 		
 		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
-			NSLog(@"AppModel:readKeyFromDatabase: SQLITE_OK");
+			NSLog(@"AppModel:readPlantsFromDatabase: SQLITE_OK");
 			// Loop through the results and add them to the feeds array
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
-				NSLog(@"AppModel:readKeyFromDatabase: Hydrating a Plant");
+				NSLog(@"AppModel:readPlantsFromDatabase: Hydrating a Plant");
 				
 				Plant *plant = [[Plant alloc] init];
 				plant.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
@@ -144,21 +144,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 				plant.commonName3 = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)];
 				plant.nativeText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)];
 				plant.habitatText = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)];
-									
-				//TODO:Replace this with real code to read the images
-				for (int count=1; count<=7; count++) {
-					Image *i = [[Image alloc]init];
-					i.uid = [NSNumber numberWithInt: count];
-					if (count == 1) i.isDefault = TRUE; else i.isDefault = FALSE;
-					i.caption = [NSString stringWithFormat:@"Image %d Caption",count];
-					i.displayPriority = [NSNumber numberWithInt: count];
-					i.fileName = [NSString stringWithFormat:@"%d.jpg",count];
-					[plant.images addObject:i];
-					[i release];
-				}
+										
+				[self readImagesFromDatabaseForPlant:plant];
 				
-				
-				// Add the node to the keyNode array
+				// Add the plant to the Plants array
 				[self.plants setObject:plant forKey:plant.uid];
 				[plant release];
 			}
@@ -167,7 +156,48 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		sqlite3_finalize(compiledStatement);
 	}
 	sqlite3_close(database);
-	NSLog(@"AppModel:readKeyNodesFromDatabase: Reading Complete");
+	NSLog(@"AppModel:readPlantsFromDatabase: Reading Complete");
+}
+
+-(void) readImagesFromDatabaseForPlant:(Plant*)plant {
+	NSLog(@"AppModel:readImagesFromDatabaseForPlant: Begin Reading");
+	
+	sqlite3 *database;
+	
+	// Open the database from the users filessytem
+	if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
+		
+		// Setup the SQL Statement and compile it for faster access
+		NSString *sqlString = [NSString stringWithFormat: @"select uid,caption,displayPriority,fileName from images where thing_type = 'p' and thing_uid = '%@'", plant.uid];
+		NSLog(@"readImagesFromDatabaseForPlant: Query is = %@",sqlString);
+		const char *sqlStatement = [sqlString UTF8String];		
+
+		sqlite3_stmt *compiledStatement;
+		
+		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
+			NSLog(@"AppModel:readImagesFromDatabaseForPlant: SQLITE_OK");
+			// Loop through the results and add them to the plant
+			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
+				NSLog(@"AppModel:readImagesFromDatabaseForPlant: Hydrating an Image");
+				
+				
+				Image *image = [[Image alloc] init];
+				image.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
+				image.caption = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
+				image.displayPriority = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)];
+				image.fileName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)];
+				image.fileName = [NSString stringWithFormat:@"%@.jpg", image.fileName]; //Add the extension  
+
+				// Add the image to the Plant's image array
+				[plant.images addObject:image];
+				[image release];
+			}
+		}
+		// Release the compiled statement from memory
+		sqlite3_finalize(compiledStatement);
+	}
+	sqlite3_close(database);
+	NSLog(@"AppModel:readImagesFromDatabaseForPlant: Reading Complete");
 }
 
 -(void) readGlossaryFromDatabase {

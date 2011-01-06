@@ -20,7 +20,6 @@
 
 
 @property(nonatomic, retain) NSNumber*		uid;
-@property(nonatomic) BOOL					isDefault;
 @property(nonatomic, retain) NSString*		caption;
 @property(nonatomic, retain) NSNumber*		displayPriority;
 @property(nonatomic, retain) NSString*		fileName;

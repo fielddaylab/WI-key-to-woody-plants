@@ -12,7 +12,6 @@
 @implementation Image
 
 @synthesize uid;
-@synthesize isDefault;
 @synthesize caption;
 @synthesize displayPriority;
 @synthesize fileName;
@@ -27,6 +26,7 @@
 	NSLog(@"Image.m: Setting Filename to %@",fn);
 	fileName = fn;
 	self.image = [UIImage imageNamed:fn];
+	if (self.image == nil) NSLog(@"Image: Warning! File %@ Doesn't Exist.",fn);
 }
 
 
