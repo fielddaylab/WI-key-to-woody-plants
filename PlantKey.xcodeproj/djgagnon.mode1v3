@@ -276,7 +276,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>25</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB62410012D53E91000EAB07</string>
+										<string>AB62411812D540E0000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C04171211FC86005F4DBE</string>
@@ -380,7 +380,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB62410112D53E91000EAB07</string>
+										<string>AB62411912D540E0000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C04171211FC86005F4DBE</string>
@@ -444,7 +444,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB62410212D53E91000EAB07</string>
+										<string>AB62411A12D540E0000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C045E12120203005F4DBE</string>
@@ -513,7 +513,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppModel.h</string>
+								<string>GlossaryListViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -521,11 +521,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AppModel.h</string>
+										<string>GlossaryListViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB62410312D53E91000EAB07</string>
+										<string>AB62411B12D540E0000EAB07</string>
 										<key>history</key>
 										<array>
 											<string>AB7C045E12120203005F4DBE</string>
@@ -563,9 +563,9 @@
 											<string>AB62409A12D52801000EAB07</string>
 											<string>AB62409B12D52801000EAB07</string>
 											<string>AB6240DA12D52E38000EAB07</string>
-											<string>AB6240DB12D52E38000EAB07</string>
 											<string>AB6240E812D52E56000EAB07</string>
-											<string>AB6240E912D52E56000EAB07</string>
+											<string>AB62411212D5407A000EAB07</string>
+											<string>AB62411312D5407A000EAB07</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -769,7 +769,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>AB62410412D53E91000EAB07</string>
+		<string>AB62411C12D540E0000EAB07</string>
 		<string>AB623C3412D3DD4B000EAB07</string>
 		<string>AB623C1C12D3DB2A000EAB07</string>
 		<string>1C78EAAD065D492600B07095</string>

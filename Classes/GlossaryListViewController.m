@@ -91,6 +91,8 @@
 	
 	cell.textLabel.text = t.word;
 	cell.detailTextLabel.text = t.definition;
+	cell.detailTextLabel.numberOfLines = 3;
+	cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
 	
 	
 	
@@ -151,7 +153,10 @@
 	NSLog(@"GlossaryViewController: didSelectRowAtIndexPath");
 }
 
-
+- (CGFloat) tableView:(UITableView *)aTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	int numberOfLines = 3;
+	return  (44.0 + (numberOfLines - 1) * 19.0);
+}
 
 #pragma mark -
 #pragma mark Content Filtering
