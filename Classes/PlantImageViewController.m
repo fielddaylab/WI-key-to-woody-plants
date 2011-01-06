@@ -32,9 +32,6 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-	
 	NSLog(@"PlantImageViewController: Loading Plant: %@",self.plant.uid);
 	self.title = self.plant.scientificName;
 	self.hidesBottomBarWhenPushed = YES;
@@ -61,19 +58,16 @@
 		rect.origin.x = scrollViewContentWidth;		
 		imageView.frame = rect;
 		
-	
 		[scrollView addSubview:imageView];
 		[imageView release];
 		
 		scrollViewContentWidth += scrollView.frame.size.width;
 	}
-
 	[scrollView setContentSize:CGSizeMake(scrollViewContentWidth, [scrollView bounds].size.height)];
 
 	
 	//Update the caption and page control
 	self.pageControl.numberOfPages = [self.plant.images count];
-	
 	[self updateCaption];
 	
 	
@@ -95,6 +89,7 @@
 	//If no images, go directly to secondary view
 	if (self.pageControl.numberOfPages < 1) [self showSecondary];
 	
+	
 }
 
 
@@ -110,8 +105,8 @@
 	[button release];
 	
 	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:1.0];
-	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight
+	[UIView setAnimationDuration:0.5];
+	[UIView setAnimationTransition:UIViewAnimationTransitionCurlUp
 						   forView:[self view]
 							 cache:YES];
 	[[self view] addSubview:self.secondaryView];
@@ -131,8 +126,8 @@
 	[button release];
 	
 	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:1.0];
-	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft
+	[UIView setAnimationDuration:0.5];
+	[UIView setAnimationTransition:UIViewAnimationTransitionCurlDown
 						   forView:[self view]
 							 cache:YES];
 	[self.secondaryView removeFromSuperview];

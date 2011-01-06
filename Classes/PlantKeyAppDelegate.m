@@ -7,9 +7,7 @@
 //
 
 #import "PlantKeyAppDelegate.h"
-#import "KeyNodeViewController.h"
-#import "PlantListViewController.h"
-#import "GlossaryListViewController.h"
+#import "RootMenuViewController.h"
 
 #import "AppModel.h"
 
@@ -24,24 +22,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 
+	RootMenuViewController *vc = [[RootMenuViewController alloc]initWithNibName:@"RootMenuViewController" bundle:nil];
+	UINavigationController *nc = [[UINavigationController alloc]initWithRootViewController:vc];
 	
-	KeyNodeViewController *keyVC = [[KeyNodeViewController alloc]initWithKeyNode:[[AppModel sharedInstance] keyNodeForId:[NSNumber numberWithInt:1]]];
-	UINavigationController *keyNav = [[UINavigationController alloc] initWithRootViewController:keyVC];
-	[keyVC release];
-	
-	PlantListViewController *plantListVC = [[PlantListViewController alloc]initWithNibName:@"PlantListViewController" bundle:nil];
-	UINavigationController *plantNav = [[UINavigationController alloc] initWithRootViewController:plantListVC];
-	[plantListVC release];
-	
-	PlantListViewController *glossaryListVC = [[GlossaryListViewController alloc]initWithNibName:@"GlossaryListViewController" bundle:nil];
-	UINavigationController *glossaryNav = [[UINavigationController alloc] initWithRootViewController:glossaryListVC];
-	[glossaryListVC release];
-	
-	UITabBarController *tabBarController = [[UITabBarController alloc]init];
-	[tabBarController setViewControllers:[NSArray arrayWithObjects:plantNav,keyNav,glossaryNav,nil] animated:NO];
-	
-	[window addSubview:tabBarController.view];
-	
+	nc.navigationBar.barStyle = UIBarStyleBlack;
+	[window addSubview:nc.view];
 	[window makeKeyAndVisible];
 	
 	return YES;

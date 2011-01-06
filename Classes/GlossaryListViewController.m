@@ -32,12 +32,26 @@
 }
 
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	//Setup the Home Button
+	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Home" 
+															   style:UIBarButtonItemStylePlain 
+															  target:self 
+															  action:@selector(home)];
+	button.image = [UIImage imageNamed:@"53-house.png"];
+	
+	self.navigationItem.rightBarButtonItem = button;
+	[button release];
+	
 }
-*/
+
+- (void)home{
+	NSLog(@"KeyNodeViewController: Home Requested");
+	[self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 /*
 // Override to allow orientations other than the default portrait orientation.

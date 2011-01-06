@@ -31,8 +31,6 @@
 		self.keyNode = k;
 		self.title = @"Identification Key";
 		self.tabBarItem.image = [UIImage imageNamed:@"30-key.png"];
-
-
 	}
 	return self;
 }
@@ -46,8 +44,22 @@
 	
 	NSLog(@"KeyNodeViewController: Loading Key Node: %@",self.keyNode.uid);
 	
+	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Home" 
+															   style:UIBarButtonItemStylePlain 
+															  target:self 
+															  action:@selector(home)];
+	button.image = [UIImage imageNamed:@"53-house.png"];
+	
+	self.navigationItem.rightBarButtonItem = button;
+	[button release];
+	
+	
 }
 
+- (void)home{
+	NSLog(@"KeyNodeViewController: Home Requested");
+	[self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
