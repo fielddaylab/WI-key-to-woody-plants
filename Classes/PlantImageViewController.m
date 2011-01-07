@@ -16,7 +16,8 @@
 @synthesize caption;
 @synthesize scrollView;
 @synthesize pageControl;
-@synthesize secondaryView;
+@synthesize secondaryButton;
+@synthesize secondaryViewController;
 
 - (id)initWithPlant:(Plant *)p {
 	if ((self = [super initWithNibName:@"PlantImageViewController" bundle:nil])) {
@@ -71,68 +72,40 @@
 	
 	
 	//Setup the secondary view and button
-	PlantDataViewController *secondaryViewController = [[PlantDataViewController alloc]initWithPlant:self.plant];
-	self.secondaryView = secondaryViewController.view;
-	[secondaryViewController release];
+	PlantDataViewController *secondaryVc = [[PlantDataViewController alloc]initWithPlant:self.plant];
+	self.secondaryViewController = secondaryVc;
+	[secondaryVc release];
 	
-	
-	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Second" 
-															   style:UIBarButtonItemStylePlain 
-															  target:self 
-															  action:@selector(showSecondary)];
-	button.image = [UIImage imageNamed:@"179-notepad.png"];
-	
-	self.navigationItem.rightBarButtonItem = button;
-	[button release];
+	//Setup secondary view button
+	[secondaryButton addTarget:self action:@selector(showSecondary) forControlEvents:UIControlEventTouchUpInside];
 	
 	//If no images, go directly to secondary view
 	if (self.pageControl.numberOfPages < 1) [self showSecondary];
 	
+	//Setup Home Button
+	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Home" 
+															   style:UIBarButtonItemStylePlain 
+															  target:self 
+															  action:@selector(home)];
+	button.image = [UIImage imageNamed:@"53-house.png"];
 	
+	self.navigationItem.rightBarButtonItem = button;
+	[button release];
+
+}
+
+- (void)home{
+	NSLog(@"KeyNodeViewController: Home Requested");
+	[self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 
 -(void)showSecondary{
-	NSLog(@"PlantImageViewController: Showing Secondary View");
 	
-	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Primary" 
-															   style:UIBarButtonItemStylePlain 
-															  target:self 
-															  action:@selector(showPrimary)];
-	button.image = [UIImage imageNamed:@"43-film-roll.png"];
-	self.navigationItem.rightBarButtonItem = button;
-	[button release];
-	
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:0.5];
-	[UIView setAnimationTransition:UIViewAnimationTransitionCurlUp
-						   forView:[self view]
-							 cache:YES];
-	[[self view] addSubview:self.secondaryView];
-	[UIView commitAnimations];
-	
+	self.secondaryViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+	[self presentModalViewController:self.secondaryViewController animated:YES];
+
 }
-
--(void)showPrimary{
-	NSLog(@"PlantImageViewController: Showing Primary View");
-	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Second" 
-															   style:UIBarButtonItemStylePlain 
-															  target:self 
-															  action:@selector(showSecondary)];  
-	button.image = [UIImage imageNamed:@"179-notepad.png"];
-
-	self.navigationItem.rightBarButtonItem = button;
-	[button release];
-	
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:0.5];
-	[UIView setAnimationTransition:UIViewAnimationTransitionCurlDown
-						   forView:[self view]
-							 cache:YES];
-	[self.secondaryView removeFromSuperview];
-	[UIView commitAnimations];
-}
-
 
 /*
 // Override to allow orientations other than the default portrait orientation.

@@ -39,6 +39,7 @@
 	[shrubButton addTarget:self action:@selector(shrubButtonAction) forControlEvents:UIControlEventTouchUpInside];
 	[glossaryButton addTarget:self action:@selector(glossaryButtonAction) forControlEvents:UIControlEventTouchUpInside];
 	[plantListButton addTarget:self action:@selector(plantListButtonAction) forControlEvents:UIControlEventTouchUpInside];
+	[infoButton addTarget:self action:@selector(infoButtonAction) forControlEvents:UIControlEventTouchUpInside];
 
 }
 
@@ -77,6 +78,10 @@
 	[self.navigationController pushViewController:vc animated:YES];
 	[vc release];
 }
+-(void) infoButtonAction {
+	
+}
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.

@@ -14,6 +14,8 @@
 	IBOutlet UIButton *shrubButton;
 	IBOutlet UIButton *glossaryButton;
 	IBOutlet UIButton *plantListButton;
+	IBOutlet UIButton *infoButton;
+
 }
 
 @end

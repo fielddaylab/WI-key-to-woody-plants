@@ -15,7 +15,9 @@
 	IBOutlet UIScrollView		*scrollView;
 	IBOutlet UIPageControl		*pageControl;
 	
-	UIView *secondaryView;
+	IBOutlet UIButton *secondaryButton;
+	UIViewController *secondaryViewController;
+
 
 }
 
@@ -24,7 +26,10 @@
 @property (nonatomic,retain) IBOutlet UILabel *caption;
 @property (nonatomic,retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic,retain) IBOutlet UIPageControl *pageControl;
-@property (nonatomic,retain) UIView *secondaryView;
+@property (nonatomic,retain) IBOutlet UIButton *secondaryButton;
+
+@property (nonatomic,retain) UIViewController *secondaryViewController;
+
 
 
 
