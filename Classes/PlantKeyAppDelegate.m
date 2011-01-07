@@ -22,6 +22,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 
+	[AppModel sharedInstance];
+	
 	RootMenuViewController *vc = [[RootMenuViewController alloc]initWithNibName:@"RootMenuViewController" bundle:nil];
 	UINavigationController *nc = [[UINavigationController alloc]initWithRootViewController:vc];
 	
