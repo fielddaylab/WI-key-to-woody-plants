@@ -18,13 +18,6 @@
 		AB62445012D6714B000EAB07 /* attribution in Resources */ = {isa = PBXBuildFile; fileRef = AB62444F12D6714B000EAB07 /* attribution */; };
 		AB6244D312D686FC000EAB07 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6244D212D686FC000EAB07 /* Default.png */; };
 		AB62452112D68D09000EAB07 /* KeyNodeOption.m in Sources */ = {isa = PBXBuildFile; fileRef = AB62452012D68D09000EAB07 /* KeyNodeOption.m */; };
-		AB6245AC12D7745F000EAB07 /* Abibal01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245A512D7745E000EAB07 /* Abibal01 Needles.jpg */; };
-		AB6245AD12D7745F000EAB07 /* Abibal02 Bough.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245A612D7745E000EAB07 /* Abibal02 Bough.jpg */; };
-		AB6245AE12D7745F000EAB07 /* Abibal03 Upright cone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245A712D7745E000EAB07 /* Abibal03 Upright cone.jpg */; };
-		AB6245AF12D7745F000EAB07 /* Abibal04 Male cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245A812D7745E000EAB07 /* Abibal04 Male cones.jpg */; };
-		AB6245B012D7745F000EAB07 /* Abibal05 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245A912D7745F000EAB07 /* Abibal05 Bark.jpg */; };
-		AB6245B112D7745F000EAB07 /* Abibal06 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245AA12D7745F000EAB07 /* Abibal06 Habit.jpg */; };
-		AB6245B212D7745F000EAB07 /* Abibal07 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245AB12D7745F000EAB07 /* Abibal07 Distmap.jpg */; };
 		AB6245CD12D77736000EAB07 /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6245C712D77736000EAB07 /* 179-notepad.png */; };
 		AB6245CE12D77736000EAB07 /* 189-plant.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6245C812D77736000EAB07 /* 189-plant.png */; };
 		AB6245CF12D77736000EAB07 /* 30-key.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6245C912D77736000EAB07 /* 30-key.png */; };
@@ -46,6 +39,122 @@
 		AB7C05DD1213233B005F4DBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7C05DC1213233B005F4DBE /* CoreGraphics.framework */; };
 		AB9BF95D12256B4C0028D6AC /* notes in Resources */ = {isa = PBXBuildFile; fileRef = AB9BF95C12256B4C0028D6AC /* notes */; };
 		ABAB8FB312D27BCC0095BDCE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB8FB212D27BCC0095BDCE /* Image.m */; };
+		ABCF9E0C12D780330062FFAF /* Abibal01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9D9912D780320062FFAF /* Abibal01 Needles.jpg */; };
+		ABCF9E0D12D780330062FFAF /* Abibal02 Bough.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9D9A12D780320062FFAF /* Abibal02 Bough.jpg */; };
+		ABCF9E0E12D780330062FFAF /* Abibal03 Upright cone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9D9B12D780320062FFAF /* Abibal03 Upright cone.jpg */; };
+		ABCF9E0F12D780330062FFAF /* Abibal04 Male cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9D9C12D780320062FFAF /* Abibal04 Male cones.jpg */; };
+		ABCF9E1012D780330062FFAF /* Abibal05 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9D9D12D780320062FFAF /* Abibal05 Bark.jpg */; };
+		ABCF9E1112D780330062FFAF /* Abibal06 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9D9E12D780320062FFAF /* Abibal06 Habit.jpg */; };
+		ABCF9E1212D780330062FFAF /* Abibal07 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9D9F12D780320062FFAF /* Abibal07 Distmap.jpg */; };
+		ABCF9E1312D780330062FFAF /* Abicon01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DA012D780320062FFAF /* Abicon01 Needles.jpg */; };
+		ABCF9E1412D780330062FFAF /* Abicon02 Bough.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DA112D780320062FFAF /* Abicon02 Bough.jpg */; };
+		ABCF9E1512D780330062FFAF /* Abicon03 Leaf scars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DA212D780320062FFAF /* Abicon03 Leaf scars.jpg */; };
+		ABCF9E1612D780330062FFAF /* Abicon04 Cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DA312D780320062FFAF /* Abicon04 Cones.jpg */; };
+		ABCF9E1712D780330062FFAF /* Abicon05 Male cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DA412D780320062FFAF /* Abicon05 Male cones.jpg */; };
+		ABCF9E1812D780330062FFAF /* Abicon06 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DA512D780320062FFAF /* Abicon06 Bark.jpg */; };
+		ABCF9E1912D780330062FFAF /* Abicon07 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DA612D780320062FFAF /* Abicon07 Habit.jpg */; };
+		ABCF9E1A12D780330062FFAF /* Juncom01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DA712D780320062FFAF /* Juncom01 Needles.jpg */; };
+		ABCF9E1B12D780330062FFAF /* Juncom02 Male cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DA812D780320062FFAF /* Juncom02 Male cones.jpg */; };
+		ABCF9E1C12D780330062FFAF /* Juncom03 Branch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DA912D780320062FFAF /* Juncom03 Branch.jpg */; };
+		ABCF9E1D12D780330062FFAF /* Juncom04 Cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DAA12D780320062FFAF /* Juncom04 Cones.jpg */; };
+		ABCF9E1E12D780330062FFAF /* Juncom05 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DAB12D780320062FFAF /* Juncom05 Habit.jpg */; };
+		ABCF9E1F12D780330062FFAF /* Juncom06 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DAC12D780320062FFAF /* Juncom06 Distmap.jpg */; };
+		ABCF9E2012D780330062FFAF /* Junhor01 Scale leaves.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DAD12D780320062FFAF /* Junhor01 Scale leaves.jpg */; };
+		ABCF9E2112D780330062FFAF /* Junhor02 Branch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DAE12D780320062FFAF /* Junhor02 Branch.jpg */; };
+		ABCF9E2212D780330062FFAF /* Junhor03 Branch withcones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DAF12D780320062FFAF /* Junhor03 Branch withcones.jpg */; };
+		ABCF9E2312D780330062FFAF /* Junhor04 Femcones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DB012D780320062FFAF /* Junhor04 Femcones.jpg */; };
+		ABCF9E2412D780330062FFAF /* Junhor05 Malcones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DB112D780320062FFAF /* Junhor05 Malcones.jpg */; };
+		ABCF9E2512D780330062FFAF /* Junhor06 Sprawl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DB212D780320062FFAF /* Junhor06 Sprawl.jpg */; };
+		ABCF9E2612D780330062FFAF /* Junhor07 Compact.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DB312D780320062FFAF /* Junhor07 Compact.jpg */; };
+		ABCF9E2712D780330062FFAF /* Junhor08 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DB412D780320062FFAF /* Junhor08 Distmap.jpg */; };
+		ABCF9E2812D780330062FFAF /* Junvir01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DB512D780320062FFAF /* Junvir01 Needles.jpg */; };
+		ABCF9E2912D780330062FFAF /* Junvir02 Branch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DB612D780320062FFAF /* Junvir02 Branch.jpg */; };
+		ABCF9E2A12D780330062FFAF /* Junvir03 Twig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DB712D780320062FFAF /* Junvir03 Twig.jpg */; };
+		ABCF9E2B12D780330062FFAF /* Junvir04 Female cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DB812D780320062FFAF /* Junvir04 Female cones.jpg */; };
+		ABCF9E2C12D780330062FFAF /* Junvir05 Male cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DB912D780320062FFAF /* Junvir05 Male cones.jpg */; };
+		ABCF9E2D12D780330062FFAF /* Junvir06 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DBA12D780320062FFAF /* Junvir06 Bark.jpg */; };
+		ABCF9E2E12D780330062FFAF /* Junvir07 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DBB12D780330062FFAF /* Junvir07 Habit.jpg */; };
+		ABCF9E2F12D780330062FFAF /* Junvir08 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DBC12D780330062FFAF /* Junvir08 Distmap.jpg */; };
+		ABCF9E3012D780330062FFAF /* Lardec01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DBD12D780330062FFAF /* Lardec01 Needles.jpg */; };
+		ABCF9E3112D780330062FFAF /* Lardec02 Branch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DBE12D780330062FFAF /* Lardec02 Branch.jpg */; };
+		ABCF9E3212D780330062FFAF /* Lardec03 Branch wCones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DBF12D780330062FFAF /* Lardec03 Branch wCones.jpg */; };
+		ABCF9E3312D780330062FFAF /* Lardec04 Cone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DC012D780330062FFAF /* Lardec04 Cone.jpg */; };
+		ABCF9E3412D780330062FFAF /* Lardec05 Winter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DC112D780330062FFAF /* Lardec05 Winter.jpg */; };
+		ABCF9E3512D780330062FFAF /* Lardec06 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DC212D780330062FFAF /* Lardec06 Bark.jpg */; };
+		ABCF9E3612D780330062FFAF /* Lardec07 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DC312D780330062FFAF /* Lardec07 Habit.jpg */; };
+		ABCF9E3712D780330062FFAF /* Larlar01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DC412D780330062FFAF /* Larlar01 Needles.jpg */; };
+		ABCF9E3812D780330062FFAF /* Larlar02 Branch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DC512D780330062FFAF /* Larlar02 Branch.jpg */; };
+		ABCF9E3912D780330062FFAF /* Larlar03 Cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DC612D780330062FFAF /* Larlar03 Cones.jpg */; };
+		ABCF9E3A12D780330062FFAF /* Larlar04 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DC712D780330062FFAF /* Larlar04 Bark.jpg */; };
+		ABCF9E3B12D780330062FFAF /* Larlar05 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DC812D780330062FFAF /* Larlar05 Habit.jpg */; };
+		ABCF9E3C12D780330062FFAF /* Larlar06 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DC912D780330062FFAF /* Larlar06 Distmap.jpg */; };
+		ABCF9E3D12D780330062FFAF /* Photo credits - P menziesii.txt in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DCA12D780330062FFAF /* Photo credits - P menziesii.txt */; };
+		ABCF9E3E12D780330062FFAF /* Picabi01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DCB12D780330062FFAF /* Picabi01 Needles.jpg */; };
+		ABCF9E3F12D780330062FFAF /* Picabi03 Developing cone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DCC12D780330062FFAF /* Picabi03 Developing cone.jpg */; };
+		ABCF9E4012D780330062FFAF /* Picabi04 Cones on tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DCD12D780330062FFAF /* Picabi04 Cones on tree.jpg */; };
+		ABCF9E4112D780330062FFAF /* Picabi05 Drooping branchlets.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DCE12D780330062FFAF /* Picabi05 Drooping branchlets.jpg */; };
+		ABCF9E4212D780330062FFAF /* Picabi06 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DCF12D780330062FFAF /* Picabi06 Bark.jpg */; };
+		ABCF9E4312D780330062FFAF /* Picabi07 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DD012D780330062FFAF /* Picabi07 Habit.jpg */; };
+		ABCF9E4412D780330062FFAF /* Picgla01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DD112D780330062FFAF /* Picgla01 Needles.jpg */; };
+		ABCF9E4512D780330062FFAF /* Picgla02 Branch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DD212D780330062FFAF /* Picgla02 Branch.jpg */; };
+		ABCF9E4612D780330062FFAF /* Picgla03 Cone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DD312D780330062FFAF /* Picgla03 Cone.jpg */; };
+		ABCF9E4712D780330062FFAF /* Picgla04 Seeds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DD412D780330062FFAF /* Picgla04 Seeds.jpg */; };
+		ABCF9E4812D780330062FFAF /* Picgla05 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DD512D780330062FFAF /* Picgla05 Bark.jpg */; };
+		ABCF9E4912D780330062FFAF /* Picgla06 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DD612D780330062FFAF /* Picgla06 Habit.jpg */; };
+		ABCF9E4A12D780330062FFAF /* Picgla07 Habit2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DD712D780330062FFAF /* Picgla07 Habit2.jpg */; };
+		ABCF9E4B12D780330062FFAF /* Picgla08 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DD812D780330062FFAF /* Picgla08 Distmap.jpg */; };
+		ABCF9E4C12D780330062FFAF /* Picmar01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DD912D780330062FFAF /* Picmar01 Needles.jpg */; };
+		ABCF9E4D12D780330062FFAF /* Picmar02 Bough.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DDA12D780330062FFAF /* Picmar02 Bough.jpg */; };
+		ABCF9E4E12D780330062FFAF /* Picmar03 Cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DDB12D780330062FFAF /* Picmar03 Cones.jpg */; };
+		ABCF9E4F12D780330062FFAF /* Picmar04 Twig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DDC12D780330062FFAF /* Picmar04 Twig.jpg */; };
+		ABCF9E5012D780330062FFAF /* Picmar05 Twig2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DDD12D780330062FFAF /* Picmar05 Twig2.jpg */; };
+		ABCF9E5112D780330062FFAF /* Picmar06 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DDE12D780330062FFAF /* Picmar06 Bark.jpg */; };
+		ABCF9E5212D780330062FFAF /* Picmar07 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DDF12D780330062FFAF /* Picmar07 Habit.jpg */; };
+		ABCF9E5312D780330062FFAF /* Picmar08 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DE012D780330062FFAF /* Picmar08 Distmap.jpg */; };
+		ABCF9E5412D780330062FFAF /* Picpun01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DE112D780330062FFAF /* Picpun01 Needles.jpg */; };
+		ABCF9E5512D780330062FFAF /* Picpun02 Branch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DE212D780330062FFAF /* Picpun02 Branch.jpg */; };
+		ABCF9E5612D780330062FFAF /* Picpun03 Cone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DE312D780330062FFAF /* Picpun03 Cone.jpg */; };
+		ABCF9E5712D780330062FFAF /* Picpun04 Twig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DE412D780330062FFAF /* Picpun04 Twig.jpg */; };
+		ABCF9E5812D780330062FFAF /* Picpun05 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DE512D780330062FFAF /* Picpun05 Bark.jpg */; };
+		ABCF9E5912D780330062FFAF /* Picpun06 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DE612D780330062FFAF /* Picpun06 Habit.jpg */; };
+		ABCF9E5A12D780330062FFAF /* Pinban01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DE712D780330062FFAF /* Pinban01 Needles.jpg */; };
+		ABCF9E5B12D780330062FFAF /* Pinban02 Twig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DE812D780330062FFAF /* Pinban02 Twig.jpg */; };
+		ABCF9E5C12D780330062FFAF /* Pinban03 Conesc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DE912D780330062FFAF /* Pinban03 Conesc.jpg */; };
+		ABCF9E5D12D780330062FFAF /* Pinban04 Coneso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DEA12D780330062FFAF /* Pinban04 Coneso.jpg */; };
+		ABCF9E5E12D780330062FFAF /* Pinban05 Male.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DEB12D780330062FFAF /* Pinban05 Male.jpg */; };
+		ABCF9E5F12D780330062FFAF /* Pinban06 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DEC12D780330062FFAF /* Pinban06 Bark.jpg */; };
+		ABCF9E6012D780330062FFAF /* Pinban07 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DED12D780330062FFAF /* Pinban07 Habit.jpg */; };
+		ABCF9E6112D780330062FFAF /* Pinban08 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DEE12D780330062FFAF /* Pinban08 Distmap.jpg */; };
+		ABCF9E6212D780330062FFAF /* Pinnig01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DEF12D780330062FFAF /* Pinnig01 Needles.jpg */; };
+		ABCF9E6312D780330062FFAF /* Pinnig02 Bough.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DF012D780330062FFAF /* Pinnig02 Bough.jpg */; };
+		ABCF9E6412D780330062FFAF /* Pinnig03 Cone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DF112D780330062FFAF /* Pinnig03 Cone.jpg */; };
+		ABCF9E6512D780330062FFAF /* Pinnig04 Twig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DF212D780330062FFAF /* Pinnig04 Twig.jpg */; };
+		ABCF9E6612D780330062FFAF /* Pinnig05 Buds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DF312D780330062FFAF /* Pinnig05 Buds.jpg */; };
+		ABCF9E6712D780330062FFAF /* Pinnig06 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DF412D780330062FFAF /* Pinnig06 Bark.jpg */; };
+		ABCF9E6812D780330062FFAF /* Pinnig07 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DF512D780330062FFAF /* Pinnig07 Habit.jpg */; };
+		ABCF9E6912D780330062FFAF /* Pinres01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DF612D780330062FFAF /* Pinres01 Needles.jpg */; };
+		ABCF9E6A12D780330062FFAF /* Pinres03 Mcones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DF712D780330062FFAF /* Pinres03 Mcones.jpg */; };
+		ABCF9E6B12D780330062FFAF /* Pinres04 Fcone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DF812D780330062FFAF /* Pinres04 Fcone.jpg */; };
+		ABCF9E6C12D780330062FFAF /* Pinres05 Twig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DF912D780330062FFAF /* Pinres05 Twig.jpg */; };
+		ABCF9E6D12D780330062FFAF /* Pinres07 Bark2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DFA12D780330062FFAF /* Pinres07 Bark2.jpg */; };
+		ABCF9E6E12D780330062FFAF /* Pinres08 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DFB12D780330062FFAF /* Pinres08 Habit.jpg */; };
+		ABCF9E6F12D780330062FFAF /* Pinres09 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DFC12D780330062FFAF /* Pinres09 Distmap.jpg */; };
+		ABCF9E7012D780330062FFAF /* Pinstr01 Needles1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DFD12D780330062FFAF /* Pinstr01 Needles1.jpg */; };
+		ABCF9E7112D780330062FFAF /* Pinstr02 Needles2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DFE12D780330062FFAF /* Pinstr02 Needles2.jpg */; };
+		ABCF9E7212D780330062FFAF /* Pinstr03 Bough.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9DFF12D780330062FFAF /* Pinstr03 Bough.jpg */; };
+		ABCF9E7312D780330062FFAF /* Pinstr04 Fcone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0012D780330062FFAF /* Pinstr04 Fcone.jpg */; };
+		ABCF9E7412D780330062FFAF /* Pinstr05 Mcone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0112D780330062FFAF /* Pinstr05 Mcone.jpg */; };
+		ABCF9E7512D780330062FFAF /* Pinstr08 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0212D780330062FFAF /* Pinstr08 Distmap.jpg */; };
+		ABCF9E7612D780330062FFAF /* Pinsyl09 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0312D780330062FFAF /* Pinsyl09 Distmap.jpg */; };
+		ABCF9E7712D780330062FFAF /* Psemen01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0412D780330062FFAF /* Psemen01 Needles.jpg */; };
+		ABCF9E7812D780330062FFAF /* Psemen02 Branch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0512D780330062FFAF /* Psemen02 Branch.jpg */; };
+		ABCF9E7912D780330062FFAF /* Psemen03 Cone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0612D780330062FFAF /* Psemen03 Cone.jpg */; };
+		ABCF9E7A12D780330062FFAF /* Taxcan01 Leaves.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0712D780330062FFAF /* Taxcan01 Leaves.jpg */; };
+		ABCF9E7B12D780330062FFAF /* Taxcan02 Cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0812D780330062FFAF /* Taxcan02 Cones.jpg */; };
+		ABCF9E7C12D780330062FFAF /* Taxcan03 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0912D780330062FFAF /* Taxcan03 Bark.jpg */; };
+		ABCF9E7D12D780330062FFAF /* Taxcan04 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0A12D780330062FFAF /* Taxcan04 Habit.jpg */; };
+		ABCF9E7E12D780330062FFAF /* Taxcan05 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0B12D780330062FFAF /* Taxcan05 Distmap.jpg */; };
+		ABCF9EAC12D7A2AB0062FFAF /* ImageNotAvailable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9EAB12D7A2AB0062FFAF /* ImageNotAvailable.jpg */; };
 		ABD22C2E125511F10018A3E8 /* KeyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22C2D125511F10018A3E8 /* KeyNode.m */; };
 		ABD22DAC12552B4A0018A3E8 /* PlantDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DAA12552B4A0018A3E8 /* PlantDataViewController.m */; };
 		ABD22DB212552B630018A3E8 /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DB112552B630018A3E8 /* Plant.m */; };
@@ -73,13 +182,6 @@
 		AB6244D212D686FC000EAB07 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		AB62451F12D68D09000EAB07 /* KeyNodeOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyNodeOption.h; sourceTree = "<group>"; };
 		AB62452012D68D09000EAB07 /* KeyNodeOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNodeOption.m; sourceTree = "<group>"; };
-		AB6245A512D7745E000EAB07 /* Abibal01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal01 Needles.jpg"; sourceTree = "<group>"; };
-		AB6245A612D7745E000EAB07 /* Abibal02 Bough.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal02 Bough.jpg"; sourceTree = "<group>"; };
-		AB6245A712D7745E000EAB07 /* Abibal03 Upright cone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal03 Upright cone.jpg"; sourceTree = "<group>"; };
-		AB6245A812D7745E000EAB07 /* Abibal04 Male cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal04 Male cones.jpg"; sourceTree = "<group>"; };
-		AB6245A912D7745F000EAB07 /* Abibal05 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal05 Bark.jpg"; sourceTree = "<group>"; };
-		AB6245AA12D7745F000EAB07 /* Abibal06 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal06 Habit.jpg"; sourceTree = "<group>"; };
-		AB6245AB12D7745F000EAB07 /* Abibal07 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal07 Distmap.jpg"; sourceTree = "<group>"; };
 		AB6245C712D77736000EAB07 /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad.png"; sourceTree = "<group>"; };
 		AB6245C812D77736000EAB07 /* 189-plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "189-plant.png"; sourceTree = "<group>"; };
 		AB6245C912D77736000EAB07 /* 30-key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "30-key.png"; sourceTree = "<group>"; };
@@ -106,6 +208,122 @@
 		AB9BF95C12256B4C0028D6AC /* notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
 		ABAB8FB112D27BCC0095BDCE /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		ABAB8FB212D27BCC0095BDCE /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		ABCF9D9912D780320062FFAF /* Abibal01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9D9A12D780320062FFAF /* Abibal02 Bough.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal02 Bough.jpg"; sourceTree = "<group>"; };
+		ABCF9D9B12D780320062FFAF /* Abibal03 Upright cone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal03 Upright cone.jpg"; sourceTree = "<group>"; };
+		ABCF9D9C12D780320062FFAF /* Abibal04 Male cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal04 Male cones.jpg"; sourceTree = "<group>"; };
+		ABCF9D9D12D780320062FFAF /* Abibal05 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal05 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9D9E12D780320062FFAF /* Abibal06 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal06 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9D9F12D780320062FFAF /* Abibal07 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal07 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9DA012D780320062FFAF /* Abicon01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abicon01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DA112D780320062FFAF /* Abicon02 Bough.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abicon02 Bough.jpg"; sourceTree = "<group>"; };
+		ABCF9DA212D780320062FFAF /* Abicon03 Leaf scars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abicon03 Leaf scars.jpg"; sourceTree = "<group>"; };
+		ABCF9DA312D780320062FFAF /* Abicon04 Cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abicon04 Cones.jpg"; sourceTree = "<group>"; };
+		ABCF9DA412D780320062FFAF /* Abicon05 Male cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abicon05 Male cones.jpg"; sourceTree = "<group>"; };
+		ABCF9DA512D780320062FFAF /* Abicon06 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abicon06 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9DA612D780320062FFAF /* Abicon07 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abicon07 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DA712D780320062FFAF /* Juncom01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Juncom01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DA812D780320062FFAF /* Juncom02 Male cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Juncom02 Male cones.jpg"; sourceTree = "<group>"; };
+		ABCF9DA912D780320062FFAF /* Juncom03 Branch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Juncom03 Branch.jpg"; sourceTree = "<group>"; };
+		ABCF9DAA12D780320062FFAF /* Juncom04 Cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Juncom04 Cones.jpg"; sourceTree = "<group>"; };
+		ABCF9DAB12D780320062FFAF /* Juncom05 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Juncom05 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DAC12D780320062FFAF /* Juncom06 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Juncom06 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9DAD12D780320062FFAF /* Junhor01 Scale leaves.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junhor01 Scale leaves.jpg"; sourceTree = "<group>"; };
+		ABCF9DAE12D780320062FFAF /* Junhor02 Branch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junhor02 Branch.jpg"; sourceTree = "<group>"; };
+		ABCF9DAF12D780320062FFAF /* Junhor03 Branch withcones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junhor03 Branch withcones.jpg"; sourceTree = "<group>"; };
+		ABCF9DB012D780320062FFAF /* Junhor04 Femcones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junhor04 Femcones.jpg"; sourceTree = "<group>"; };
+		ABCF9DB112D780320062FFAF /* Junhor05 Malcones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junhor05 Malcones.jpg"; sourceTree = "<group>"; };
+		ABCF9DB212D780320062FFAF /* Junhor06 Sprawl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junhor06 Sprawl.jpg"; sourceTree = "<group>"; };
+		ABCF9DB312D780320062FFAF /* Junhor07 Compact.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junhor07 Compact.jpg"; sourceTree = "<group>"; };
+		ABCF9DB412D780320062FFAF /* Junhor08 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junhor08 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9DB512D780320062FFAF /* Junvir01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junvir01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DB612D780320062FFAF /* Junvir02 Branch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junvir02 Branch.jpg"; sourceTree = "<group>"; };
+		ABCF9DB712D780320062FFAF /* Junvir03 Twig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junvir03 Twig.jpg"; sourceTree = "<group>"; };
+		ABCF9DB812D780320062FFAF /* Junvir04 Female cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junvir04 Female cones.jpg"; sourceTree = "<group>"; };
+		ABCF9DB912D780320062FFAF /* Junvir05 Male cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junvir05 Male cones.jpg"; sourceTree = "<group>"; };
+		ABCF9DBA12D780320062FFAF /* Junvir06 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junvir06 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9DBB12D780330062FFAF /* Junvir07 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junvir07 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DBC12D780330062FFAF /* Junvir08 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Junvir08 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9DBD12D780330062FFAF /* Lardec01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lardec01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DBE12D780330062FFAF /* Lardec02 Branch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lardec02 Branch.jpg"; sourceTree = "<group>"; };
+		ABCF9DBF12D780330062FFAF /* Lardec03 Branch wCones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lardec03 Branch wCones.jpg"; sourceTree = "<group>"; };
+		ABCF9DC012D780330062FFAF /* Lardec04 Cone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lardec04 Cone.jpg"; sourceTree = "<group>"; };
+		ABCF9DC112D780330062FFAF /* Lardec05 Winter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lardec05 Winter.jpg"; sourceTree = "<group>"; };
+		ABCF9DC212D780330062FFAF /* Lardec06 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lardec06 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9DC312D780330062FFAF /* Lardec07 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lardec07 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DC412D780330062FFAF /* Larlar01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Larlar01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DC512D780330062FFAF /* Larlar02 Branch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Larlar02 Branch.jpg"; sourceTree = "<group>"; };
+		ABCF9DC612D780330062FFAF /* Larlar03 Cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Larlar03 Cones.jpg"; sourceTree = "<group>"; };
+		ABCF9DC712D780330062FFAF /* Larlar04 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Larlar04 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9DC812D780330062FFAF /* Larlar05 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Larlar05 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DC912D780330062FFAF /* Larlar06 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Larlar06 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9DCA12D780330062FFAF /* Photo credits - P menziesii.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Photo credits - P menziesii.txt"; sourceTree = "<group>"; };
+		ABCF9DCB12D780330062FFAF /* Picabi01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picabi01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DCC12D780330062FFAF /* Picabi03 Developing cone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picabi03 Developing cone.jpg"; sourceTree = "<group>"; };
+		ABCF9DCD12D780330062FFAF /* Picabi04 Cones on tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picabi04 Cones on tree.jpg"; sourceTree = "<group>"; };
+		ABCF9DCE12D780330062FFAF /* Picabi05 Drooping branchlets.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picabi05 Drooping branchlets.jpg"; sourceTree = "<group>"; };
+		ABCF9DCF12D780330062FFAF /* Picabi06 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picabi06 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9DD012D780330062FFAF /* Picabi07 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picabi07 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DD112D780330062FFAF /* Picgla01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picgla01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DD212D780330062FFAF /* Picgla02 Branch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picgla02 Branch.jpg"; sourceTree = "<group>"; };
+		ABCF9DD312D780330062FFAF /* Picgla03 Cone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picgla03 Cone.jpg"; sourceTree = "<group>"; };
+		ABCF9DD412D780330062FFAF /* Picgla04 Seeds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picgla04 Seeds.jpg"; sourceTree = "<group>"; };
+		ABCF9DD512D780330062FFAF /* Picgla05 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picgla05 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9DD612D780330062FFAF /* Picgla06 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picgla06 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DD712D780330062FFAF /* Picgla07 Habit2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picgla07 Habit2.jpg"; sourceTree = "<group>"; };
+		ABCF9DD812D780330062FFAF /* Picgla08 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picgla08 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9DD912D780330062FFAF /* Picmar01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picmar01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DDA12D780330062FFAF /* Picmar02 Bough.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picmar02 Bough.jpg"; sourceTree = "<group>"; };
+		ABCF9DDB12D780330062FFAF /* Picmar03 Cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picmar03 Cones.jpg"; sourceTree = "<group>"; };
+		ABCF9DDC12D780330062FFAF /* Picmar04 Twig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picmar04 Twig.jpg"; sourceTree = "<group>"; };
+		ABCF9DDD12D780330062FFAF /* Picmar05 Twig2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picmar05 Twig2.jpg"; sourceTree = "<group>"; };
+		ABCF9DDE12D780330062FFAF /* Picmar06 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picmar06 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9DDF12D780330062FFAF /* Picmar07 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picmar07 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DE012D780330062FFAF /* Picmar08 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picmar08 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9DE112D780330062FFAF /* Picpun01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picpun01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DE212D780330062FFAF /* Picpun02 Branch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picpun02 Branch.jpg"; sourceTree = "<group>"; };
+		ABCF9DE312D780330062FFAF /* Picpun03 Cone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picpun03 Cone.jpg"; sourceTree = "<group>"; };
+		ABCF9DE412D780330062FFAF /* Picpun04 Twig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picpun04 Twig.jpg"; sourceTree = "<group>"; };
+		ABCF9DE512D780330062FFAF /* Picpun05 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picpun05 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9DE612D780330062FFAF /* Picpun06 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picpun06 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DE712D780330062FFAF /* Pinban01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinban01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DE812D780330062FFAF /* Pinban02 Twig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinban02 Twig.jpg"; sourceTree = "<group>"; };
+		ABCF9DE912D780330062FFAF /* Pinban03 Conesc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinban03 Conesc.jpg"; sourceTree = "<group>"; };
+		ABCF9DEA12D780330062FFAF /* Pinban04 Coneso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinban04 Coneso.jpg"; sourceTree = "<group>"; };
+		ABCF9DEB12D780330062FFAF /* Pinban05 Male.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinban05 Male.jpg"; sourceTree = "<group>"; };
+		ABCF9DEC12D780330062FFAF /* Pinban06 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinban06 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9DED12D780330062FFAF /* Pinban07 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinban07 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DEE12D780330062FFAF /* Pinban08 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinban08 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9DEF12D780330062FFAF /* Pinnig01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinnig01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DF012D780330062FFAF /* Pinnig02 Bough.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinnig02 Bough.jpg"; sourceTree = "<group>"; };
+		ABCF9DF112D780330062FFAF /* Pinnig03 Cone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinnig03 Cone.jpg"; sourceTree = "<group>"; };
+		ABCF9DF212D780330062FFAF /* Pinnig04 Twig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinnig04 Twig.jpg"; sourceTree = "<group>"; };
+		ABCF9DF312D780330062FFAF /* Pinnig05 Buds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinnig05 Buds.jpg"; sourceTree = "<group>"; };
+		ABCF9DF412D780330062FFAF /* Pinnig06 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinnig06 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9DF512D780330062FFAF /* Pinnig07 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinnig07 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DF612D780330062FFAF /* Pinres01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinres01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9DF712D780330062FFAF /* Pinres03 Mcones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinres03 Mcones.jpg"; sourceTree = "<group>"; };
+		ABCF9DF812D780330062FFAF /* Pinres04 Fcone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinres04 Fcone.jpg"; sourceTree = "<group>"; };
+		ABCF9DF912D780330062FFAF /* Pinres05 Twig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinres05 Twig.jpg"; sourceTree = "<group>"; };
+		ABCF9DFA12D780330062FFAF /* Pinres07 Bark2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinres07 Bark2.jpg"; sourceTree = "<group>"; };
+		ABCF9DFB12D780330062FFAF /* Pinres08 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinres08 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9DFC12D780330062FFAF /* Pinres09 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinres09 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9DFD12D780330062FFAF /* Pinstr01 Needles1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinstr01 Needles1.jpg"; sourceTree = "<group>"; };
+		ABCF9DFE12D780330062FFAF /* Pinstr02 Needles2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinstr02 Needles2.jpg"; sourceTree = "<group>"; };
+		ABCF9DFF12D780330062FFAF /* Pinstr03 Bough.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinstr03 Bough.jpg"; sourceTree = "<group>"; };
+		ABCF9E0012D780330062FFAF /* Pinstr04 Fcone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinstr04 Fcone.jpg"; sourceTree = "<group>"; };
+		ABCF9E0112D780330062FFAF /* Pinstr05 Mcone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinstr05 Mcone.jpg"; sourceTree = "<group>"; };
+		ABCF9E0212D780330062FFAF /* Pinstr08 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinstr08 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9E0312D780330062FFAF /* Pinsyl09 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pinsyl09 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9E0412D780330062FFAF /* Psemen01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Psemen01 Needles.jpg"; sourceTree = "<group>"; };
+		ABCF9E0512D780330062FFAF /* Psemen02 Branch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Psemen02 Branch.jpg"; sourceTree = "<group>"; };
+		ABCF9E0612D780330062FFAF /* Psemen03 Cone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Psemen03 Cone.jpg"; sourceTree = "<group>"; };
+		ABCF9E0712D780330062FFAF /* Taxcan01 Leaves.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taxcan01 Leaves.jpg"; sourceTree = "<group>"; };
+		ABCF9E0812D780330062FFAF /* Taxcan02 Cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taxcan02 Cones.jpg"; sourceTree = "<group>"; };
+		ABCF9E0912D780330062FFAF /* Taxcan03 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taxcan03 Bark.jpg"; sourceTree = "<group>"; };
+		ABCF9E0A12D780330062FFAF /* Taxcan04 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taxcan04 Habit.jpg"; sourceTree = "<group>"; };
+		ABCF9E0B12D780330062FFAF /* Taxcan05 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taxcan05 Distmap.jpg"; sourceTree = "<group>"; };
+		ABCF9EAB12D7A2AB0062FFAF /* ImageNotAvailable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ImageNotAvailable.jpg; sourceTree = "<group>"; };
 		ABD22C2912550E580018A3E8 /* PlantKeyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantKeyType.h; sourceTree = "<group>"; };
 		ABD22C2D125511F10018A3E8 /* KeyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNode.m; sourceTree = "<group>"; };
 		ABD22DA912552B4A0018A3E8 /* PlantDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantDataViewController.h; sourceTree = "<group>"; };
@@ -201,6 +419,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ABCF9EAB12D7A2AB0062FFAF /* ImageNotAvailable.jpg */,
 				AB6244D212D686FC000EAB07 /* Default.png */,
 				AB6245C612D77736000EAB07 /* icons */,
 				ABCE86BC12133B380012C322 /* images */,
@@ -252,13 +471,121 @@
 		ABCE86BC12133B380012C322 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				AB6245A512D7745E000EAB07 /* Abibal01 Needles.jpg */,
-				AB6245A612D7745E000EAB07 /* Abibal02 Bough.jpg */,
-				AB6245A712D7745E000EAB07 /* Abibal03 Upright cone.jpg */,
-				AB6245A812D7745E000EAB07 /* Abibal04 Male cones.jpg */,
-				AB6245A912D7745F000EAB07 /* Abibal05 Bark.jpg */,
-				AB6245AA12D7745F000EAB07 /* Abibal06 Habit.jpg */,
-				AB6245AB12D7745F000EAB07 /* Abibal07 Distmap.jpg */,
+				ABCF9D9912D780320062FFAF /* Abibal01 Needles.jpg */,
+				ABCF9D9A12D780320062FFAF /* Abibal02 Bough.jpg */,
+				ABCF9D9B12D780320062FFAF /* Abibal03 Upright cone.jpg */,
+				ABCF9D9C12D780320062FFAF /* Abibal04 Male cones.jpg */,
+				ABCF9D9D12D780320062FFAF /* Abibal05 Bark.jpg */,
+				ABCF9D9E12D780320062FFAF /* Abibal06 Habit.jpg */,
+				ABCF9D9F12D780320062FFAF /* Abibal07 Distmap.jpg */,
+				ABCF9DA012D780320062FFAF /* Abicon01 Needles.jpg */,
+				ABCF9DA112D780320062FFAF /* Abicon02 Bough.jpg */,
+				ABCF9DA212D780320062FFAF /* Abicon03 Leaf scars.jpg */,
+				ABCF9DA312D780320062FFAF /* Abicon04 Cones.jpg */,
+				ABCF9DA412D780320062FFAF /* Abicon05 Male cones.jpg */,
+				ABCF9DA512D780320062FFAF /* Abicon06 Bark.jpg */,
+				ABCF9DA612D780320062FFAF /* Abicon07 Habit.jpg */,
+				ABCF9DA712D780320062FFAF /* Juncom01 Needles.jpg */,
+				ABCF9DA812D780320062FFAF /* Juncom02 Male cones.jpg */,
+				ABCF9DA912D780320062FFAF /* Juncom03 Branch.jpg */,
+				ABCF9DAA12D780320062FFAF /* Juncom04 Cones.jpg */,
+				ABCF9DAB12D780320062FFAF /* Juncom05 Habit.jpg */,
+				ABCF9DAC12D780320062FFAF /* Juncom06 Distmap.jpg */,
+				ABCF9DAD12D780320062FFAF /* Junhor01 Scale leaves.jpg */,
+				ABCF9DAE12D780320062FFAF /* Junhor02 Branch.jpg */,
+				ABCF9DAF12D780320062FFAF /* Junhor03 Branch withcones.jpg */,
+				ABCF9DB012D780320062FFAF /* Junhor04 Femcones.jpg */,
+				ABCF9DB112D780320062FFAF /* Junhor05 Malcones.jpg */,
+				ABCF9DB212D780320062FFAF /* Junhor06 Sprawl.jpg */,
+				ABCF9DB312D780320062FFAF /* Junhor07 Compact.jpg */,
+				ABCF9DB412D780320062FFAF /* Junhor08 Distmap.jpg */,
+				ABCF9DB512D780320062FFAF /* Junvir01 Needles.jpg */,
+				ABCF9DB612D780320062FFAF /* Junvir02 Branch.jpg */,
+				ABCF9DB712D780320062FFAF /* Junvir03 Twig.jpg */,
+				ABCF9DB812D780320062FFAF /* Junvir04 Female cones.jpg */,
+				ABCF9DB912D780320062FFAF /* Junvir05 Male cones.jpg */,
+				ABCF9DBA12D780320062FFAF /* Junvir06 Bark.jpg */,
+				ABCF9DBB12D780330062FFAF /* Junvir07 Habit.jpg */,
+				ABCF9DBC12D780330062FFAF /* Junvir08 Distmap.jpg */,
+				ABCF9DBD12D780330062FFAF /* Lardec01 Needles.jpg */,
+				ABCF9DBE12D780330062FFAF /* Lardec02 Branch.jpg */,
+				ABCF9DBF12D780330062FFAF /* Lardec03 Branch wCones.jpg */,
+				ABCF9DC012D780330062FFAF /* Lardec04 Cone.jpg */,
+				ABCF9DC112D780330062FFAF /* Lardec05 Winter.jpg */,
+				ABCF9DC212D780330062FFAF /* Lardec06 Bark.jpg */,
+				ABCF9DC312D780330062FFAF /* Lardec07 Habit.jpg */,
+				ABCF9DC412D780330062FFAF /* Larlar01 Needles.jpg */,
+				ABCF9DC512D780330062FFAF /* Larlar02 Branch.jpg */,
+				ABCF9DC612D780330062FFAF /* Larlar03 Cones.jpg */,
+				ABCF9DC712D780330062FFAF /* Larlar04 Bark.jpg */,
+				ABCF9DC812D780330062FFAF /* Larlar05 Habit.jpg */,
+				ABCF9DC912D780330062FFAF /* Larlar06 Distmap.jpg */,
+				ABCF9DCA12D780330062FFAF /* Photo credits - P menziesii.txt */,
+				ABCF9DCB12D780330062FFAF /* Picabi01 Needles.jpg */,
+				ABCF9DCC12D780330062FFAF /* Picabi03 Developing cone.jpg */,
+				ABCF9DCD12D780330062FFAF /* Picabi04 Cones on tree.jpg */,
+				ABCF9DCE12D780330062FFAF /* Picabi05 Drooping branchlets.jpg */,
+				ABCF9DCF12D780330062FFAF /* Picabi06 Bark.jpg */,
+				ABCF9DD012D780330062FFAF /* Picabi07 Habit.jpg */,
+				ABCF9DD112D780330062FFAF /* Picgla01 Needles.jpg */,
+				ABCF9DD212D780330062FFAF /* Picgla02 Branch.jpg */,
+				ABCF9DD312D780330062FFAF /* Picgla03 Cone.jpg */,
+				ABCF9DD412D780330062FFAF /* Picgla04 Seeds.jpg */,
+				ABCF9DD512D780330062FFAF /* Picgla05 Bark.jpg */,
+				ABCF9DD612D780330062FFAF /* Picgla06 Habit.jpg */,
+				ABCF9DD712D780330062FFAF /* Picgla07 Habit2.jpg */,
+				ABCF9DD812D780330062FFAF /* Picgla08 Distmap.jpg */,
+				ABCF9DD912D780330062FFAF /* Picmar01 Needles.jpg */,
+				ABCF9DDA12D780330062FFAF /* Picmar02 Bough.jpg */,
+				ABCF9DDB12D780330062FFAF /* Picmar03 Cones.jpg */,
+				ABCF9DDC12D780330062FFAF /* Picmar04 Twig.jpg */,
+				ABCF9DDD12D780330062FFAF /* Picmar05 Twig2.jpg */,
+				ABCF9DDE12D780330062FFAF /* Picmar06 Bark.jpg */,
+				ABCF9DDF12D780330062FFAF /* Picmar07 Habit.jpg */,
+				ABCF9DE012D780330062FFAF /* Picmar08 Distmap.jpg */,
+				ABCF9DE112D780330062FFAF /* Picpun01 Needles.jpg */,
+				ABCF9DE212D780330062FFAF /* Picpun02 Branch.jpg */,
+				ABCF9DE312D780330062FFAF /* Picpun03 Cone.jpg */,
+				ABCF9DE412D780330062FFAF /* Picpun04 Twig.jpg */,
+				ABCF9DE512D780330062FFAF /* Picpun05 Bark.jpg */,
+				ABCF9DE612D780330062FFAF /* Picpun06 Habit.jpg */,
+				ABCF9DE712D780330062FFAF /* Pinban01 Needles.jpg */,
+				ABCF9DE812D780330062FFAF /* Pinban02 Twig.jpg */,
+				ABCF9DE912D780330062FFAF /* Pinban03 Conesc.jpg */,
+				ABCF9DEA12D780330062FFAF /* Pinban04 Coneso.jpg */,
+				ABCF9DEB12D780330062FFAF /* Pinban05 Male.jpg */,
+				ABCF9DEC12D780330062FFAF /* Pinban06 Bark.jpg */,
+				ABCF9DED12D780330062FFAF /* Pinban07 Habit.jpg */,
+				ABCF9DEE12D780330062FFAF /* Pinban08 Distmap.jpg */,
+				ABCF9DEF12D780330062FFAF /* Pinnig01 Needles.jpg */,
+				ABCF9DF012D780330062FFAF /* Pinnig02 Bough.jpg */,
+				ABCF9DF112D780330062FFAF /* Pinnig03 Cone.jpg */,
+				ABCF9DF212D780330062FFAF /* Pinnig04 Twig.jpg */,
+				ABCF9DF312D780330062FFAF /* Pinnig05 Buds.jpg */,
+				ABCF9DF412D780330062FFAF /* Pinnig06 Bark.jpg */,
+				ABCF9DF512D780330062FFAF /* Pinnig07 Habit.jpg */,
+				ABCF9DF612D780330062FFAF /* Pinres01 Needles.jpg */,
+				ABCF9DF712D780330062FFAF /* Pinres03 Mcones.jpg */,
+				ABCF9DF812D780330062FFAF /* Pinres04 Fcone.jpg */,
+				ABCF9DF912D780330062FFAF /* Pinres05 Twig.jpg */,
+				ABCF9DFA12D780330062FFAF /* Pinres07 Bark2.jpg */,
+				ABCF9DFB12D780330062FFAF /* Pinres08 Habit.jpg */,
+				ABCF9DFC12D780330062FFAF /* Pinres09 Distmap.jpg */,
+				ABCF9DFD12D780330062FFAF /* Pinstr01 Needles1.jpg */,
+				ABCF9DFE12D780330062FFAF /* Pinstr02 Needles2.jpg */,
+				ABCF9DFF12D780330062FFAF /* Pinstr03 Bough.jpg */,
+				ABCF9E0012D780330062FFAF /* Pinstr04 Fcone.jpg */,
+				ABCF9E0112D780330062FFAF /* Pinstr05 Mcone.jpg */,
+				ABCF9E0212D780330062FFAF /* Pinstr08 Distmap.jpg */,
+				ABCF9E0312D780330062FFAF /* Pinsyl09 Distmap.jpg */,
+				ABCF9E0412D780330062FFAF /* Psemen01 Needles.jpg */,
+				ABCF9E0512D780330062FFAF /* Psemen02 Branch.jpg */,
+				ABCF9E0612D780330062FFAF /* Psemen03 Cone.jpg */,
+				ABCF9E0712D780330062FFAF /* Taxcan01 Leaves.jpg */,
+				ABCF9E0812D780330062FFAF /* Taxcan02 Cones.jpg */,
+				ABCF9E0912D780330062FFAF /* Taxcan03 Bark.jpg */,
+				ABCF9E0A12D780330062FFAF /* Taxcan04 Habit.jpg */,
+				ABCF9E0B12D780330062FFAF /* Taxcan05 Distmap.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -316,13 +643,6 @@
 				AB9BF95D12256B4C0028D6AC /* notes in Resources */,
 				AB62445012D6714B000EAB07 /* attribution in Resources */,
 				AB6244D312D686FC000EAB07 /* Default.png in Resources */,
-				AB6245AC12D7745F000EAB07 /* Abibal01 Needles.jpg in Resources */,
-				AB6245AD12D7745F000EAB07 /* Abibal02 Bough.jpg in Resources */,
-				AB6245AE12D7745F000EAB07 /* Abibal03 Upright cone.jpg in Resources */,
-				AB6245AF12D7745F000EAB07 /* Abibal04 Male cones.jpg in Resources */,
-				AB6245B012D7745F000EAB07 /* Abibal05 Bark.jpg in Resources */,
-				AB6245B112D7745F000EAB07 /* Abibal06 Habit.jpg in Resources */,
-				AB6245B212D7745F000EAB07 /* Abibal07 Distmap.jpg in Resources */,
 				AB6245CD12D77736000EAB07 /* 179-notepad.png in Resources */,
 				AB6245CE12D77736000EAB07 /* 189-plant.png in Resources */,
 				AB6245CF12D77736000EAB07 /* 30-key.png in Resources */,
@@ -337,6 +657,122 @@
 				AB6245E012D77793000EAB07 /* PlantListViewController.xib in Resources */,
 				AB6245E112D77793000EAB07 /* RootMenuViewController.xib in Resources */,
 				AB6245E312D777C6000EAB07 /* GlossaryListViewController.xib in Resources */,
+				ABCF9E0C12D780330062FFAF /* Abibal01 Needles.jpg in Resources */,
+				ABCF9E0D12D780330062FFAF /* Abibal02 Bough.jpg in Resources */,
+				ABCF9E0E12D780330062FFAF /* Abibal03 Upright cone.jpg in Resources */,
+				ABCF9E0F12D780330062FFAF /* Abibal04 Male cones.jpg in Resources */,
+				ABCF9E1012D780330062FFAF /* Abibal05 Bark.jpg in Resources */,
+				ABCF9E1112D780330062FFAF /* Abibal06 Habit.jpg in Resources */,
+				ABCF9E1212D780330062FFAF /* Abibal07 Distmap.jpg in Resources */,
+				ABCF9E1312D780330062FFAF /* Abicon01 Needles.jpg in Resources */,
+				ABCF9E1412D780330062FFAF /* Abicon02 Bough.jpg in Resources */,
+				ABCF9E1512D780330062FFAF /* Abicon03 Leaf scars.jpg in Resources */,
+				ABCF9E1612D780330062FFAF /* Abicon04 Cones.jpg in Resources */,
+				ABCF9E1712D780330062FFAF /* Abicon05 Male cones.jpg in Resources */,
+				ABCF9E1812D780330062FFAF /* Abicon06 Bark.jpg in Resources */,
+				ABCF9E1912D780330062FFAF /* Abicon07 Habit.jpg in Resources */,
+				ABCF9E1A12D780330062FFAF /* Juncom01 Needles.jpg in Resources */,
+				ABCF9E1B12D780330062FFAF /* Juncom02 Male cones.jpg in Resources */,
+				ABCF9E1C12D780330062FFAF /* Juncom03 Branch.jpg in Resources */,
+				ABCF9E1D12D780330062FFAF /* Juncom04 Cones.jpg in Resources */,
+				ABCF9E1E12D780330062FFAF /* Juncom05 Habit.jpg in Resources */,
+				ABCF9E1F12D780330062FFAF /* Juncom06 Distmap.jpg in Resources */,
+				ABCF9E2012D780330062FFAF /* Junhor01 Scale leaves.jpg in Resources */,
+				ABCF9E2112D780330062FFAF /* Junhor02 Branch.jpg in Resources */,
+				ABCF9E2212D780330062FFAF /* Junhor03 Branch withcones.jpg in Resources */,
+				ABCF9E2312D780330062FFAF /* Junhor04 Femcones.jpg in Resources */,
+				ABCF9E2412D780330062FFAF /* Junhor05 Malcones.jpg in Resources */,
+				ABCF9E2512D780330062FFAF /* Junhor06 Sprawl.jpg in Resources */,
+				ABCF9E2612D780330062FFAF /* Junhor07 Compact.jpg in Resources */,
+				ABCF9E2712D780330062FFAF /* Junhor08 Distmap.jpg in Resources */,
+				ABCF9E2812D780330062FFAF /* Junvir01 Needles.jpg in Resources */,
+				ABCF9E2912D780330062FFAF /* Junvir02 Branch.jpg in Resources */,
+				ABCF9E2A12D780330062FFAF /* Junvir03 Twig.jpg in Resources */,
+				ABCF9E2B12D780330062FFAF /* Junvir04 Female cones.jpg in Resources */,
+				ABCF9E2C12D780330062FFAF /* Junvir05 Male cones.jpg in Resources */,
+				ABCF9E2D12D780330062FFAF /* Junvir06 Bark.jpg in Resources */,
+				ABCF9E2E12D780330062FFAF /* Junvir07 Habit.jpg in Resources */,
+				ABCF9E2F12D780330062FFAF /* Junvir08 Distmap.jpg in Resources */,
+				ABCF9E3012D780330062FFAF /* Lardec01 Needles.jpg in Resources */,
+				ABCF9E3112D780330062FFAF /* Lardec02 Branch.jpg in Resources */,
+				ABCF9E3212D780330062FFAF /* Lardec03 Branch wCones.jpg in Resources */,
+				ABCF9E3312D780330062FFAF /* Lardec04 Cone.jpg in Resources */,
+				ABCF9E3412D780330062FFAF /* Lardec05 Winter.jpg in Resources */,
+				ABCF9E3512D780330062FFAF /* Lardec06 Bark.jpg in Resources */,
+				ABCF9E3612D780330062FFAF /* Lardec07 Habit.jpg in Resources */,
+				ABCF9E3712D780330062FFAF /* Larlar01 Needles.jpg in Resources */,
+				ABCF9E3812D780330062FFAF /* Larlar02 Branch.jpg in Resources */,
+				ABCF9E3912D780330062FFAF /* Larlar03 Cones.jpg in Resources */,
+				ABCF9E3A12D780330062FFAF /* Larlar04 Bark.jpg in Resources */,
+				ABCF9E3B12D780330062FFAF /* Larlar05 Habit.jpg in Resources */,
+				ABCF9E3C12D780330062FFAF /* Larlar06 Distmap.jpg in Resources */,
+				ABCF9E3D12D780330062FFAF /* Photo credits - P menziesii.txt in Resources */,
+				ABCF9E3E12D780330062FFAF /* Picabi01 Needles.jpg in Resources */,
+				ABCF9E3F12D780330062FFAF /* Picabi03 Developing cone.jpg in Resources */,
+				ABCF9E4012D780330062FFAF /* Picabi04 Cones on tree.jpg in Resources */,
+				ABCF9E4112D780330062FFAF /* Picabi05 Drooping branchlets.jpg in Resources */,
+				ABCF9E4212D780330062FFAF /* Picabi06 Bark.jpg in Resources */,
+				ABCF9E4312D780330062FFAF /* Picabi07 Habit.jpg in Resources */,
+				ABCF9E4412D780330062FFAF /* Picgla01 Needles.jpg in Resources */,
+				ABCF9E4512D780330062FFAF /* Picgla02 Branch.jpg in Resources */,
+				ABCF9E4612D780330062FFAF /* Picgla03 Cone.jpg in Resources */,
+				ABCF9E4712D780330062FFAF /* Picgla04 Seeds.jpg in Resources */,
+				ABCF9E4812D780330062FFAF /* Picgla05 Bark.jpg in Resources */,
+				ABCF9E4912D780330062FFAF /* Picgla06 Habit.jpg in Resources */,
+				ABCF9E4A12D780330062FFAF /* Picgla07 Habit2.jpg in Resources */,
+				ABCF9E4B12D780330062FFAF /* Picgla08 Distmap.jpg in Resources */,
+				ABCF9E4C12D780330062FFAF /* Picmar01 Needles.jpg in Resources */,
+				ABCF9E4D12D780330062FFAF /* Picmar02 Bough.jpg in Resources */,
+				ABCF9E4E12D780330062FFAF /* Picmar03 Cones.jpg in Resources */,
+				ABCF9E4F12D780330062FFAF /* Picmar04 Twig.jpg in Resources */,
+				ABCF9E5012D780330062FFAF /* Picmar05 Twig2.jpg in Resources */,
+				ABCF9E5112D780330062FFAF /* Picmar06 Bark.jpg in Resources */,
+				ABCF9E5212D780330062FFAF /* Picmar07 Habit.jpg in Resources */,
+				ABCF9E5312D780330062FFAF /* Picmar08 Distmap.jpg in Resources */,
+				ABCF9E5412D780330062FFAF /* Picpun01 Needles.jpg in Resources */,
+				ABCF9E5512D780330062FFAF /* Picpun02 Branch.jpg in Resources */,
+				ABCF9E5612D780330062FFAF /* Picpun03 Cone.jpg in Resources */,
+				ABCF9E5712D780330062FFAF /* Picpun04 Twig.jpg in Resources */,
+				ABCF9E5812D780330062FFAF /* Picpun05 Bark.jpg in Resources */,
+				ABCF9E5912D780330062FFAF /* Picpun06 Habit.jpg in Resources */,
+				ABCF9E5A12D780330062FFAF /* Pinban01 Needles.jpg in Resources */,
+				ABCF9E5B12D780330062FFAF /* Pinban02 Twig.jpg in Resources */,
+				ABCF9E5C12D780330062FFAF /* Pinban03 Conesc.jpg in Resources */,
+				ABCF9E5D12D780330062FFAF /* Pinban04 Coneso.jpg in Resources */,
+				ABCF9E5E12D780330062FFAF /* Pinban05 Male.jpg in Resources */,
+				ABCF9E5F12D780330062FFAF /* Pinban06 Bark.jpg in Resources */,
+				ABCF9E6012D780330062FFAF /* Pinban07 Habit.jpg in Resources */,
+				ABCF9E6112D780330062FFAF /* Pinban08 Distmap.jpg in Resources */,
+				ABCF9E6212D780330062FFAF /* Pinnig01 Needles.jpg in Resources */,
+				ABCF9E6312D780330062FFAF /* Pinnig02 Bough.jpg in Resources */,
+				ABCF9E6412D780330062FFAF /* Pinnig03 Cone.jpg in Resources */,
+				ABCF9E6512D780330062FFAF /* Pinnig04 Twig.jpg in Resources */,
+				ABCF9E6612D780330062FFAF /* Pinnig05 Buds.jpg in Resources */,
+				ABCF9E6712D780330062FFAF /* Pinnig06 Bark.jpg in Resources */,
+				ABCF9E6812D780330062FFAF /* Pinnig07 Habit.jpg in Resources */,
+				ABCF9E6912D780330062FFAF /* Pinres01 Needles.jpg in Resources */,
+				ABCF9E6A12D780330062FFAF /* Pinres03 Mcones.jpg in Resources */,
+				ABCF9E6B12D780330062FFAF /* Pinres04 Fcone.jpg in Resources */,
+				ABCF9E6C12D780330062FFAF /* Pinres05 Twig.jpg in Resources */,
+				ABCF9E6D12D780330062FFAF /* Pinres07 Bark2.jpg in Resources */,
+				ABCF9E6E12D780330062FFAF /* Pinres08 Habit.jpg in Resources */,
+				ABCF9E6F12D780330062FFAF /* Pinres09 Distmap.jpg in Resources */,
+				ABCF9E7012D780330062FFAF /* Pinstr01 Needles1.jpg in Resources */,
+				ABCF9E7112D780330062FFAF /* Pinstr02 Needles2.jpg in Resources */,
+				ABCF9E7212D780330062FFAF /* Pinstr03 Bough.jpg in Resources */,
+				ABCF9E7312D780330062FFAF /* Pinstr04 Fcone.jpg in Resources */,
+				ABCF9E7412D780330062FFAF /* Pinstr05 Mcone.jpg in Resources */,
+				ABCF9E7512D780330062FFAF /* Pinstr08 Distmap.jpg in Resources */,
+				ABCF9E7612D780330062FFAF /* Pinsyl09 Distmap.jpg in Resources */,
+				ABCF9E7712D780330062FFAF /* Psemen01 Needles.jpg in Resources */,
+				ABCF9E7812D780330062FFAF /* Psemen02 Branch.jpg in Resources */,
+				ABCF9E7912D780330062FFAF /* Psemen03 Cone.jpg in Resources */,
+				ABCF9E7A12D780330062FFAF /* Taxcan01 Leaves.jpg in Resources */,
+				ABCF9E7B12D780330062FFAF /* Taxcan02 Cones.jpg in Resources */,
+				ABCF9E7C12D780330062FFAF /* Taxcan03 Bark.jpg in Resources */,
+				ABCF9E7D12D780330062FFAF /* Taxcan04 Habit.jpg in Resources */,
+				ABCF9E7E12D780330062FFAF /* Taxcan05 Distmap.jpg in Resources */,
+				ABCF9EAC12D7A2AB0062FFAF /* ImageNotAvailable.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
