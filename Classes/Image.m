@@ -23,10 +23,13 @@
 }
 
 - (void)setFileName:(NSString*)fn{
-	NSLog(@"Image.m: Setting Filename to %@",fn);
+	//NSLog(@"Image.m: Setting Filename to %@",fn);
 	fileName = fn;
 	self.image = [UIImage imageNamed:fn];
-	if (self.image == nil) NSLog(@"Image: Warning! File %@ Doesn't Exist.",fn);
+	if (self.image == nil) {
+		NSLog(@"Image: Warning! File %@ Doesn't Exist.",fn);
+		self.image = [UIImage imageNamed:@"ImageNotAvailable.jpg"];
+	}
 }
 
 
