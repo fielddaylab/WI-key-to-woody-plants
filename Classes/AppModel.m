@@ -86,10 +86,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		sqlite3_stmt *compiledStatement;
 		
 		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
-			NSLog(@"AppModel:readKeyFromDatabase: SQLITE_OK");
+			//NSLog(@"AppModel:readKeyFromDatabase: SQLITE_OK");
 			// Loop through the results and add them to the feeds array
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
-				NSLog(@"AppModel:readKeyFromDatabase: Hydrating a KeyNode");
+				//NSLog(@"AppModel:readKeyFromDatabase: Hydrating a KeyNode");
 				
 				KeyNode *keyNode = [[KeyNode alloc] init];
 
@@ -139,10 +139,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		sqlite3_stmt *compiledStatement;
 		
 		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
-			NSLog(@"AppModel:readPlantsFromDatabase: SQLITE_OK");
+			//NSLog(@"AppModel:readPlantsFromDatabase: SQLITE_OK");
 			// Loop through the results and add them to the feeds array
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
-				NSLog(@"AppModel:readPlantsFromDatabase: Hydrating a Plant");
+				//NSLog(@"AppModel:readPlantsFromDatabase: Hydrating a Plant");
 				
 				Plant *plant = [[Plant alloc] init];
 				plant.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
@@ -179,25 +179,25 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		sqlite3_stmt *compiledStatement;
 		
 		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
-			NSLog(@"AppModel:readImagesFromDatabaseForPlant: SQLITE_OK");
+			//NSLog(@"AppModel:readImagesFromDatabaseForPlant: SQLITE_OK");
 			// Loop through the results and add them to the plant
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
-				NSLog(@"AppModel:readImagesFromDatabaseForPlant: Hydrating an Image");
+				//NSLog(@"AppModel:readImagesFromDatabaseForPlant: Hydrating an Image");
 				
 				
 				Image *image = [[Image alloc] init];
 				image.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
 				image.caption = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
 				image.displayPriority = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)];
-				image.fileName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)];
-				image.fileName = [NSString stringWithFormat:@"%@.jpg", image.fileName]; //Add the extension  
+				NSString *filename = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)];
+				image.fileName = [NSString stringWithFormat:@"%@.jpg", filename]; //Add the extension  
 				
 				NSNumber *plantId = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)] intValue]];
 
 				// Add the image to the Plant's image array
 				Plant *plant = [self.plants objectForKey:plantId];
 				if (plant) {
-					NSLog(@"AppModel:readImagesFromDatabaseForPlant: adding image to plant %@", plant.uid);
+					//NSLog(@"AppModel:readImagesFromDatabaseForPlant: adding image to plant %@", plant.uid);
 					[plant.images addObject:image];
 				}
 				else NSLog(@"AppModel:readImagesFromDatabaseForPlant: Bad Plant uid in Image uid %@",image.uid );
@@ -226,10 +226,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		sqlite3_stmt *compiledStatement;
 		
 		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
-			NSLog(@"AppModel:readKeyFromDatabase: SQLITE_OK");
+			//NSLog(@"AppModel:readKeyFromDatabase: SQLITE_OK");
 			// Loop through the results and add them to the feeds array
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
-				NSLog(@"AppModel:readKeyFromDatabase: Hydrating a Term");
+				//NSLog(@"AppModel:readKeyFromDatabase: Hydrating a Term");
 				
 				Term *term = [[Term alloc] init];
 				term.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
