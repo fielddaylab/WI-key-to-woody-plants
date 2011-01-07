@@ -43,7 +43,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	
-	NSLog(@"KeyNodeViewController: Loading Key Node: %@",self.keyNode.uid);
+	NSLog(@"KeyNodeViewController: Loading");
 	
 	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Home" 
 															   style:UIBarButtonItemStylePlain 
