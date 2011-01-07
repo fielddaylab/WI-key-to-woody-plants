@@ -50,7 +50,7 @@
 		UIImage *uiImage = image.image;
 		UIImageView *imageView = [[UIImageView alloc]initWithImage:uiImage];
 	
-		imageView.contentMode = UIViewContentModeScaleAspectFill;
+		imageView.contentMode = UIViewContentModeScaleAspectFit;
 				
 		CGRect rect = imageView.frame;
 		rect.size.height = scrollView.frame.size.height;

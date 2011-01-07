@@ -156,6 +156,8 @@
 		ABCF9E7E12D780330062FFAF /* Taxcan05 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9E0B12D780330062FFAF /* Taxcan05 Distmap.jpg */; };
 		ABCF9EAC12D7A2AB0062FFAF /* ImageNotAvailable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9EAB12D7A2AB0062FFAF /* ImageNotAvailable.jpg */; };
 		ABCF9F1E12D7BC9D0062FFAF /* curlButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9F1B12D7BC9D0062FFAF /* curlButton.png */; };
+		ABCF9F3812D7C0A30062FFAF /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCF9F3712D7C0A30062FFAF /* AppInfoViewController.m */; };
+		ABCF9F3B12D7C0B60062FFAF /* AppInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9F3A12D7C0B60062FFAF /* AppInfoViewController.xib */; };
 		ABD22C2E125511F10018A3E8 /* KeyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22C2D125511F10018A3E8 /* KeyNode.m */; };
 		ABD22DAC12552B4A0018A3E8 /* PlantDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DAA12552B4A0018A3E8 /* PlantDataViewController.m */; };
 		ABD22DB212552B630018A3E8 /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DB112552B630018A3E8 /* Plant.m */; };
@@ -326,6 +328,9 @@
 		ABCF9E0B12D780330062FFAF /* Taxcan05 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taxcan05 Distmap.jpg"; sourceTree = "<group>"; };
 		ABCF9EAB12D7A2AB0062FFAF /* ImageNotAvailable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ImageNotAvailable.jpg; sourceTree = "<group>"; };
 		ABCF9F1B12D7BC9D0062FFAF /* curlButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curlButton.png; sourceTree = "<group>"; };
+		ABCF9F3612D7C0A30062FFAF /* AppInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
+		ABCF9F3712D7C0A30062FFAF /* AppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
+		ABCF9F3A12D7C0B60062FFAF /* AppInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppInfoViewController.xib; sourceTree = "<group>"; };
 		ABD22C2912550E580018A3E8 /* PlantKeyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantKeyType.h; sourceTree = "<group>"; };
 		ABD22C2D125511F10018A3E8 /* KeyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNode.m; sourceTree = "<group>"; };
 		ABD22DA912552B4A0018A3E8 /* PlantDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantDataViewController.h; sourceTree = "<group>"; };
@@ -382,6 +387,8 @@
 				AB62404E12D512CB000EAB07 /* PlantListViewController.m */,
 				ABD22E2D125545CA0018A3E8 /* GlossaryListViewController.h */,
 				ABD22E2E125545CA0018A3E8 /* GlossaryListViewController.m */,
+				ABCF9F3612D7C0A30062FFAF /* AppInfoViewController.h */,
+				ABCF9F3712D7C0A30062FFAF /* AppInfoViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -467,6 +474,7 @@
 				AB6245D812D77793000EAB07 /* PlantImageViewController.xib */,
 				AB6245D912D77793000EAB07 /* PlantListViewController.xib */,
 				AB6245DA12D77793000EAB07 /* RootMenuViewController.xib */,
+				ABCF9F3A12D7C0B60062FFAF /* AppInfoViewController.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -777,6 +785,7 @@
 				ABCF9E7E12D780330062FFAF /* Taxcan05 Distmap.jpg in Resources */,
 				ABCF9EAC12D7A2AB0062FFAF /* ImageNotAvailable.jpg in Resources */,
 				ABCF9F1E12D7BC9D0062FFAF /* curlButton.png in Resources */,
+				ABCF9F3B12D7C0B60062FFAF /* AppInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,6 +810,7 @@
 				AB62408F12D526DF000EAB07 /* Term.m in Sources */,
 				AB62443C12D67074000EAB07 /* RootMenuViewController.m in Sources */,
 				AB62452112D68D09000EAB07 /* KeyNodeOption.m in Sources */,
+				ABCF9F3812D7C0A30062FFAF /* AppInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

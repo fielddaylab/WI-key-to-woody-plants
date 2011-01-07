@@ -14,6 +14,7 @@
 #import "GlossaryListViewController.h"
 #import "KeyNode.h"
 #import "KeyNodeOption.h"
+#import "AppInfoViewController.h"
 
 @implementation RootMenuViewController
 
@@ -79,7 +80,9 @@
 	[vc release];
 }
 -(void) infoButtonAction {
-	
+	AppInfoViewController *vc = [[AppInfoViewController alloc]initWithNibName:@"AppInfoViewController" bundle:nil];
+	[self.navigationController pushViewController:vc animated:YES];
+	[vc release];
 }
 
 

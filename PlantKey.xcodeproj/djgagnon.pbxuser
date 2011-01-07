@@ -279,6 +279,23 @@
 			ABCF9F1112D7B3F50062FFAF /* PBXTextBookmark */ = ABCF9F1112D7B3F50062FFAF /* PBXTextBookmark */;
 			ABCF9F1212D7B3F50062FFAF /* PBXTextBookmark */ = ABCF9F1212D7B3F50062FFAF /* PBXTextBookmark */;
 			ABCF9F1312D7B3F50062FFAF /* PBXTextBookmark */ = ABCF9F1312D7B3F50062FFAF /* PBXTextBookmark */;
+			ABCF9F2C12D7BFF90062FFAF /* PBXTextBookmark */ = ABCF9F2C12D7BFF90062FFAF /* PBXTextBookmark */;
+			ABCF9F2D12D7BFF90062FFAF /* PBXTextBookmark */ = ABCF9F2D12D7BFF90062FFAF /* PBXTextBookmark */;
+			ABCF9F2E12D7BFF90062FFAF /* PBXBookmark */ = ABCF9F2E12D7BFF90062FFAF /* PBXBookmark */;
+			ABCF9F2F12D7BFF90062FFAF /* PBXTextBookmark */ = ABCF9F2F12D7BFF90062FFAF /* PBXTextBookmark */;
+			ABCF9F3012D7BFF90062FFAF /* PBXTextBookmark */ = ABCF9F3012D7BFF90062FFAF /* PBXTextBookmark */;
+			ABCF9F3112D7BFF90062FFAF /* PBXTextBookmark */ = ABCF9F3112D7BFF90062FFAF /* PBXTextBookmark */;
+			ABCF9F3212D7BFF90062FFAF /* PBXTextBookmark */ = ABCF9F3212D7BFF90062FFAF /* PBXTextBookmark */;
+			ABCF9F4012D7C35C0062FFAF /* PBXTextBookmark */ = ABCF9F4012D7C35C0062FFAF /* PBXTextBookmark */;
+			ABCF9F4112D7C35C0062FFAF /* PBXTextBookmark */ = ABCF9F4112D7C35C0062FFAF /* PBXTextBookmark */;
+			ABCF9F4212D7C35C0062FFAF /* PBXTextBookmark */ = ABCF9F4212D7C35C0062FFAF /* PBXTextBookmark */;
+			ABCF9F4312D7C35C0062FFAF /* PBXTextBookmark */ = ABCF9F4312D7C35C0062FFAF /* PBXTextBookmark */;
+			ABCF9F4412D7C35C0062FFAF /* PBXTextBookmark */ = ABCF9F4412D7C35C0062FFAF /* PBXTextBookmark */;
+			ABCF9F4512D7C35C0062FFAF /* PBXTextBookmark */ = ABCF9F4512D7C35C0062FFAF /* PBXTextBookmark */;
+			ABCF9F4612D7C35C0062FFAF /* PBXTextBookmark */ = ABCF9F4612D7C35C0062FFAF /* PBXTextBookmark */;
+			ABCF9F4712D7C35C0062FFAF /* PBXTextBookmark */ = ABCF9F4712D7C35C0062FFAF /* PBXTextBookmark */;
+			ABCF9F4812D7C35C0062FFAF /* PBXTextBookmark */ = ABCF9F4812D7C35C0062FFAF /* PBXTextBookmark */;
+			ABCF9F4912D7C35C0062FFAF /* PBXTextBookmark */ = ABCF9F4912D7C35C0062FFAF /* PBXTextBookmark */;
 			ABD22DCC125534460018A3E8 = ABD22DCC125534460018A3E8 /* PBXTextBookmark */;
 			ABD22E1B125540380018A3E8 = ABD22E1B125540380018A3E8 /* PBXTextBookmark */;
 			ABD22E4912554AE60018A3E8 = ABD22E4912554AE60018A3E8 /* PBXTextBookmark */;
@@ -320,8 +337,8 @@
 	AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1002, 2028}}";
-			sepNavSelRange = "{2267, 0}";
-			sepNavVisRange = "{483, 1601}";
+			sepNavSelRange = "{1519, 0}";
+			sepNavVisRange = "{723, 1761}";
 		};
 	};
 	AB026B1012D296C300D17F90 /* PBXTextBookmark */ = {
@@ -449,7 +466,7 @@
 		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
 		name = "PlantImageViewController.m: 60";
 		rLen = 0;
-		rLoc = 1659;
+		rLoc = 1658;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 1396;
@@ -574,22 +591,22 @@
 	};
 	AB62443912D67074000EAB07 /* RootMenuViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1173, 286}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1002, 654}}";
 			sepNavSelRange = "{401, 0}";
-			sepNavVisRange = "{154, 264}";
+			sepNavVisRange = "{0, 418}";
 		};
 	};
 	AB62443A12D67074000EAB07 /* RootMenuViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1419, 1300}}";
-			sepNavSelRange = "{3724, 0}";
-			sepNavVisRange = "{3679, 132}";
+			sepNavIntBoundsRect = "{{0, 0}, {1419, 1391}}";
+			sepNavSelRange = "{3870, 0}";
+			sepNavVisRange = "{1586, 2661}";
 		};
 	};
 	AB62444F12D6714B000EAB07 /* attribution */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {815, 979}}";
-			sepNavSelRange = "{144, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1002, 654}}";
+			sepNavSelRange = "{1, 32}";
 			sepNavVisRange = "{0, 144}";
 		};
 	};
@@ -698,7 +715,7 @@
 		fRef = AB62443A12D67074000EAB07 /* RootMenuViewController.m */;
 		name = "RootMenuViewController.m: 43";
 		rLen = 0;
-		rLoc = 2503;
+		rLoc = 2537;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 743;
@@ -882,7 +899,7 @@
 		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
 		name = "PlantImageViewController.m: 101";
 		rLen = 0;
-		rLoc = 3054;
+		rLoc = 3053;
 		rType = 0;
 		vrLen = 664;
 		vrLoc = 2771;
@@ -1012,7 +1029,7 @@
 		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
 		name = "PlantImageViewController.m: 53";
 		rLen = 0;
-		rLoc = 1520;
+		rLoc = 1519;
 		rType = 0;
 		vrLen = 1118;
 		vrLoc = 875;
@@ -1042,7 +1059,7 @@
 		fRef = AB62443A12D67074000EAB07 /* RootMenuViewController.m */;
 		name = "RootMenuViewController.m: 73";
 		rLen = 0;
-		rLoc = 3417;
+		rLoc = 3451;
 		rType = 0;
 		vrLen = 1877;
 		vrLoc = 1710;
@@ -1501,7 +1518,7 @@
 		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
 		name = "PlantImageViewController.m: 52";
 		rLen = 0;
-		rLoc = 1520;
+		rLoc = 1519;
 		rType = 0;
 		vrLen = 1118;
 		vrLoc = 839;
@@ -1736,7 +1753,7 @@
 		fRef = AB62443A12D67074000EAB07 /* RootMenuViewController.m */;
 		name = "RootMenuViewController.m: 82";
 		rLen = 0;
-		rLoc = 3724;
+		rLoc = 3949;
 		rType = 0;
 		vrLen = 132;
 		vrLoc = 3679;
@@ -1786,7 +1803,7 @@
 		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
 		name = "PlantImageViewController.m: 117";
 		rLen = 0;
-		rLoc = 3146;
+		rLoc = 3145;
 		rType = 0;
 		vrLen = 917;
 		vrLoc = 2740;
@@ -1906,7 +1923,7 @@
 		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
 		name = "PlantImageViewController.m: 118";
 		rLen = 0;
-		rLoc = 3085;
+		rLoc = 3084;
 		rType = 0;
 		vrLen = 1015;
 		vrLoc = 3141;
@@ -1966,7 +1983,7 @@
 		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
 		name = "PlantImageViewController.m: 118";
 		rLen = 0;
-		rLoc = 3085;
+		rLoc = 3084;
 		rType = 0;
 		vrLen = 1015;
 		vrLoc = 3141;
@@ -1976,7 +1993,7 @@
 		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
 		name = "PlantImageViewController.m: 77";
 		rLen = 0;
-		rLoc = 2267;
+		rLoc = 2266;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 0;
@@ -2016,7 +2033,7 @@
 		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
 		name = "PlantImageViewController.m: 53";
 		rLen = 0;
-		rLoc = 1520;
+		rLoc = 1519;
 		rType = 0;
 		vrLen = 536;
 		vrLoc = 1458;
@@ -2045,6 +2062,177 @@
 		uiCtxt = {
 			sepNavWindowFrame = "{{15, 143}, {1653, 1030}}";
 		};
+	};
+	ABCF9F2C12D7BFF90062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB7C017E1210A3A8005F4DBE /* AppModel.m */;
+		name = "AppModel.m: 84";
+		rLen = 0;
+		rLoc = 2581;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	ABCF9F2D12D7BFF90062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ABD22DA912552B4A0018A3E8 /* PlantDataViewController.h */;
+		name = "PlantDataViewController.h: 15";
+		rLen = 0;
+		rLoc = 294;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	ABCF9F2E12D7BFF90062FFAF /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = ABCF9F1B12D7BC9D0062FFAF /* curlButton.png */;
+	};
+	ABCF9F2F12D7BFF90062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
+		name = "PlantImageViewController.h: 31";
+		rLen = 0;
+		rLoc = 888;
+		rType = 0;
+		vrLen = 981;
+		vrLoc = 0;
+	};
+	ABCF9F3012D7BFF90062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
+		name = "PlantImageViewController.m: 77";
+		rLen = 0;
+		rLoc = 2266;
+		rType = 0;
+		vrLen = 1601;
+		vrLoc = 483;
+	};
+	ABCF9F3112D7BFF90062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
+		name = "PlantImageViewController.m: 53";
+		rLen = 0;
+		rLoc = 1519;
+		rType = 0;
+		vrLen = 1761;
+		vrLoc = 723;
+	};
+	ABCF9F3212D7BFF90062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
+		name = "PlantImageViewController.h: 29";
+		rLen = 8;
+		rLoc = 815;
+		rType = 0;
+		vrLen = 490;
+		vrLoc = 491;
+	};
+	ABCF9F3612D7C0A30062FFAF /* AppInfoViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1002, 654}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 246}";
+		};
+	};
+	ABCF9F4012D7C35C0062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB7C017E1210A3A8005F4DBE /* AppModel.m */;
+		name = "AppModel.m: 84";
+		rLen = 0;
+		rLoc = 2581;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	ABCF9F4112D7C35C0062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ABD22DA912552B4A0018A3E8 /* PlantDataViewController.h */;
+		name = "PlantDataViewController.h: 15";
+		rLen = 0;
+		rLoc = 294;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	ABCF9F4212D7C35C0062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */;
+		name = "PlantImageViewController.m: 53";
+		rLen = 0;
+		rLoc = 1519;
+		rType = 0;
+		vrLen = 1761;
+		vrLoc = 723;
+	};
+	ABCF9F4312D7C35C0062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ABD22E2E125545CA0018A3E8 /* GlossaryListViewController.m */;
+		name = "GlossaryListViewController.m: 37";
+		rLen = 0;
+		rLoc = 1053;
+		rType = 0;
+		vrLen = 1635;
+		vrLoc = 222;
+	};
+	ABCF9F4412D7C35C0062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ABCF9F3612D7C0A30062FFAF /* AppInfoViewController.h */;
+		name = "AppInfoViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 246;
+		vrLoc = 0;
+	};
+	ABCF9F4512D7C35C0062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB62444F12D6714B000EAB07 /* attribution */;
+		name = "attribution: 2";
+		rLen = 32;
+		rLoc = 1;
+		rType = 0;
+		vrLen = 144;
+		vrLoc = 0;
+	};
+	ABCF9F4612D7C35C0062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB62443912D67074000EAB07 /* RootMenuViewController.h */;
+		name = "RootMenuViewController.h: 17";
+		rLen = 0;
+		rLoc = 401;
+		rType = 0;
+		vrLen = 418;
+		vrLoc = 0;
+	};
+	ABCF9F4712D7C35C0062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB62443A12D67074000EAB07 /* RootMenuViewController.m */;
+		name = "RootMenuViewController.m: 82";
+		rLen = 0;
+		rLoc = 3949;
+		rType = 0;
+		vrLen = 1896;
+		vrLoc = 2472;
+	};
+	ABCF9F4812D7C35C0062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB62443A12D67074000EAB07 /* RootMenuViewController.m */;
+		name = "RootMenuViewController.m: 84";
+		rLen = 0;
+		rLoc = 3870;
+		rType = 0;
+		vrLen = 2661;
+		vrLoc = 1586;
+	};
+	ABCF9F4912D7C35C0062FFAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB026AC912D288EB00D17F90 /* PlantImageViewController.h */;
+		name = "PlantImageViewController.h: 29";
+		rLen = 8;
+		rLoc = 815;
+		rType = 0;
+		vrLen = 490;
+		vrLoc = 491;
 	};
 	ABD22C2912550E580018A3E8 /* PlantKeyType.h */ = {
 		uiCtxt = {
@@ -2119,9 +2307,9 @@
 	};
 	ABD22E2E125545CA0018A3E8 /* GlossaryListViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1055, 3276}}";
-			sepNavSelRange = "{5552, 0}";
-			sepNavVisRange = "{4044, 767}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 3159}}";
+			sepNavSelRange = "{1053, 0}";
+			sepNavVisRange = "{222, 1635}";
 			sepNavWindowFrame = "{{298, 123}, {1440, 845}}";
 		};
 	};
