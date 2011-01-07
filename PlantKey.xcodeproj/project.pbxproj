@@ -11,43 +11,45 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		AB026ACC12D288EB00D17F90 /* PlantImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */; };
-		AB026ACD12D288EB00D17F90 /* PlantImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB026ACB12D288EB00D17F90 /* PlantImageViewController.xib */; };
-		AB623E8612D50DC4000EAB07 /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = AB623E8512D50DC4000EAB07 /* 179-notepad.png */; };
-		AB623E8812D50DC8000EAB07 /* 43-film-roll.png in Resources */ = {isa = PBXBuildFile; fileRef = AB623E8712D50DC8000EAB07 /* 43-film-roll.png */; };
-		AB623ED212D511EE000EAB07 /* GlossaryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB623ED112D511EE000EAB07 /* GlossaryListViewController.xib */; };
 		AB62404F12D512CB000EAB07 /* PlantListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB62404E12D512CB000EAB07 /* PlantListViewController.m */; };
-		AB62406212D52447000EAB07 /* 30-key.png in Resources */ = {isa = PBXBuildFile; fileRef = AB62406112D52447000EAB07 /* 30-key.png */; };
-		AB62406A12D52490000EAB07 /* 96-book.png in Resources */ = {isa = PBXBuildFile; fileRef = AB62406912D52490000EAB07 /* 96-book.png */; };
-		AB62406C12D524C0000EAB07 /* 189-plant.png in Resources */ = {isa = PBXBuildFile; fileRef = AB62406B12D524C0000EAB07 /* 189-plant.png */; };
 		AB62408F12D526DF000EAB07 /* Term.m in Sources */ = {isa = PBXBuildFile; fileRef = AB62408E12D526DF000EAB07 /* Term.m */; };
-		AB6243CC12D66B80000EAB07 /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6243CB12D66B80000EAB07 /* 53-house.png */; };
 		AB62443C12D67074000EAB07 /* RootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB62443A12D67074000EAB07 /* RootMenuViewController.m */; };
-		AB62443D12D67074000EAB07 /* RootMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB62443B12D67074000EAB07 /* RootMenuViewController.xib */; };
 		AB62445012D6714B000EAB07 /* attribution in Resources */ = {isa = PBXBuildFile; fileRef = AB62444F12D6714B000EAB07 /* attribution */; };
 		AB6244D312D686FC000EAB07 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6244D212D686FC000EAB07 /* Default.png */; };
+		AB62452112D68D09000EAB07 /* KeyNodeOption.m in Sources */ = {isa = PBXBuildFile; fileRef = AB62452012D68D09000EAB07 /* KeyNodeOption.m */; };
+		AB6245AC12D7745F000EAB07 /* Abibal01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245A512D7745E000EAB07 /* Abibal01 Needles.jpg */; };
+		AB6245AD12D7745F000EAB07 /* Abibal02 Bough.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245A612D7745E000EAB07 /* Abibal02 Bough.jpg */; };
+		AB6245AE12D7745F000EAB07 /* Abibal03 Upright cone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245A712D7745E000EAB07 /* Abibal03 Upright cone.jpg */; };
+		AB6245AF12D7745F000EAB07 /* Abibal04 Male cones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245A812D7745E000EAB07 /* Abibal04 Male cones.jpg */; };
+		AB6245B012D7745F000EAB07 /* Abibal05 Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245A912D7745F000EAB07 /* Abibal05 Bark.jpg */; };
+		AB6245B112D7745F000EAB07 /* Abibal06 Habit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245AA12D7745F000EAB07 /* Abibal06 Habit.jpg */; };
+		AB6245B212D7745F000EAB07 /* Abibal07 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB6245AB12D7745F000EAB07 /* Abibal07 Distmap.jpg */; };
+		AB6245CD12D77736000EAB07 /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6245C712D77736000EAB07 /* 179-notepad.png */; };
+		AB6245CE12D77736000EAB07 /* 189-plant.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6245C812D77736000EAB07 /* 189-plant.png */; };
+		AB6245CF12D77736000EAB07 /* 30-key.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6245C912D77736000EAB07 /* 30-key.png */; };
+		AB6245D012D77736000EAB07 /* 43-film-roll.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6245CA12D77736000EAB07 /* 43-film-roll.png */; };
+		AB6245D112D77736000EAB07 /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6245CB12D77736000EAB07 /* 53-house.png */; };
+		AB6245D212D77736000EAB07 /* 96-book.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6245CC12D77736000EAB07 /* 96-book.png */; };
+		AB6245DB12D77793000EAB07 /* KeyNodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6245D412D77793000EAB07 /* KeyNodeViewController.xib */; };
+		AB6245DC12D77793000EAB07 /* KeyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6245D512D77793000EAB07 /* KeyViewController.xib */; };
+		AB6245DD12D77793000EAB07 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6245D612D77793000EAB07 /* MainWindow.xib */; };
+		AB6245DE12D77793000EAB07 /* PlantDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6245D712D77793000EAB07 /* PlantDataViewController.xib */; };
+		AB6245DF12D77793000EAB07 /* PlantImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6245D812D77793000EAB07 /* PlantImageViewController.xib */; };
+		AB6245E012D77793000EAB07 /* PlantListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6245D912D77793000EAB07 /* PlantListViewController.xib */; };
+		AB6245E112D77793000EAB07 /* RootMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6245DA12D77793000EAB07 /* RootMenuViewController.xib */; };
+		AB6245E312D777C6000EAB07 /* GlossaryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6245E212D777C6000EAB07 /* GlossaryListViewController.xib */; };
 		AB7C01801210A3A8005F4DBE /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7C017E1210A3A8005F4DBE /* AppModel.m */; };
 		AB7C036E1211E932005F4DBE /* plantKey.sql in Resources */ = {isa = PBXBuildFile; fileRef = AB7C036D1211E932005F4DBE /* plantKey.sql */; };
 		AB7C03CD1211F412005F4DBE /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7C03CC1211F412005F4DBE /* libsqlite3.0.dylib */; };
 		AB7C05251212E344005F4DBE /* KeyNodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7C05231212E344005F4DBE /* KeyNodeViewController.m */; };
 		AB7C05DD1213233B005F4DBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7C05DC1213233B005F4DBE /* CoreGraphics.framework */; };
 		AB9BF95D12256B4C0028D6AC /* notes in Resources */ = {isa = PBXBuildFile; fileRef = AB9BF95C12256B4C0028D6AC /* notes */; };
-		ABAB8FA712D27B430095BDCE /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8F9F12D27B420095BDCE /* 1.jpg */; };
-		ABAB8FA812D27B430095BDCE /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA012D27B420095BDCE /* 2.jpg */; };
-		ABAB8FA912D27B430095BDCE /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA112D27B420095BDCE /* 3.jpg */; };
-		ABAB8FAA12D27B430095BDCE /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA212D27B420095BDCE /* 4.jpg */; };
-		ABAB8FAB12D27B430095BDCE /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA312D27B420095BDCE /* 5.jpg */; };
-		ABAB8FAC12D27B430095BDCE /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA412D27B420095BDCE /* 6.jpg */; };
-		ABAB8FAD12D27B430095BDCE /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB8FA512D27B420095BDCE /* 7.jpg */; };
 		ABAB8FB312D27BCC0095BDCE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB8FB212D27BCC0095BDCE /* Image.m */; };
 		ABD22C2E125511F10018A3E8 /* KeyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22C2D125511F10018A3E8 /* KeyNode.m */; };
 		ABD22DAC12552B4A0018A3E8 /* PlantDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DAA12552B4A0018A3E8 /* PlantDataViewController.m */; };
-		ABD22DAD12552B4A0018A3E8 /* PlantDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD22DAB12552B4A0018A3E8 /* PlantDataViewController.xib */; };
 		ABD22DB212552B630018A3E8 /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DB112552B630018A3E8 /* Plant.m */; };
 		ABD22E30125545CB0018A3E8 /* GlossaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22E2E125545CA0018A3E8 /* GlossaryListViewController.m */; };
-		ABD22E31125545CB0018A3E8 /* PlantListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD22E2F125545CB0018A3E8 /* PlantListViewController.xib */; };
-		ABD22F0E1255545D0018A3E8 /* KeyNodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD22F0D1255545D0018A3E8 /* KeyNodeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,29 +58,42 @@
 		1D3623250D0F684500981E51 /* PlantKeyAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantKeyAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* PlantKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PlantKey_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantKey_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* PlantKey-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PlantKey-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		AB026AC912D288EB00D17F90 /* PlantImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantImageViewController.h; sourceTree = "<group>"; };
 		AB026ACA12D288EB00D17F90 /* PlantImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantImageViewController.m; sourceTree = "<group>"; };
-		AB026ACB12D288EB00D17F90 /* PlantImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlantImageViewController.xib; path = Classes/PlantImageViewController.xib; sourceTree = "<group>"; };
-		AB623E8512D50DC4000EAB07 /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad.png"; sourceTree = "<group>"; };
-		AB623E8712D50DC8000EAB07 /* 43-film-roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "43-film-roll.png"; sourceTree = "<group>"; };
-		AB623ED112D511EE000EAB07 /* GlossaryListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GlossaryListViewController.xib; path = Classes/GlossaryListViewController.xib; sourceTree = "<group>"; };
 		AB62404D12D512CB000EAB07 /* PlantListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantListViewController.h; sourceTree = "<group>"; };
 		AB62404E12D512CB000EAB07 /* PlantListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantListViewController.m; sourceTree = "<group>"; };
-		AB62406112D52447000EAB07 /* 30-key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "30-key.png"; sourceTree = "<group>"; };
-		AB62406912D52490000EAB07 /* 96-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "96-book.png"; sourceTree = "<group>"; };
-		AB62406B12D524C0000EAB07 /* 189-plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "189-plant.png"; sourceTree = "<group>"; };
 		AB62408D12D526DF000EAB07 /* Term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Term.h; sourceTree = "<group>"; };
 		AB62408E12D526DF000EAB07 /* Term.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Term.m; sourceTree = "<group>"; };
-		AB6243CB12D66B80000EAB07 /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
 		AB62443912D67074000EAB07 /* RootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootMenuViewController.h; sourceTree = "<group>"; };
 		AB62443A12D67074000EAB07 /* RootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootMenuViewController.m; sourceTree = "<group>"; };
-		AB62443B12D67074000EAB07 /* RootMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RootMenuViewController.xib; path = Classes/RootMenuViewController.xib; sourceTree = "<group>"; };
 		AB62444F12D6714B000EAB07 /* attribution */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attribution; sourceTree = "<group>"; };
 		AB6244D212D686FC000EAB07 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AB62451F12D68D09000EAB07 /* KeyNodeOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyNodeOption.h; sourceTree = "<group>"; };
+		AB62452012D68D09000EAB07 /* KeyNodeOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNodeOption.m; sourceTree = "<group>"; };
+		AB6245A512D7745E000EAB07 /* Abibal01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal01 Needles.jpg"; sourceTree = "<group>"; };
+		AB6245A612D7745E000EAB07 /* Abibal02 Bough.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal02 Bough.jpg"; sourceTree = "<group>"; };
+		AB6245A712D7745E000EAB07 /* Abibal03 Upright cone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal03 Upright cone.jpg"; sourceTree = "<group>"; };
+		AB6245A812D7745E000EAB07 /* Abibal04 Male cones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal04 Male cones.jpg"; sourceTree = "<group>"; };
+		AB6245A912D7745F000EAB07 /* Abibal05 Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal05 Bark.jpg"; sourceTree = "<group>"; };
+		AB6245AA12D7745F000EAB07 /* Abibal06 Habit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal06 Habit.jpg"; sourceTree = "<group>"; };
+		AB6245AB12D7745F000EAB07 /* Abibal07 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal07 Distmap.jpg"; sourceTree = "<group>"; };
+		AB6245C712D77736000EAB07 /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad.png"; sourceTree = "<group>"; };
+		AB6245C812D77736000EAB07 /* 189-plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "189-plant.png"; sourceTree = "<group>"; };
+		AB6245C912D77736000EAB07 /* 30-key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "30-key.png"; sourceTree = "<group>"; };
+		AB6245CA12D77736000EAB07 /* 43-film-roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "43-film-roll.png"; sourceTree = "<group>"; };
+		AB6245CB12D77736000EAB07 /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
+		AB6245CC12D77736000EAB07 /* 96-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "96-book.png"; sourceTree = "<group>"; };
+		AB6245D412D77793000EAB07 /* KeyNodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyNodeViewController.xib; sourceTree = "<group>"; };
+		AB6245D512D77793000EAB07 /* KeyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyViewController.xib; sourceTree = "<group>"; };
+		AB6245D612D77793000EAB07 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		AB6245D712D77793000EAB07 /* PlantDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantDataViewController.xib; sourceTree = "<group>"; };
+		AB6245D812D77793000EAB07 /* PlantImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantImageViewController.xib; sourceTree = "<group>"; };
+		AB6245D912D77793000EAB07 /* PlantListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantListViewController.xib; sourceTree = "<group>"; };
+		AB6245DA12D77793000EAB07 /* RootMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootMenuViewController.xib; sourceTree = "<group>"; };
+		AB6245E212D777C6000EAB07 /* GlossaryListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlossaryListViewController.xib; sourceTree = "<group>"; };
 		AB7C017D1210A3A8005F4DBE /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
 		AB7C017E1210A3A8005F4DBE /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
 		AB7C017F1210A3A8005F4DBE /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
@@ -89,26 +104,16 @@
 		AB7C05231212E344005F4DBE /* KeyNodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNodeViewController.m; sourceTree = "<group>"; };
 		AB7C05DC1213233B005F4DBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AB9BF95C12256B4C0028D6AC /* notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
-		ABAB8F9F12D27B420095BDCE /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		ABAB8FA012D27B420095BDCE /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		ABAB8FA112D27B420095BDCE /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
-		ABAB8FA212D27B420095BDCE /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
-		ABAB8FA312D27B420095BDCE /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
-		ABAB8FA412D27B420095BDCE /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
-		ABAB8FA512D27B420095BDCE /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		ABAB8FB112D27BCC0095BDCE /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		ABAB8FB212D27BCC0095BDCE /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		ABD22C2912550E580018A3E8 /* PlantKeyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantKeyType.h; sourceTree = "<group>"; };
 		ABD22C2D125511F10018A3E8 /* KeyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNode.m; sourceTree = "<group>"; };
 		ABD22DA912552B4A0018A3E8 /* PlantDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantDataViewController.h; sourceTree = "<group>"; };
 		ABD22DAA12552B4A0018A3E8 /* PlantDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantDataViewController.m; sourceTree = "<group>"; };
-		ABD22DAB12552B4A0018A3E8 /* PlantDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlantDataViewController.xib; path = Classes/PlantDataViewController.xib; sourceTree = "<group>"; };
 		ABD22DB012552B630018A3E8 /* Plant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plant.h; sourceTree = "<group>"; };
 		ABD22DB112552B630018A3E8 /* Plant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plant.m; sourceTree = "<group>"; };
 		ABD22E2D125545CA0018A3E8 /* GlossaryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryListViewController.h; sourceTree = "<group>"; };
 		ABD22E2E125545CA0018A3E8 /* GlossaryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryListViewController.m; sourceTree = "<group>"; };
-		ABD22E2F125545CB0018A3E8 /* PlantListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlantListViewController.xib; path = Classes/PlantListViewController.xib; sourceTree = "<group>"; };
-		ABD22F0D1255545D0018A3E8 /* KeyNodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyNodeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +142,8 @@
 				AB7C017F1210A3A8005F4DBE /* SynthesizeSingleton.h */,
 				AB7C03701211E968005F4DBE /* KeyNode.h */,
 				ABD22C2D125511F10018A3E8 /* KeyNode.m */,
+				AB62451F12D68D09000EAB07 /* KeyNodeOption.h */,
+				AB62452012D68D09000EAB07 /* KeyNodeOption.m */,
 				AB62408D12D526DF000EAB07 /* Term.h */,
 				AB62408E12D526DF000EAB07 /* Term.m */,
 				ABD22DB012552B630018A3E8 /* Plant.h */,
@@ -195,22 +202,11 @@
 			isa = PBXGroup;
 			children = (
 				AB6244D212D686FC000EAB07 /* Default.png */,
-				AB6243CB12D66B80000EAB07 /* 53-house.png */,
-				AB62406B12D524C0000EAB07 /* 189-plant.png */,
-				AB62406912D52490000EAB07 /* 96-book.png */,
-				AB62406112D52447000EAB07 /* 30-key.png */,
-				AB623E8712D50DC8000EAB07 /* 43-film-roll.png */,
-				AB623E8512D50DC4000EAB07 /* 179-notepad.png */,
+				AB6245C612D77736000EAB07 /* icons */,
 				ABCE86BC12133B380012C322 /* images */,
+				AB6245D312D77793000EAB07 /* xibs */,
 				AB7C036D1211E932005F4DBE /* plantKey.sql */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* PlantKey-Info.plist */,
-				AB62443B12D67074000EAB07 /* RootMenuViewController.xib */,
-				ABD22F0D1255545D0018A3E8 /* KeyNodeViewController.xib */,
-				ABD22DAB12552B4A0018A3E8 /* PlantDataViewController.xib */,
-				AB026ACB12D288EB00D17F90 /* PlantImageViewController.xib */,
-				ABD22E2F125545CB0018A3E8 /* PlantListViewController.xib */,
-				AB623ED112D511EE000EAB07 /* GlossaryListViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -225,16 +221,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AB6245C612D77736000EAB07 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				AB6245C712D77736000EAB07 /* 179-notepad.png */,
+				AB6245C812D77736000EAB07 /* 189-plant.png */,
+				AB6245C912D77736000EAB07 /* 30-key.png */,
+				AB6245CA12D77736000EAB07 /* 43-film-roll.png */,
+				AB6245CB12D77736000EAB07 /* 53-house.png */,
+				AB6245CC12D77736000EAB07 /* 96-book.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		AB6245D312D77793000EAB07 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				AB6245E212D777C6000EAB07 /* GlossaryListViewController.xib */,
+				AB6245D412D77793000EAB07 /* KeyNodeViewController.xib */,
+				AB6245D512D77793000EAB07 /* KeyViewController.xib */,
+				AB6245D612D77793000EAB07 /* MainWindow.xib */,
+				AB6245D712D77793000EAB07 /* PlantDataViewController.xib */,
+				AB6245D812D77793000EAB07 /* PlantImageViewController.xib */,
+				AB6245D912D77793000EAB07 /* PlantListViewController.xib */,
+				AB6245DA12D77793000EAB07 /* RootMenuViewController.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
 		ABCE86BC12133B380012C322 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				ABAB8F9F12D27B420095BDCE /* 1.jpg */,
-				ABAB8FA012D27B420095BDCE /* 2.jpg */,
-				ABAB8FA112D27B420095BDCE /* 3.jpg */,
-				ABAB8FA212D27B420095BDCE /* 4.jpg */,
-				ABAB8FA312D27B420095BDCE /* 5.jpg */,
-				ABAB8FA412D27B420095BDCE /* 6.jpg */,
-				ABAB8FA512D27B420095BDCE /* 7.jpg */,
+				AB6245A512D7745E000EAB07 /* Abibal01 Needles.jpg */,
+				AB6245A612D7745E000EAB07 /* Abibal02 Bough.jpg */,
+				AB6245A712D7745E000EAB07 /* Abibal03 Upright cone.jpg */,
+				AB6245A812D7745E000EAB07 /* Abibal04 Male cones.jpg */,
+				AB6245A912D7745F000EAB07 /* Abibal05 Bark.jpg */,
+				AB6245AA12D7745F000EAB07 /* Abibal06 Habit.jpg */,
+				AB6245AB12D7745F000EAB07 /* Abibal07 Distmap.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -288,30 +312,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				AB7C036E1211E932005F4DBE /* plantKey.sql in Resources */,
 				AB9BF95D12256B4C0028D6AC /* notes in Resources */,
-				ABD22DAD12552B4A0018A3E8 /* PlantDataViewController.xib in Resources */,
-				ABD22E31125545CB0018A3E8 /* PlantListViewController.xib in Resources */,
-				ABD22F0E1255545D0018A3E8 /* KeyNodeViewController.xib in Resources */,
-				ABAB8FA712D27B430095BDCE /* 1.jpg in Resources */,
-				ABAB8FA812D27B430095BDCE /* 2.jpg in Resources */,
-				ABAB8FA912D27B430095BDCE /* 3.jpg in Resources */,
-				ABAB8FAA12D27B430095BDCE /* 4.jpg in Resources */,
-				ABAB8FAB12D27B430095BDCE /* 5.jpg in Resources */,
-				ABAB8FAC12D27B430095BDCE /* 6.jpg in Resources */,
-				ABAB8FAD12D27B430095BDCE /* 7.jpg in Resources */,
-				AB026ACD12D288EB00D17F90 /* PlantImageViewController.xib in Resources */,
-				AB623E8612D50DC4000EAB07 /* 179-notepad.png in Resources */,
-				AB623E8812D50DC8000EAB07 /* 43-film-roll.png in Resources */,
-				AB623ED212D511EE000EAB07 /* GlossaryListViewController.xib in Resources */,
-				AB62406212D52447000EAB07 /* 30-key.png in Resources */,
-				AB62406A12D52490000EAB07 /* 96-book.png in Resources */,
-				AB62406C12D524C0000EAB07 /* 189-plant.png in Resources */,
-				AB6243CC12D66B80000EAB07 /* 53-house.png in Resources */,
-				AB62443D12D67074000EAB07 /* RootMenuViewController.xib in Resources */,
 				AB62445012D6714B000EAB07 /* attribution in Resources */,
 				AB6244D312D686FC000EAB07 /* Default.png in Resources */,
+				AB6245AC12D7745F000EAB07 /* Abibal01 Needles.jpg in Resources */,
+				AB6245AD12D7745F000EAB07 /* Abibal02 Bough.jpg in Resources */,
+				AB6245AE12D7745F000EAB07 /* Abibal03 Upright cone.jpg in Resources */,
+				AB6245AF12D7745F000EAB07 /* Abibal04 Male cones.jpg in Resources */,
+				AB6245B012D7745F000EAB07 /* Abibal05 Bark.jpg in Resources */,
+				AB6245B112D7745F000EAB07 /* Abibal06 Habit.jpg in Resources */,
+				AB6245B212D7745F000EAB07 /* Abibal07 Distmap.jpg in Resources */,
+				AB6245CD12D77736000EAB07 /* 179-notepad.png in Resources */,
+				AB6245CE12D77736000EAB07 /* 189-plant.png in Resources */,
+				AB6245CF12D77736000EAB07 /* 30-key.png in Resources */,
+				AB6245D012D77736000EAB07 /* 43-film-roll.png in Resources */,
+				AB6245D112D77736000EAB07 /* 53-house.png in Resources */,
+				AB6245D212D77736000EAB07 /* 96-book.png in Resources */,
+				AB6245DB12D77793000EAB07 /* KeyNodeViewController.xib in Resources */,
+				AB6245DC12D77793000EAB07 /* KeyViewController.xib in Resources */,
+				AB6245DD12D77793000EAB07 /* MainWindow.xib in Resources */,
+				AB6245DE12D77793000EAB07 /* PlantDataViewController.xib in Resources */,
+				AB6245DF12D77793000EAB07 /* PlantImageViewController.xib in Resources */,
+				AB6245E012D77793000EAB07 /* PlantListViewController.xib in Resources */,
+				AB6245E112D77793000EAB07 /* RootMenuViewController.xib in Resources */,
+				AB6245E312D777C6000EAB07 /* GlossaryListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +360,7 @@
 				AB62404F12D512CB000EAB07 /* PlantListViewController.m in Sources */,
 				AB62408F12D526DF000EAB07 /* Term.m in Sources */,
 				AB62443C12D67074000EAB07 /* RootMenuViewController.m in Sources */,
+				AB62452112D68D09000EAB07 /* KeyNodeOption.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

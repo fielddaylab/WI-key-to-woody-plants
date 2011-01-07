@@ -11,12 +11,14 @@
 @implementation KeyNode
 
 @synthesize		uid;
-@synthesize		opt1text;
-@synthesize		opt1id;
-@synthesize		opt1type;
-@synthesize		opt2text;
-@synthesize		opt2id;
-@synthesize		opt2type;
+@synthesize		options;
 
+- (id)init {
+	if ((self = [super init])) {
+		// Custom initialization
+		self.options = [[NSMutableArray alloc]init];
+	}
+	return self;
+}
 
 @end

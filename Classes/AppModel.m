@@ -11,6 +11,7 @@
 #import "PlantKeyType.h"
 #import "Image.h"
 #import "Term.h"
+#import "KeyNodeOption.h"
 
 
 @implementation AppModel
@@ -93,17 +94,23 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 				KeyNode *keyNode = [[KeyNode alloc] init];
 
 				keyNode.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] intValue]];
-				keyNode.opt1text = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
-				keyNode.opt1id = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)] intValue]];
 				
-				if ([[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)] isEqualToString:@"n"]) keyNode.opt1type = kNode;
-				else keyNode.opt1type = kPlant;
+				KeyNodeOption *option1 = [[KeyNodeOption alloc]init];
+				option1.text = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
+				option1.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)] intValue]];
+				if ([[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)] isEqualToString:@"n"]) option1.type = kNode;
+				else option1.type = kPlant;
+				[keyNode.options addObject:option1];
+				[option1 release];
 				
-				keyNode.opt2text = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)];
-				keyNode.opt2id = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)] intValue]];
-			
-				if ([[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)] isEqualToString:@"n"]) keyNode.opt2type = kNode;
-				else keyNode.opt2type = kPlant;
+				
+				KeyNodeOption *option2 = [[KeyNodeOption alloc]init];
+				option2.text = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)];
+				option2.uid = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)] intValue]];
+				if ([[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)] isEqualToString:@"n"]) option2.type = kNode;
+				else option2.type = kPlant;
+				[keyNode.options addObject:option2];
+				[option2 release];				
 				
 				// Add the node to the keyNode array
 				[self.keyNodes setObject:keyNode forKey:keyNode.uid];

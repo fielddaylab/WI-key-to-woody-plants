@@ -11,6 +11,7 @@
 #import "KeyNodeViewController.h"
 #import "Plant.h"
 #import "PlantImageViewController.h"
+#import "KeyNodeOption.h"
 
 #define FONT_SIZE 18.0f
 #define CELL_CONTENT_WIDTH 300.0f
@@ -101,7 +102,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 2;
+    return [self.keyNode.options count];
 }
 
 
@@ -129,18 +130,8 @@
 		
 	}
 	
-	NSString *text;
-	switch (indexPath.row) {
-		case 0:
-			text = self.keyNode.opt1text;
-			break;
-		case 1:
-			text = self.keyNode.opt2text;
-			break;	
-		default:
-			break;
-	}
-
+	KeyNodeOption *o = [self.keyNode.options objectAtIndex:indexPath.row];
+	NSString *text = o.text;
 	CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
 	CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
 	
@@ -156,20 +147,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-	NSString *text;
-	switch (indexPath.row) {
-		case 0:
-			text = self.keyNode.opt1text;
-			break;
-		case 1:
-			text = self.keyNode.opt2text;
-			break;	
-		default:
-			break;
-	}
-	
+	KeyNodeOption *o = [self.keyNode.options objectAtIndex:indexPath.row];
+
 	CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
-	CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+	CGSize size = [o.text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
 	CGFloat height = MAX(size.height, 44.0f);
 	return height + (CELL_CONTENT_MARGIN * 2);
 }
@@ -225,20 +206,11 @@
 	plantKeyType nextType;
 	NSNumber *nextId;
 	
-	switch (indexPath.row) {
-		case 0:
-			nextType = self.keyNode.opt1type;
-			nextId = self.keyNode.opt1id;
-			break;
-		case 1:
-			nextType = self.keyNode.opt2type;
-			nextId = self.keyNode.opt2id;
-			break;	
-		default:
-			NSLog(@"KeyNodeViewController: Shouldn't have gotten here");
-			break;
-	}
+	KeyNodeOption *o = [self.keyNode.options objectAtIndex:indexPath.row];
 	
+	nextType = o.type;
+	nextId = o.uid;
+			
 	//Create an push the new view
 	UIViewController *nextVc;
 	

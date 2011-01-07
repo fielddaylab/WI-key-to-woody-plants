@@ -12,6 +12,8 @@
 #import "KeyNodeViewController.h"
 #import "PlantListViewController.h"
 #import "GlossaryListViewController.h"
+#import "KeyNode.h"
+#import "KeyNodeOption.h"
 
 @implementation RootMenuViewController
 
@@ -41,15 +43,26 @@
 }
 
 -(void) treeButtonAction {
-	KeyNodeViewController *vc = [[KeyNodeViewController alloc]initWithKeyNode:[[AppModel sharedInstance] keyNodeForId:[NSNumber numberWithInt:1]]];
+	KeyNode *kn = [[KeyNode alloc]init];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Leaves, needles or scales narrower than 0.5\", with 1 or 2 veins; conifers"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 21] Type:kNode andText:@"Opposite or whorled leaves that are broad and flat"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 34] Type:kNode andText:@"Simple alternate leaves that are broad and flat, "]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 79] Type:kNode andText:@"Compound alternate leaves that are broad and flat"]autorelease]];
+
+	KeyNodeViewController *vc = [[KeyNodeViewController alloc]initWithKeyNode:kn];
 	[vc.navigationItem setHidesBackButton:YES];
 	[self.navigationController pushViewController:vc animated:YES];
+	[kn release];
 	[vc release];
 }
 -(void) shrubButtonAction {
-	KeyNodeViewController *vc = [[KeyNodeViewController alloc]initWithKeyNode:[[AppModel sharedInstance] keyNodeForId:[NSNumber numberWithInt:1]]];
-	[vc.navigationItem setHidesBackButton:YES];
+	KeyNode *kn = [[KeyNode alloc]init];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Shrubs [TODO]"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Vines [TODO]"]autorelease]];
+	
+	KeyNodeViewController *vc = [[KeyNodeViewController alloc]initWithKeyNode:kn];[vc.navigationItem setHidesBackButton:YES];
 	[self.navigationController pushViewController:vc animated:YES];
+	[kn release];
 	[vc release];
 }
 -(void) glossaryButtonAction {
