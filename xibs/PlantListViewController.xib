@@ -42,6 +42,40 @@
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
+					<object class="IBUITableView" id="390957132">
+						<reference key="NSNextResponder" ref="191373211"/>
+						<int key="NSvFlags">274</int>
+						<object class="NSMutableArray" key="NSSubviews">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBUISearchBar" id="419786532">
+								<reference key="NSNextResponder" ref="390957132"/>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrameSize">{320, 44}</string>
+								<reference key="NSSuperview" ref="390957132"/>
+								<int key="IBUIContentMode">3</int>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<object class="IBUITextInputTraits" key="IBTextInputTraits">
+									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								</object>
+							</object>
+						</object>
+						<string key="NSFrame">{{0, 44}, {320, 372}}</string>
+						<reference key="NSSuperview" ref="191373211"/>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MQA</bytes>
+						</object>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<bool key="IBUIAlwaysBounceVertical">YES</bool>
+						<int key="IBUISeparatorStyle">1</int>
+						<int key="IBUISectionIndexMinimumDisplayRowCount">0</int>
+						<bool key="IBUIShowsSelectionImmediatelyOnTouchBegin">YES</bool>
+						<float key="IBUIRowHeight">44</float>
+						<float key="IBUISectionHeaderHeight">22</float>
+						<float key="IBUISectionFooterHeight">22</float>
+						<reference key="IBUITableHeaderView" ref="419786532"/>
+					</object>
 					<object class="IBUIToolbar" id="325177593">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">266</int>
@@ -84,7 +118,7 @@
 								</object>
 							</object>
 						</object>
-						<string key="NSFrame">{{0, 49}, {320, 44}}</string>
+						<string key="NSFrameSize">{320, 44}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -107,40 +141,6 @@
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
 						</object>
-					</object>
-					<object class="IBUITableView" id="390957132">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">274</int>
-						<object class="NSMutableArray" key="NSSubviews">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUISearchBar" id="419786532">
-								<reference key="NSNextResponder" ref="390957132"/>
-								<int key="NSvFlags">290</int>
-								<string key="NSFrameSize">{320, 44}</string>
-								<reference key="NSSuperview" ref="390957132"/>
-								<int key="IBUIContentMode">3</int>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<object class="IBUITextInputTraits" key="IBTextInputTraits">
-									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								</object>
-							</object>
-						</object>
-						<string key="NSFrameSize">{320, 416}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-						</object>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<bool key="IBUIAlwaysBounceVertical">YES</bool>
-						<int key="IBUISeparatorStyle">1</int>
-						<int key="IBUISectionIndexMinimumDisplayRowCount">0</int>
-						<bool key="IBUIShowsSelectionImmediatelyOnTouchBegin">YES</bool>
-						<float key="IBUIRowHeight">44</float>
-						<float key="IBUISectionHeaderHeight">22</float>
-						<float key="IBUISectionFooterHeight">22</float>
-						<reference key="IBUITableHeaderView" ref="419786532"/>
 					</object>
 				</object>
 				<string key="NSFrameSize">{320, 416}</string>
@@ -285,8 +285,8 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="325177593"/>
 							<reference ref="390957132"/>
+							<reference ref="325177593"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -378,7 +378,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>PlantListViewController</string>
 					<string>UIResponder</string>
-					<string>{{713, 303}, {320, 480}}</string>
+					<string>{{765, 303}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -390,7 +390,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">AQAAAADCRAAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCSAAAww4AAA</bytes>
 					</object>
 				</object>
 			</object>

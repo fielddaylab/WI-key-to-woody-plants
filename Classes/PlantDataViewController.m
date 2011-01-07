@@ -16,7 +16,6 @@
 	if ((self = [super initWithNibName:@"PlantDataViewController" bundle:nil])) {
 		// Custom initialization
 		self.plant = p;
-		self.title = @"Plant Details";
 	}
 	return self;
 }
@@ -29,7 +28,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	
 	NSLog(@"PlantDataViewController: Loading Plant: %@",self.plant.uid);
-	self.title = self.plant.scientificName;
+	self.title = self.plant.commonName1;
 	nativeTextView.text = self.plant.nativeText;
 	commonNamesTextView.text = self.plant.commonName1;
 	habitatTextView.text = self.plant.habitatText;

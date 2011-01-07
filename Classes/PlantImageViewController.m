@@ -22,7 +22,6 @@
 	if ((self = [super initWithNibName:@"PlantImageViewController" bundle:nil])) {
 		// Custom initialization
 		self.plant = p;
-		self.title = p.scientificName;
 	}
 	return self;
 }
@@ -33,7 +32,7 @@
 	[super viewDidLoad];
 	
 	NSLog(@"PlantImageViewController: Loading Plant: %@",self.plant.uid);
-	self.title = self.plant.scientificName;
+	self.title = self.plant.commonName1;
 	self.hidesBottomBarWhenPushed = YES;
 	
 	//Scroller Images
