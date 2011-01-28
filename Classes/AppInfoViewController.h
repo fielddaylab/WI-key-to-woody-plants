@@ -10,7 +10,7 @@
 
 
 @interface AppInfoViewController : UIViewController {
-
+	IBOutlet UIWebView *webView;
 }
 
 @end

@@ -34,18 +34,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	self.title = @"Plant Key";
+	self.title = @"Key to WI Woody Plants";
 
-	[treeButton addTarget:self action:@selector(treeButtonAction) forControlEvents:UIControlEventTouchUpInside];
-	[shrubButton addTarget:self action:@selector(shrubButtonAction) forControlEvents:UIControlEventTouchUpInside];
+	[keyButton addTarget:self action:@selector(keyButtonAction) forControlEvents:UIControlEventTouchUpInside];
+	[keyToKeysButton addTarget:self action:@selector(keyToKeysButtonAction) forControlEvents:UIControlEventTouchUpInside];
 	[glossaryButton addTarget:self action:@selector(glossaryButtonAction) forControlEvents:UIControlEventTouchUpInside];
 	[plantListButton addTarget:self action:@selector(plantListButtonAction) forControlEvents:UIControlEventTouchUpInside];
 	[infoButton addTarget:self action:@selector(infoButtonAction) forControlEvents:UIControlEventTouchUpInside];
 
 }
 
--(void) treeButtonAction {
+-(void) keyButtonAction {
 	KeyNode *kn = [[KeyNode alloc]init];
+
 	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Leaves, needles or scales narrower than 0.5\", with 1 or 2 veins; conifers"]autorelease]];
 	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 21] Type:kNode andText:@"Opposite or whorled leaves that are broad and flat"]autorelease]];
 	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 34] Type:kNode andText:@"Simple alternate leaves that are broad and flat, "]autorelease]];
@@ -57,10 +58,15 @@
 	[kn release];
 	[vc release];
 }
--(void) shrubButtonAction {
+-(void) keyToKeysButtonAction {
+	
 	KeyNode *kn = [[KeyNode alloc]init];
-	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Shrubs [TODO]"]autorelease]];
-	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Vines [TODO]"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Conifers"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 21] Type:kNode andText:@"Trees With Alternate Simple Leaves"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 34] Type:kNode andText:@"Trees With Alternate Compound Leaves"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 79] Type:kNode andText:@"Trees With Opposite Leaves"]autorelease]];
+	//[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Shrubs or Vines"]autorelease]];
+	
 	
 	KeyNodeViewController *vc = [[KeyNodeViewController alloc]initWithKeyNode:kn];[vc.navigationItem setHidesBackButton:YES];
 	[self.navigationController pushViewController:vc animated:YES];

@@ -10,8 +10,8 @@
 
 
 @interface RootMenuViewController : UIViewController {
-	IBOutlet UIButton *treeButton;
-	IBOutlet UIButton *shrubButton;
+	IBOutlet UIButton *keyButton;
+	IBOutlet UIButton *keyToKeysButton;
 	IBOutlet UIButton *glossaryButton;
 	IBOutlet UIButton *plantListButton;
 	IBOutlet UIButton *infoButton;

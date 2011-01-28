@@ -28,12 +28,17 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	webView.opaque = NO;
+	webView.backgroundColor = [UIColor clearColor];
+	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"info" ofType:@"html"];
+	NSURL *url = [NSURL fileURLWithPath:urlAddress];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[webView loadRequest:requestObj];
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
