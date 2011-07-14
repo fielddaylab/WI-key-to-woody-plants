@@ -194,10 +194,11 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 				
 				NSNumber *plantId = [NSNumber numberWithInt:[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)] intValue]];
 
+                NSLog(@"AppModel:readImagesFromDatabaseForPlant: adding image to plant %@", plantId);
+
 				// Add the image to the Plant's image array
 				Plant *plant = [self.plants objectForKey:plantId];
 				if (plant) {
-					//NSLog(@"AppModel:readImagesFromDatabaseForPlant: adding image to plant %@", plant.uid);
 					[plant.images addObject:image];
 				}
 				else NSLog(@"AppModel:readImagesFromDatabaseForPlant: Bad Plant uid in Image uid %@",image.uid );
@@ -207,6 +208,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppModel);
 		// Release the compiled statement from memory
 		sqlite3_finalize(compiledStatement);
 	}
+    else NSLog(@"AppModel:readImagesFromDatabaseForPlant: SQLITE was NOT OK");
+
 	sqlite3_close(database);
 	NSLog(@"AppModel:readImagesFromDatabaseForPlant: Reading Complete");
 }
