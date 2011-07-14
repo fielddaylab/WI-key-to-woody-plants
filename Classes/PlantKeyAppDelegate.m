@@ -5,6 +5,7 @@
 //  Created by David J Gagnon on 8/9/10.
 //  Copyright University of Wisconsin 2010. All rights reserved.
 //
+//  Licence: MIT
 
 #import "PlantKeyAppDelegate.h"
 #import "RootMenuViewController.h"
