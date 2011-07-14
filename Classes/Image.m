@@ -5,6 +5,8 @@
 //  Created by David J Gagnon on 1/3/11.
 //  Copyright 2011 University of Wisconsin. All rights reserved.
 //
+//  Licensed under the MIT license: 
+//  http://www.opensource.org/licenses/mit-license.php
 
 #import "Image.h"
 
