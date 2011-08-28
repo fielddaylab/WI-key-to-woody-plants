@@ -29,6 +29,7 @@
 	RootMenuViewController *vc = [[RootMenuViewController alloc]initWithNibName:@"RootMenuViewController" bundle:nil];
 	UINavigationController *nc = [[UINavigationController alloc]initWithRootViewController:vc];
 	
+    [application setStatusBarStyle:UIStatusBarStyleBlackOpaque];
 	nc.navigationBar.barStyle = UIBarStyleBlack;
 	[window addSubview:nc.view];
 	[window makeKeyAndVisible];

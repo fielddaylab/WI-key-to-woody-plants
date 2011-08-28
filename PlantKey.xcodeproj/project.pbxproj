@@ -35,6 +35,7 @@
 		AB7C03CD1211F412005F4DBE /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7C03CC1211F412005F4DBE /* libsqlite3.0.dylib */; };
 		AB7C05251212E344005F4DBE /* KeyNodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7C05231212E344005F4DBE /* KeyNodeViewController.m */; };
 		AB7C05DD1213233B005F4DBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7C05DC1213233B005F4DBE /* CoreGraphics.framework */; };
+		AB84E411140AD8DD00D6DEDB /* background_root.png in Resources */ = {isa = PBXBuildFile; fileRef = AB84E410140AD8DD00D6DEDB /* background_root.png */; };
 		ABAB8FB312D27BCC0095BDCE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB8FB212D27BCC0095BDCE /* Image.m */; };
 		ABCF9EAC12D7A2AB0062FFAF /* ImageNotAvailable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9EAB12D7A2AB0062FFAF /* ImageNotAvailable.jpg */; };
 		ABCF9F1E12D7BC9D0062FFAF /* curlButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF9F1B12D7BC9D0062FFAF /* curlButton.png */; };
@@ -45,6 +46,7 @@
 		ABD22DB212552B630018A3E8 /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22DB112552B630018A3E8 /* Plant.m */; };
 		ABD22E30125545CB0018A3E8 /* GlossaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD22E2E125545CA0018A3E8 /* GlossaryListViewController.m */; };
 		ABD6E20912F225A000276B67 /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = ABD6E20812F225A000276B67 /* info.html */; };
+		ABD97706140ADA7E00D5FB0D /* background_key.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD97705140ADA7E00D5FB0D /* background_key.png */; };
 		ABDD0A29136B62240020020F /* Abibal01 Needles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABDD07A5136B62230020020F /* Abibal01 Needles.jpg */; };
 		ABDD0A2A136B62240020020F /* Abibal02 Bough.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABDD07A6136B62230020020F /* Abibal02 Bough.jpg */; };
 		ABDD0A2B136B62240020020F /* Abibal03 Upright cone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABDD07A7136B62230020020F /* Abibal03 Upright cone.jpg */; };
@@ -690,7 +692,6 @@
 		ABDD0CAB136B62240020020F /* Zaname09 Distmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABDD0A27136B62240020020F /* Zaname09 Distmap.jpg */; };
 		ABDD0CAC136B62240020020F /* Photo credits - P menziesii.txt in Resources */ = {isa = PBXBuildFile; fileRef = ABDD0A28136B62240020020F /* Photo credits - P menziesii.txt */; };
 		ABEED42E13720AE500C7D10B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEED42D13720AE500C7D10B /* Icon.png */; };
-		ABEED43013720B0100C7D10B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEED42F13720B0000C7D10B /* Default@2x.png */; };
 		ABEED43213720B5800C7D10B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6244D212D686FC000EAB07 /* Default.png */; };
 /* End PBXBuildFile section */
 
@@ -737,6 +738,7 @@
 		AB7C05221212E344005F4DBE /* KeyNodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyNodeViewController.h; sourceTree = "<group>"; };
 		AB7C05231212E344005F4DBE /* KeyNodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyNodeViewController.m; sourceTree = "<group>"; };
 		AB7C05DC1213233B005F4DBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB84E410140AD8DD00D6DEDB /* background_root.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_root.png; sourceTree = "<group>"; };
 		ABAB8FB112D27BCC0095BDCE /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		ABAB8FB212D27BCC0095BDCE /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		ABCF9EAB12D7A2AB0062FFAF /* ImageNotAvailable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ImageNotAvailable.jpg; sourceTree = "<group>"; };
@@ -754,6 +756,7 @@
 		ABD22E2E125545CA0018A3E8 /* GlossaryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryListViewController.m; sourceTree = "<group>"; };
 		ABD6E1E712F21AF200276B67 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		ABD6E20812F225A000276B67 /* info.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = info.html; sourceTree = "<group>"; };
+		ABD97705140ADA7E00D5FB0D /* background_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_key.png; sourceTree = "<group>"; };
 		ABDD07A5136B62230020020F /* Abibal01 Needles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal01 Needles.jpg"; sourceTree = "<group>"; };
 		ABDD07A6136B62230020020F /* Abibal02 Bough.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal02 Bough.jpg"; sourceTree = "<group>"; };
 		ABDD07A7136B62230020020F /* Abibal03 Upright cone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abibal03 Upright cone.jpg"; sourceTree = "<group>"; };
@@ -1399,7 +1402,6 @@
 		ABDD0A27136B62240020020F /* Zaname09 Distmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Zaname09 Distmap.jpg"; sourceTree = "<group>"; };
 		ABDD0A28136B62240020020F /* Photo credits - P menziesii.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Photo credits - P menziesii.txt"; sourceTree = "<group>"; };
 		ABEED42D13720AE500C7D10B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		ABEED42F13720B0000C7D10B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1486,8 +1488,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ABD97705140ADA7E00D5FB0D /* background_key.png */,
+				AB84E410140AD8DD00D6DEDB /* background_root.png */,
 				ABD6E1E712F21AF200276B67 /* Entitlements.plist */,
-				ABEED42F13720B0000C7D10B /* Default@2x.png */,
 				ABEED42D13720AE500C7D10B /* Icon.png */,
 				ABD6E20812F225A000276B67 /* info.html */,
 				ABCF9EAB12D7A2AB0062FFAF /* ImageNotAvailable.jpg */,
@@ -2906,8 +2909,9 @@
 				ABDD0CAB136B62240020020F /* Zaname09 Distmap.jpg in Resources */,
 				ABDD0CAC136B62240020020F /* Photo credits - P menziesii.txt in Resources */,
 				ABEED42E13720AE500C7D10B /* Icon.png in Resources */,
-				ABEED43013720B0100C7D10B /* Default@2x.png in Resources */,
 				ABEED43213720B5800C7D10B /* Default.png in Resources */,
+				AB84E411140AD8DD00D6DEDB /* background_root.png in Resources */,
+				ABD97706140ADA7E00D5FB0D /* background_key.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

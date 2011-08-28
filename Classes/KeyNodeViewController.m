@@ -120,13 +120,19 @@
 	if (cell == nil)
 	{
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
-
+        [cell setBackgroundColor:[UIColor colorWithRed:71/255.0 green:97/255.0 blue:23/255.0 alpha:1.0]];
+        cell.backgroundView = nil;
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        
+        
 		label = [[UILabel alloc] initWithFrame:CGRectZero];
 		[label setLineBreakMode:UILineBreakModeWordWrap];
 		[label setMinimumFontSize:FONT_SIZE];
 		[label setNumberOfLines:0];
 		[label setFont:[UIFont systemFontOfSize:FONT_SIZE]];
+        [label setTextColor:[UIColor whiteColor]];
 		[label setTag:1];
+        [label setBackgroundColor:[UIColor clearColor]];
 		 	
 		[[cell contentView] addSubview:label];
 		
