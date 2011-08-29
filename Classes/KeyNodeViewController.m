@@ -122,7 +122,7 @@
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
         [cell setBackgroundColor:[UIColor colorWithRed:71/255.0 green:97/255.0 blue:23/255.0 alpha:1.0]];
         cell.backgroundView = nil;
-        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
         
         
 		label = [[UILabel alloc] initWithFrame:CGRectZero];

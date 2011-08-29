@@ -95,8 +95,18 @@
 	
 	if (cell == nil) {
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        
+        [cell setBackgroundColor:[UIColor colorWithRed:71/255.0 green:97/255.0 blue:23/255.0 alpha:1.0]];
+        cell.backgroundView = nil;
+        [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
+        
+        cell.textLabel.textColor = [UIColor whiteColor];
+        cell.detailTextLabel.textColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.7];
+        
 	}
 
+
+    
 	NSNumber *plantId;
 	if (tableView == self.searchDisplayController.searchResultsTableView) 
 		plantId = [self.filteredPlantIndexes objectAtIndex:indexPath.row];
