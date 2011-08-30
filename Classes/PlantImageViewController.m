@@ -35,8 +35,10 @@
 	[super viewDidLoad];
 	
 	NSLog(@"PlantImageViewController: Loading Plant: %@",self.plant.uid);
-	self.title = self.plant.commonName1;
+	self.title = self.plant.commonName;
 	self.hidesBottomBarWhenPushed = YES;
+    
+    self.navigationItem.leftBarButtonItem.title = @"Back";
 	
 	//Scroller Images
 	self.scrollView.delegate = self;

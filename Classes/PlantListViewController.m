@@ -118,10 +118,10 @@
 	switch (sortFieldSegmentedControl.selectedSegmentIndex) {
 		case 0:
 			cell.textLabel.text = p.scientificName;
-			cell.detailTextLabel.text = p.commonName1;			
+			cell.detailTextLabel.text = p.commonName;			
 			break;
 		case 1:
-			cell.textLabel.text = p.commonName1;
+			cell.textLabel.text = p.commonName;
 			cell.detailTextLabel.text = p.scientificName;
 			break;
 		default:
@@ -210,9 +210,8 @@
 	for (NSNumber *plantId in self.plantIndexes) {
 		Plant *p = [[AppModel sharedInstance] plantForId:plantId];
 		if ([[p.scientificName lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
-		if ([[p.commonName1 lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
-		if ([[p.commonName2 lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
-		if ([[p.commonName3 lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
+		if ([[p.commonName lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
+		if ([[p.commonNames lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) [self.filteredPlantIndexes addObject:plantId]; 
 		
 	}
 	NSLog(@"filting Complete");

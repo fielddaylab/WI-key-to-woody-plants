@@ -15,11 +15,13 @@
 
 @synthesize uid;
 @synthesize scientificName;
-@synthesize commonName1;
-@synthesize commonName2;
-@synthesize commonName3;
+@synthesize commonName;
+@synthesize commonNames;
+@synthesize family;
 @synthesize nativeText;
-@synthesize habitatText; 
+@synthesize habitatText;
+@synthesize uses;
+@synthesize credits;
 @synthesize images;
 
 -(id)init {
@@ -32,7 +34,7 @@
 }
 
 - (NSComparisonResult)compareCommonName:(Plant*)otherPlant{
-	return [self.commonName1 localizedCaseInsensitiveCompare:otherPlant.commonName1];
+	return [self.commonName localizedCaseInsensitiveCompare:otherPlant.commonName];
 }
 
 @end

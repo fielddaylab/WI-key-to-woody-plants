@@ -12,23 +12,27 @@
 
 
 @interface Plant : NSObject {
-	NSNumber*		uid;
-	NSString*		scientificName;
-	NSString*		commonName1;
-	NSString*		commonName2;
-	NSString*		commonName3;
-	NSString*		nativeText;
-	NSString*		habitatText;
+    NSNumber*		uid;
+    NSString*		scientificName;
+    NSString*		commonName;
+    NSString*		commonNames;
+    NSString*		family;
+    NSString*		nativeText;
+    NSString*		habitatText;
+    NSString*		uses;
+    NSString*		credits;
 	NSMutableArray*	images;
 }
 
 @property(nonatomic, retain) NSNumber*		uid;
 @property(nonatomic, retain) NSString*		scientificName;
-@property(nonatomic, retain) NSString*		commonName1;
-@property(nonatomic, retain) NSString*		commonName2;
-@property(nonatomic, retain) NSString*		commonName3;
+@property(nonatomic, retain) NSString*		commonName;
+@property(nonatomic, retain) NSString*		commonNames;
+@property(nonatomic, retain) NSString*		family;
 @property(nonatomic, retain) NSString*		nativeText;
 @property(nonatomic, retain) NSString*		habitatText;
+@property(nonatomic, retain) NSString*		uses;
+@property(nonatomic, retain) NSString*		credits;
 @property(nonatomic, retain) NSMutableArray*	images;
 
 - (NSComparisonResult)compareScientificName:(Plant*)otherPlant;

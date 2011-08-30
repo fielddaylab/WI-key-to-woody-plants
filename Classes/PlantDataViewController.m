@@ -30,9 +30,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	
 	NSLog(@"PlantDataViewController: Loading Plant: %@",self.plant.uid);
-	self.title = self.plant.commonName1;
+	self.title = self.plant.commonName;
 	nativeTextView.text = self.plant.nativeText;
-	commonNamesTextView.text = self.plant.commonName1;
+	commonNamesTextView.text = self.plant.commonNames;
 	habitatTextView.text = self.plant.habitatText;
 	
 	self.hidesBottomBarWhenPushed = YES;
