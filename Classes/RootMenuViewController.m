@@ -58,11 +58,11 @@
 -(void) keyToKeysButtonAction {
 	
 	KeyNode *kn = [[KeyNode alloc]init];
-	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Conifers"]autorelease]];
-	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 21] Type:kNode andText:@"Trees With Alternate Simple Leaves"]autorelease]];
-	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 34] Type:kNode andText:@"Trees With Alternate Compound Leaves"]autorelease]];
-	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 79] Type:kNode andText:@"Trees With Opposite Leaves"]autorelease]];
-	//[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Shrubs or Vines"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 1] Type:kNode andText:@"Key I: Conifers"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 21] Type:kNode andText:@"Key II: Broadleaf Trees with Opposite Leaves"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 34] Type:kNode andText:@"Key III: Broadleaf Trees with Alternate Simple Leaves"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 79] Type:kNode andText:@"Key IV: Broadleaf Trees with Alternate Compound Leaves"]autorelease]];
+	[kn.options addObject: [[[KeyNodeOption alloc]initWithUid:[NSNumber numberWithInt: 88] Type:kNode andText:@"Key V: Broadleaf Shrubs & Vines"]autorelease]];
 	
 	
 	KeyNodeViewController *vc = [[KeyNodeViewController alloc]initWithKeyNode:kn];[vc.navigationItem setHidesBackButton:YES];
