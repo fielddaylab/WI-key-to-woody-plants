@@ -14,14 +14,19 @@
 
 @interface PlantDataViewController : UIViewController {
 	Plant *plant;
-	IBOutlet UITextView *nativeTextView;
+    IBOutlet UIWebView *webView;
 	IBOutlet UITextView *commonNamesTextView;
+    IBOutlet UITextView *nativeTextView;
 	IBOutlet UITextView *habitatTextView;
+    IBOutlet UITextView *usesTextView;
+	IBOutlet UITextView *creditsTextView;   
 	IBOutlet UIImageView *mainImageView;
 	IBOutlet UIView *otherImagesView;	
 }
 
 @property (nonatomic,retain) Plant *plant;
+@property (nonatomic,retain) UIWebView *webView;
+
 
 - (id)initWithPlant:(Plant *)p;
 

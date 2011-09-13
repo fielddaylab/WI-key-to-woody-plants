@@ -11,6 +11,7 @@
 #import "PlantImageViewController.h"
 #import "Image.h"
 #import "PlantDataViewController.h"
+#import "AppModel.h"
 
 @implementation PlantImageViewController
 
@@ -47,6 +48,9 @@
 	scrollView.clipsToBounds = YES;
 	scrollView.scrollEnabled = YES;
 	scrollView.pagingEnabled = YES;
+    
+    if ([self.plant.images count] == 0) [[AppModel sharedInstance] readImagesFromDatabaseForPlant:self.plant.uid];
+    
 	
 	CGFloat scrollViewContentWidth = 0;
 	for (NSUInteger imageIndex = 0; imageIndex < [self.plant.images count]; imageIndex++) {

@@ -31,12 +31,15 @@
 - (void) readKeyNodesFromDatabase;
 - (void) readPlantsFromDatabase;
 - (void) readGlossaryFromDatabase;
+- (void) readImagesFromDatabaseForPlant:(NSNumber*)plantId;
 
 - (void) checkAndCreateDatabase;
 - (KeyNode *)keyNodeForId: (NSNumber*)i;
 - (Plant *)plantForId: (NSNumber*)i;
 - (Term *)termForId: (NSNumber*)i;
 
+@property (nonatomic, retain) NSString *databaseName;
+@property (nonatomic, retain) NSString *databasePath;
 
 @property (nonatomic, retain) NSMutableDictionary *keyNodes;
 @property (nonatomic, retain) NSMutableDictionary *plants;
