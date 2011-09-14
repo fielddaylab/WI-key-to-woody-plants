@@ -92,6 +92,8 @@ NSString *const kHtmlTemplate =
     NSLog(@"Loading: %@",webView);
     
 	self.hidesBottomBarWhenPushed = YES;
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background_key.png"]];
 
 	
 }
