@@ -5542,7 +5542,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>337696881.47993898</real>
+		<real>337717271.86895299</real>
 		<string>{0, 586}</string>
 		<string>{240, 0}</string>
 		<dict>
@@ -12189,7 +12189,7 @@
 		</dict>
 		<string>IDEDeviceLocation</string>
 		<string>IDEDeviceArchitecture</string>
-		<string>dvtdevice-iphonePlaceholder:placeholder</string>
+		<string>dvtdevice-iphone:5a577448da4453bbb1173f9a5a9700437b008412</string>
 		<string>armv7</string>
 		<dict>
 			<key>$class</key>
@@ -12322,7 +12322,7 @@
 		<string>IDEActivityReportStringSegmentStringValue</string>
 		<real>2</real>
 		<string> </string>
-		<string>Build</string>
+		<string>Archive</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -12501,7 +12501,7 @@
 				<integer>954</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>337696667.040007</real>
+			<real>337696916.87715501</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -12512,7 +12512,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 7:37 AM</string>
+		<string>Today at 7:41 AM</string>
 		<integer>106</integer>
 		<dict>
 			<key>$class</key>
@@ -12522,10 +12522,6 @@
 			</dict>
 			<key>NS.objects</key>
 			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>5</integer>
-				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>8</integer>
@@ -18254,7 +18250,7 @@
 		<string>IDEOrderedWorkspaceTabControllers</string>
 		<string>IDEWorkspaceTabController_54242F7B-75CB-4EE0-B13A-3D1AA40AFA92</string>
 		<string>IDEActiveWorkspaceTabController</string>
-		<string>{{0, 67}, {1416, 961}}</string>
+		<string>{{0, 457}, {1416, 961}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -18773,7 +18769,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>337696881.48098099</real>
+		<real>337717278.85703599</real>
 		<string>{0, 586}</string>
 		<string>{240, 0}</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
@@ -25538,7 +25534,7 @@
 			<key>NS.objects</key>
 			<array/>
 		</dict>
-		<string>{{488, 201}, {1020, 709}}</string>
+		<string>{{1010, 482}, {1020, 709}}</string>
 	</array>
 	<key>$top</key>
 	<dict>
